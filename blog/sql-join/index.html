@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#" itemscope itemtype="https://schema.org/Article">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+
+
+<title>Introduction to SQL Joins - Sololearn</title>
+<meta name="description" content="SQL joins are a very useful tool when it comes to taking information from tables and putting it together in a useful way." />
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Introduction to SQL Joins - Sololearn" />
+<meta property="og:description" content="SQL joins are a very useful tool when it comes to taking information from tables and putting it together in a useful way." />
+<meta property="og:url" content="https://www.sololearn.com/blog/sql-join/" />
+<meta property="og:site_name" content="Sololearn Blog" />
+<meta property="article:section" content="Guides" />
+<meta property="og:updated_time" content="2023-03-23T23:27:05+00:00" />
+<meta property="og:image" content="https://www.sololearn.com/wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist.-760x300.png" />
+<meta property="og:image:secure_url" content="https://www.sololearn.com/wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist.-760x300.png" />
+<meta property="og:image:width" content="760" />
+<meta property="og:image:height" content="300" />
+<meta property="og:image:alt" content="SQL Joins: What They are, How They Work, and How Many Types Exist" />
+<meta property="og:image:type" content="image/png" />
+<meta property="article:published_time" content="2022-11-21T12:04:19+00:00" />
+<meta property="article:modified_time" content="2023-03-23T23:27:05+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Introduction to SQL Joins - Sololearn" />
+<meta name="twitter:description" content="SQL joins are a very useful tool when it comes to taking information from tables and putting it together in a useful way." />
+<meta name="twitter:image" content="https://www.sololearn.com/wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist.-760x300.png" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Sololearn Growth" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="7 minutes" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.sololearn.com/blog/#organization","name":"Sololearn Blog","logo":{"@type":"ImageObject","@id":"https://www.sololearn.com/blog/#logo","url":"https://blog-dev.sololearn.com/wp-content/uploads/2022/11/sololearn_color_dark-2.png","contentUrl":"https://blog-dev.sololearn.com/wp-content/uploads/2022/11/sololearn_color_dark-2.png","caption":"Sololearn Blog","inLanguage":"en-US","width":"1112","height":"213"}},{"@type":"WebSite","@id":"https://www.sololearn.com/blog/#website","url":"https://www.sololearn.com/blog","name":"Sololearn Blog","publisher":{"@id":"https://www.sololearn.com/blog/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.sololearn.com/wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist..png","url":"https://www.sololearn.com/wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist..png","width":"760","height":"900","inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://www.sololearn.com/blog/sql-join/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://www.sololearn.com/blog","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://www.sololearn.com/blog/category/guides/","name":"Guides"}},{"@type":"ListItem","position":"3","item":{"@id":"https://www.sololearn.com/blog/sql-join/","name":"SQL Joins: What They are, How They Work, and How Many Types Exist"}}]},{"@type":"WebPage","@id":"https://www.sololearn.com/blog/sql-join/#webpage","url":"https://www.sololearn.com/blog/sql-join/","name":"Introduction to SQL Joins - Sololearn","datePublished":"2022-11-21T12:04:19+00:00","dateModified":"2023-03-23T23:27:05+00:00","isPartOf":{"@id":"https://www.sololearn.com/blog/#website"},"primaryImageOfPage":{"@id":"https://www.sololearn.com/wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist..png"},"inLanguage":"en-US","breadcrumb":{"@id":"https://www.sololearn.com/blog/sql-join/#breadcrumb"}},{"@type":"Person","@id":"https://www.sololearn.com/blog/author/sololearn/","name":"Sololearn Growth","url":"https://www.sololearn.com/blog/author/sololearn/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/c7e8224ac7ad8328638086ea96255fb7?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/c7e8224ac7ad8328638086ea96255fb7?s=96&amp;d=mm&amp;r=g","caption":"Sololearn Growth","inLanguage":"en-US"},"worksFor":{"@id":"https://www.sololearn.com/blog/#organization"}},{"@type":"BlogPosting","headline":"Introduction to SQL Joins - Sololearn","datePublished":"2022-11-21T12:04:19+00:00","dateModified":"2023-03-23T23:27:05+00:00","articleSection":"Guides","author":{"@id":"https://www.sololearn.com/blog/author/sololearn/"},"publisher":{"@id":"https://www.sololearn.com/blog/#organization"},"description":"SQL joins are a very useful tool when it comes to taking information from tables and putting it together in a useful way.","name":"Introduction to SQL Joins - Sololearn","@id":"https://www.sololearn.com/blog/sql-join/#richSnippet","isPartOf":{"@id":"https://www.sololearn.com/blog/sql-join/#webpage"},"image":{"@id":"https://www.sololearn.com/wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist..png"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://www.sololearn.com/blog/sql-join/#webpage"}}]}</script>
+
+<link rel="alternate" type="application/rss+xml" title="Sololearn &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Sololearn &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Sololearn &raquo; SQL Joins: What They are, How They Work, and How Many Types Exist Comments Feed" href="feed/index.html" />
+<script type="818dac2e4cf1fa80f41cf38c-text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.sololearn.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}figure{margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://www.sololearn.com/wp-includes/css/classic-themes.min.css?ver=6.2.2' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('index.html');--wp--preset--duotone--grayscale: url('index.html');--wp--preset--duotone--purple-yellow: url('index.html');--wp--preset--duotone--blue-red: url('index.html');--wp--preset--duotone--midnight: url('index.html');--wp--preset--duotone--magenta-yellow: url('index.html');--wp--preset--duotone--purple-green: url('index.html');--wp--preset--duotone--blue-orange: url('index.html');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='sololearn-style-css' href='https://www.sololearn.com/wp-content/themes/sololearn/style.css?ver=6.2.2' media='all' />
+<link rel='stylesheet' id='enlighterjs-css' href='https://www.sololearn.com/wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=5ldjK8WLazRmDr7' media='all' />
+<script src='https://www.sololearn.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js' type="818dac2e4cf1fa80f41cf38c-text/javascript"></script>
+<script src='https://www.sololearn.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js' type="818dac2e4cf1fa80f41cf38c-text/javascript"></script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" type="application/json" href="../wp-json/wp/v2/posts/1753" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.sololearn.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.2.2" />
+<link rel='shortlink' href='https://www.sololearn.com/blog/?p=1753' />
+<link rel="alternate" type="application/json+oembed" href="https://www.sololearn.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sololearn.com%2Fblog%2Fsql-join%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.sololearn.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sololearn.com%2Fblog%2Fsql-join%2F&#038;format=xml" />
+
+
+<script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["guides"],"pagePostAuthor":"Sololearn Growth"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7MQKF7');
+</script>
+
+<link rel="pingback" href="https://www.sololearn.com/xmlrpc.php" />
+<script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js" type="818dac2e4cf1fa80f41cf38c-text/javascript"></script>
+</head>
+<body class="post-template-default single single-post postid-1753 single-format-standard wp-embed-responsive">
+<a href="index.html#content" class="skip-link screen-reader-text">Skip to the content</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7MQKF7" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+
+<script type="818dac2e4cf1fa80f41cf38c-text/javascript">
+    if(!JSON.parse(window.localStorage.user)?.data?.isPro) {
+        document.querySelector('.wp-navbar__pro-button-wrapper').style.display = 'block';
+    }
+</script>
+<nav class="wp-navbar light">
+<div class="wp-navbar__container">
+<a class="wp-navbar__main-logo wp-navbar__main-logo--desktop" href="../../home">
+<img src="../../wp-content/themes/sololearn/assets/icons/logoAppDesktop.svg" alt="brand_logo-desktop" class='style-svg'>
+</a>
+<a class="wp-navbar__main-logo wp-navbar__main-logo--mobile" href="../../home">
+<img src="../../wp-content/themes/sololearn/assets/icons/logoAppMobile.svg" alt="brand_logo-mobile" class='style-svg'>
+</a>
+<div class="wp-navbar__content" id="navbar_content">
+<div class="wp-navbar__content-wrapper">
+<ul class='wp-navbar__content-list'>
+<li class="wp-navbar__content-list__item"><a href="../../Courses/index.html">Catalog</a></li>
+<li class="wp-navbar__content-list__item"><a href="../../compiler-playground">Online Compiler</a></li>
+<li class="wp-navbar__content-list__item"><a href="../../discuss">Discuss</a></li>
+<li class="wp-navbar__content-list__item"><a href="../../blog">Blog</a></li>
+<li class="wp-navbar__content-list__item"><a href="https://www.sololearn.com/payments/pro">Get Pro</a></li>
+</ul>
+</div>
+<div class="wp-navbar__actions-wrapper">
+<div class="wp-navbar__actions">
+<a href="https://www.sololearn.com/users/login?tr_source=login&amp;tr_source_detail=blog">
+<button type="button" class="sol-button sol-button-secondary sol-button-block sol-button-m" tabindex="0">Log in
+</button>
+</a>
+<a href="https://www.sololearn.com/onboarding/auth/signup?tr_source=register&amp;tr_source_detail=blog">
+<button type="button" class="sol-button sol-button-primary sol-button-block sol-button-m" tabindex="0">Register
+</button>
+</a>
+</div>
+</div>
+</div>
+<div class="wp-navbar__hamburger" id="hamburger_menu">
+Menu
+<div class="wp-navbar__hamburger__button" id="hamburger_menu_btn">
+<span class="arrow first"></span>
+<span class="arrow second"></span>
+<span class="arrow third"></span>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<main id="content" role="main">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="wp-breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Sololearn." href="../../blog" class="home"><span property="name">Sololearn blog</span></a><meta property="position" content="1"></span><span class="wp-breadcrumbs-separator"></span><span property="itemListElement" typeof="ListItem"><span property="name" class="post post-post current-item">SQL Joins: What They are, How They Work, and How Many Types Exist</span><meta property="url" content="https://www.sololearn.com/blog/sql-join/"><meta property="position" content="2"></span> </div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-8">
+<article id="post-1753" class="post-1753 post type-post status-publish format-standard has-post-thumbnail hentry category-guides">
+<header>
+<div class="share-container">
+<span>Share:</span>
+<button data-sharer="facebook" data-url="https://www.sololearn.com/blog/sql-join/">
+<img src="../../wp-content/themes/sololearn/assets/icons/facebook.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="linkedin" data-url="https://www.sololearn.com/blog/sql-join/">
+<img src="../../wp-content/themes/sololearn/assets/icons/linkedin.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="twitter" data-url="https://www.sololearn.com/blog/sql-join/">
+<img src="../../wp-content/themes/sololearn/assets/icons/twitter.svg" alt="share-icons" class="style-svg">
+</button>
+</div> <div class="reading-time">
+<img src="../../wp-content/themes/sololearn/assets/icons/timeToRead.svg" alt="time to read" class='style-svg'>
+<span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 5</span> <span class="rt-label rt-postfix">min read</span></span> </div>
+</header>
+<div class="entry-content" itemprop="mainEntityOfPage">
+<a href="../../wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist..png" title="SQL joins_ what they are, how they work and how many types exist.">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist..png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="../../wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist..png 760w, ../../wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist.-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> </a>
+<div class="entry-content__body">
+<h1 class="entry-title" itemprop="headline"> SQL Joins: What They are, How They Work, and How Many Types Exist </h1> <meta itemprop="description" content="Did you ever need to Join two tables? An SQL Join statement lets you access data from multiple sources &#8211; tables in SQL.&nbsp;&nbsp; You might ask, &#8220;What is SQL?&#8221; or/and &#8220;What are SQL joins?&#8221; depending on how far down you are on the SQL path, And we&#8217;d say that&#8217;s a fair question. While it&#8217;s a ... SQL Joins: What They are, How They Work, and How Many Types Exist" />
+<p>Did you ever need to <strong>Join two tables</strong>? An <strong>SQL Join </strong>statement lets you access data from multiple sources &#8211; tables in SQL.&nbsp;&nbsp;</p>
+<p>You might ask, <strong><em>&#8220;<a href="../what-is-sql/index.html" data-type="post" data-id="1755">What is SQL</a>?&#8221;</em></strong> or/and <strong><em>&#8220;What are SQL joins?&#8221; </em></strong>depending on how far down you are on the SQL path, And we&#8217;d say that&#8217;s a fair question. While it&#8217;s a very well-known acronym, it is an important part of <a href="../what-is-database/index.html" data-type="post" data-id="2637">database management systems (DBMS)</a>. SQL manages everything from giant corporate databases to small local databases. </p>
+<p>Think of it like this; if we have to write code and programs for each type of data because there aren&#8217;t any specialized tools to help us do this, we will drown in data clutter. If you&#8217;re creating web pages or sending emails and there are millions of different options available, you want something that will make all that information easier to read and work with — not harder! That&#8217;s what SQL does for you.&nbsp;</p>
+<p>SQL (Structured Query Language) manages data in relational database management systems (RDBMS). A developer who knows SQL can write code to create, modify, and retrieve data stored in a database.</p>
+<p>SQL is the most widely used database language in the world. It&#8217;s an essential skill for anyone working with websites or applications that use databases to store information.</p>
+<p>In addition to using SQL commands directly, most database applications allow you to enter SQL statements through graphical user interfaces or wizards.</p>
+<p>In this blog post, we&#8217;ll discuss <strong>SQL joins</strong> with examples to show how you can use this technique to improve your queries.</p>
+<h2 class="wp-block-heading"><strong>Types of SQL Joins</strong></h2>
+<p>SQL selects the data <strong>Join from two tables</strong> (or more) based on the same key data points&nbsp; between them; the top 4 types of<strong> SQL join statements</strong> are as follows:&nbsp;</p>
+<ol>
+<li><strong>Cross Join</strong></li>
+</ol>
+<p>A cross-join is a Cartesian product of two or more tables. A cross-join can combine data from multiple tables into a single result set. For example, if you have a table named Employees that contains employee names and phone numbers, you can cross-join with another table named Phones to get each employee&#8217;s phone numbers.</p>
+<p>The syntax for a cross-join is as follows:</p>
+<p><strong>SELECT * FROM [table name 1] CROSS JOIN [table name 2]</strong></p>
+<p>Take a look at the <strong>clear cross-join</strong> example below.</p>
+<p><strong>Table 1: Car_model</strong></p>
+<figure class="wp-block-table"><table><tbody><tr><td></td><td><strong>Car_model</strong></td></tr><tr><td><strong>1</strong></td><td>Corolla</td></tr><tr><td><strong>2</strong></td><td>Cultus</td></tr><tr><td><strong>3</strong></td><td>Camry</td></tr></tbody></table></figure>
+<p><strong>Table 2: Color_name</strong></p>
+<figure class="wp-block-table"><table><tbody><tr><td></td><td><strong>Color_name</strong></td></tr><tr><td><strong>1</strong></td><td>Black</td></tr><tr><td><strong>2</strong></td><td>Silver</td></tr><tr><td><strong>3</strong></td><td>Red</td></tr></tbody></table></figure>
+<p>To get all possible combinations of cars and colors, you need to execute the following piece of code:</p>
+<figure class="wp-block-table"><table><tbody><tr><td>SELECT<br>c.Car_model<br>,c1.Color_name<br>FROM Cars c<br>CROSS JOIN Colors c1</td></tr></tbody></table></figure>
+<p>This will generate a Cartesian product of all possible values of above 2 tables.</p>
+<figure class="wp-block-table"><table><tbody><tr><td></td><td><strong>Car_model</strong></td><td><strong>Color_name</strong></td></tr><tr><td>1</td><td>Corolla</td><td>Black</td></tr><tr><td>2</td><td>Cultus</td><td>Black</td></tr><tr><td>3</td><td>Camry</td><td>Black</td></tr><tr><td>4</td><td>Corolla</td><td>Silver</td></tr><tr><td>5</td><td>Cultus</td><td>Silver</td></tr><tr><td>6</td><td>Camry</td><td>Silver</td></tr><tr><td>7</td><td>Corolla</td><td>Grey</td></tr><tr><td>8</td><td>Cultus</td><td>Grey</td></tr><tr><td>9</td><td>Camry</td><td>Grey</td></tr></tbody></table></figure>
+<ol start="2">
+<li><strong>Inner Join</strong></li>
+</ol>
+<p>An inner join is a type of join that joins two tables based on the matching values in their columns. The result of the inner join contains all rows from both tables, with matching rows from both tables linked together.</p>
+<p>To use an inner join in SQL, you use the following syntax:</p>
+<p><strong>SELECT * FROM table1 INNER JOIN table2&nbsp;</strong></p>
+<p><strong>ON table1.column_name = table2.column_name;&nbsp;</strong></p>
+<p>Here&#8217;s how this code works:</p>
+<p><strong>Table 1: Foods</strong></p>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>ITEM_ID&nbsp;</strong></td><td><strong>ITEM_NAME</strong></td><td><strong>ITEM_UNIT</strong></td><td><strong>COMPANY_ID</strong></td></tr><tr><td>1</td><td>Cheeze Mix</td><td>Pcs</td><td>16</td></tr><tr><td>6</td><td>Cheeze It</td><td>Pcs</td><td>15</td></tr><tr><td>2</td><td>Biscuits</td><td>Pcs</td><td>15</td></tr><tr><td>3</td><td>Munch</td><td>Pcs</td><td>17</td></tr></tbody></table></figure>
+<p><strong>Table 2: Company</strong></p>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>COMPANY_ID</strong></td><td><strong>COMPANY_NAME</strong></td><td><strong>COMPANY_CITY</strong></td></tr><tr><td>18</td><td>Nestle</td><td>London</td></tr><tr><td>15</td><td>Jack Foods</td><td>Boston</td></tr><tr><td>16</td><td>Foodies</td><td>America</td></tr><tr><td>17</td><td>Akas Food</td><td>Australia</td></tr></tbody></table></figure>
+<p>You need to execute following piece of code to get the desired outcome with Inner join:</p>
+<figure class="wp-block-table"><table><tbody><tr><td>SELECT foods.item_name,foods.item_unit, company.company_name,company.company_city FROM foods INNER JOIN company ON foods.company_id =company.company_id;</td></tr></tbody></table></figure>
+<p>You’ll get the following output:</p>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>ITEM_NAME</strong></td><td><strong>ITEM_UNIT</strong></td><td><strong>COMPANY_NAME</strong></td><td><strong>COMPANY_CITY</strong></td></tr><tr><td>Cheeze Mix</td><td>Pcs</td><td>Nestle</td><td>London</td></tr><tr><td>Cheeze It</td><td>Pcs</td><td>Jack Foods</td><td>Boston</td></tr><tr><td>Biscuits</td><td>Pcs</td><td>Foodies</td><td>America</td></tr><tr><td>Munch</td><td>Pcs</td><td>Akas Food</td><td>Australia</td></tr></tbody></table></figure>
+<ol start="3">
+<li><strong>Self Join</strong></li>
+</ol>
+<p>Self-join enables the joining of a table to itself. To employ a self join, the table must contain a column (let&#8217;s call it X) that serves as the primary key and another column (let&#8217;s call it Y) that includes values that can be matched up with the values in Column X.&nbsp;</p>
+<p>Columns X and Y do not need to have identical values for any given row, and Column Y can even be null.</p>
+<p>Here is an illustration of the members and their administration. Let&#8217;s examine the membership table:</p>
+<p>Each member has a unique identifier, which we refer to as &#8220;Column X.&#8221; The Teamlead Id column contains the member or <strong>teamleader&#8217;s Id</strong>; this is our &#8220;Column Y.&#8221; If these columns are utilized to monitor the <strong>member-teamleader</strong> relationships in this table:</p>
+<p><strong>Table: Customers</strong></p>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Id</strong></td><td><strong>&nbsp;FullName</strong></td><td><strong>Salary</strong></td><td><strong>TeamleadId</strong></td></tr><tr><td>1</td><td>Chirs Hemsworth</td><td>200000</td><td>5</td></tr><tr><td>2</td><td>Tom Holland</td><td>250000</td><td>5</td></tr><tr><td>3</td><td>Ben Affleck</td><td>120000</td><td>1</td></tr></tbody></table></figure>
+<p>You need to execute following piece of code:</p>
+<figure class="wp-block-table"><table><tbody><tr><td>SELECT<br>&nbsp; &nbsp; member. Id,<br>&nbsp; &nbsp; &nbsp; &nbsp; member.FullName,<br>&nbsp; &nbsp; &nbsp; &nbsp; member.teamleadId,<br>&nbsp; &nbsp; &nbsp; &nbsp; teamlead.FullName as teamleadName<br>FROM members member<br>JOIN members teamlead<br>ON member.teamleadId = teamlead.Id</td></tr></tbody></table></figure>
+<p>This will show you the following output:</p>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Id</strong></td><td><strong>FullName</strong></td><td><strong>Teamlead Id</strong></td><td><strong>Teamlead Name</strong></td></tr><tr><td>1</td><td>Chirs Hemsworth</td><td>5</td><td>Gal Galdot</td></tr><tr><td>2</td><td>Tom Holland</td><td>5</td><td>Gal Galdot</td></tr><tr><td>3</td><td>Ben Affleck</td><td>1</td><td>Chirs Hemsworth</td></tr><tr><td>5</td><td>Gal Galdot</td><td>4</td><td>Christian Bale</td></tr></tbody></table></figure>
+<ol start="4">
+<li><strong>Outer Join</strong></li>
+</ol>
+<p>An outer join returns matching and non-matching values from one or both tables.</p>
+<p>Outer joins subdivide additionally into three subcategories:</p>
+<ol>
+<li>Left outer join</li>
+<li>Right outer join</li>
+<li>Full outer join&nbsp;</li>
+</ol>
+<p>These categories depend on the table&#8217;s rows included: left, right, and both. Assume an example of Pets table and Owner table for all these Outer join types.</p>
+<p><strong>Table 1: Pets</strong></p>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>ID</strong></td><td><strong>Pet.Name</strong></td><td><strong>Owner.ID</strong></td></tr><tr><td>1</td><td>Neiger</td><td>1</td></tr><tr><td>2</td><td>Bella</td><td>2</td></tr><tr><td>3</td><td>Snowie</td><td>2</td></tr><tr><td>4</td><td>Tiger</td><td>3</td></tr><tr><td>5</td><td>Swiky</td><td>0</td></tr></tbody></table></figure>
+<p><strong>Table 2: Owers</strong></p>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>ID</strong></td><td><strong>Owner.Name</strong></td></tr><tr><td>1</td><td>Stephan</td></tr><tr><td>2</td><td>Jonny</td></tr><tr><td>3</td><td>Charlie</td></tr><tr><td>4</td><td>Vicky</td></tr></tbody></table></figure>
+<ul>
+<li><strong>Left Outer Join</strong></li>
+</ul>
+<p>A left outer join is a way to join two tables together. Only rows from the table named before the <em>LEFT OUTER JOIN</em> clause that was not found in the target table are included in the output.</p>
+<figure class="wp-block-table"><table><tbody><tr><td>SELECT pets.name AS pet_name, owners.name AS owner<br>FROM pets<br>LEFT JOIN owners<br>ON pets.owner_id = owners.id;</td></tr></tbody></table></figure>
+<p>You’ll get it as:</p>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Pet.name</strong></td><td><strong>Owner</strong></td></tr><tr><td>Neiger</td><td>Stephan</td></tr><tr><td>Bella</td><td>Jonny</td></tr><tr><td>Snowie</td><td>Jonny</td></tr><tr><td>Tiger</td><td>Charlie</td></tr><tr><td>Swiky</td><td>NULL</td></tr></tbody></table></figure>
+<ul>
+<li><strong>Right Outer Join</strong></li>
+</ul>
+<p>A right join (or outer join) is like the left outer join, except with the reversed table treatment.&nbsp;</p>
+<p>Let’s do the same query with right join:</p>
+<figure class="wp-block-table"><table><tbody><tr><td>SELECT pets.name AS pet_name, owners.name AS owner<br>FROM pets<br>RIGHT JOIN owners<br>ON pets.owner_id = owners.id;</td></tr></tbody></table></figure>
+<p>In this case, we retain all relevant rows from the owner&#8217;s table, and if any columns from pets require values but don&#8217;t have any, we substitute NULL.</p>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Pet.name</strong></td><td><strong>Owner</strong></td></tr><tr><td>Neiger</td><td>Stephan</td></tr><tr><td>Bella</td><td>Jonny</td></tr><tr><td>Snowie</td><td>Jonny</td></tr><tr><td>Tiger</td><td>Charlie</td></tr><tr><td>Null</td><td>Vicky</td></tr></tbody></table></figure>
+<ul>
+<li><strong>Full Outer Join</strong></li>
+</ul>
+<p>This category (full outer join) combines the applying effect of both left and right (outer joins).&nbsp;</p>
+<p>There is no match in the full outer joined table rows; it appears that it will consider the result set to have NULL values for every table&#8217;s column that lacks a matching row.&nbsp;</p>
+<p>A single row will produce the result for those (rows) that have some matching possibilities.</p>
+<p>Here’s the query for this:</p>
+<figure class="wp-block-table"><table><tbody><tr><td>SELECT pets.name AS pet_name, owners.name AS owner<br>FROM pets<br>FULL JOIN owners<br>ON pets.owner_id = owners.id;</td></tr></tbody></table></figure>
+<h2 class="wp-block-heading">It will produce the following results:</h2>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Pet.name</strong></td><td><strong>Owner</strong></td></tr><tr><td>Neiger</td><td>Stephan</td></tr><tr><td>Bella</td><td>Jonny</td></tr><tr><td>Snowie</td><td>Jonny</td></tr><tr><td>Tiger</td><td>Charlie</td></tr><tr><td>Swiky</td><td>Null</td></tr><tr><td>Null</td><td>Vicky</td></tr></tbody></table></figure>
+<h2 class="wp-block-heading"><strong>How to Select Data from Multiple Tables Using SQL Joins?</strong></h2>
+<p>You can get information from as many tables as you want, specify the <a href="https://www.sololearn.com/blog/what-is-sql-used-for/" data-type="post" data-id="1250">conditions based on any data in the tables,</a> and display the results in any order you choose if your database is properly designed and linked.</p>
+<p>Let&#8217;s have an example:</p>
+<p><strong>Table 1: Product</strong></p>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>ID</strong></td><td><strong>Name</strong></td><td><strong>Price</strong></td><td><strong>Category_ID</strong></td></tr><tr><td>1</td><td>Table</td><td>200</td><td>2</td></tr><tr><td>2</td><td>Chair</td><td>120</td><td>3</td></tr><tr><td>3</td><td>Bricks</td><td>150</td><td>2</td></tr><tr><td>4</td><td>Sofa</td><td>50</td><td>1</td></tr><tr><td>5</td><td>Sand</td><td>20</td><td>1</td></tr><tr><td>6</td><td>Toy Car</td><td>100</td><td>2</td></tr></tbody></table></figure>
+<p><strong>Table 2: Category</strong></p>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>ID</strong></td><td><strong>Category</strong></td></tr><tr><td>1</td><td>Material</td></tr><tr><td>2</td><td>Furniture</td></tr><tr><td>3</td><td>Toys</td></tr></tbody></table></figure>
+<p>You need following code to get the desired outcome:</p>
+<figure class="wp-block-table"><table><tbody><tr><td>SELECT<br>&nbsp; product.name AS product_name,<br>&nbsp; category.name AS category_name<br>FROM product<br>JOIN category ON product.category_id=category.id;</td></tr></tbody></table></figure>
+<p>After execution, you’ll get following output:</p>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Product_name</strong></td><td><strong>Category</strong></td></tr><tr><td>Table</td><td>Furniture</td></tr><tr><td>Chair</td><td>Furniture</td></tr><tr><td>Bricks</td><td>Material</td></tr><tr><td>Sofa</td><td>Furniture</td></tr><tr><td>Sand</td><td>Material</td></tr><tr><td>Toy Car</td><td>Toys</td></tr></tbody></table></figure>
+<h2 class="wp-block-heading"><strong>Use Cases for SQL Joins</strong></h2>
+<p>The basic application of SQL Joins is to select data from many tables, as shown above. But, it can be applied to address different tasks. Some of the most occurring usage scenarios for SQL joins are:</p>
+<ul>
+<li><strong>Relationship Hierarchy:</strong> Joins are used if a multi-tiered relationship exists among tables, e.g., grandfather, father, son relationship or user, city, and state relationship.</li>
+<li><strong>Many-to-many Connections:</strong> This scenario occurs when many items in one table have a relationship with many items in the second table. For example, students are enrolled in multiple courses, and courses are assigned to multiple students. Same as customers subscribe to different products while products are shared by customers.</li>
+<li><strong>SQL Joins for Data Analysis:</strong> From a business intelligence (BI) perspective, SQL joins analyze data for making charts and building dashboards.</li>
+<li><strong>Database Normalization:</strong> In normalization, larger tables are organized into smaller tables to drop any data redundancy and anomalies. Then relevant data is fetched from these smaller tables using SQL joins.&nbsp;</li>
+</ul>
+<h2 class="wp-block-heading"><strong>Learn SQL Joins with Sololearn</strong></h2>
+<p>AS a declarative language, SQL needs joins statements to extract relevant data from highly structured databases.&nbsp; . They can be confusing, especially if you&#8217;re new to SQL, but they are worth learning. We have given you different commands to help you write queries and recreate them around your databases. So, to learn more SQL join or relational databases, you must start with a basic beginner program.&nbsp;</p>
+<p>All three-course levels (<a href="../../Course/SQL/index.html">beginners</a>, <a href="https://www.sololearn.com/learn/courses/sql-intermediate">intermediate</a>, and compiler) at Sololearn will provide you with the complete coverage of SQL joins, their importance, and easy ways to imply them daily.</p>
+</div>
+</div>
+<div class="share-container">
+<span>Share:</span>
+<button data-sharer="facebook" data-url="https://www.sololearn.com/blog/sql-join/">
+<img src="../../wp-content/themes/sololearn/assets/icons/facebook.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="linkedin" data-url="https://www.sololearn.com/blog/sql-join/">
+<img src="../../wp-content/themes/sololearn/assets/icons/linkedin.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="twitter" data-url="https://www.sololearn.com/blog/sql-join/">
+<img src="../../wp-content/themes/sololearn/assets/icons/twitter.svg" alt="share-icons" class="style-svg">
+</button>
+</div>
+<div class='yarpp yarpp-related yarpp-related-website yarpp-template-yarpp-template-blogPosts-footer'>
+<div class="blog-relatedBlogPostsFooter">
+<h3 class="blog-sidebarBlogPosts_title">Related blogposts</h3>
+<ul class="row blog-relatedBlogPostsFooter_list">
+<li class="col-lg-4 col-md-6">
+<article class="blog-relatedBlogPostsFooter_item">
+<a class="blog-relatedBlogPostsFooter_item-link" href="../html-lists/index.html" rel="bookmark norewrite" title="How To Create HTML Lists">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/How-to-create-lists-in-html-will-cover-ul_ol_-HTML.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="../../wp-content/uploads/2022/11/How-to-create-lists-in-html-will-cover-ul_ol_-HTML.png 760w, ../../wp-content/uploads/2022/11/How-to-create-lists-in-html-will-cover-ul_ol_-HTML-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> <h2 class="blog-relatedBlogPostsFooter_item__content">
+How To Create HTML Lists </h2>
+</a>
+</article>
+</li>
+<li class="col-lg-4 col-md-6">
+<article class="blog-relatedBlogPostsFooter_item">
+<a class="blog-relatedBlogPostsFooter_item-link" href="../ethical-hacking/index.html" rel="bookmark norewrite" title="What Is Ethical Hacking &amp; How Can One Become An Ethical Hacker?">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/What-is-Ethical-Hacking-and-How-is-it-Used_.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="../../wp-content/uploads/2022/11/What-is-Ethical-Hacking-and-How-is-it-Used_.png 760w, ../../wp-content/uploads/2022/11/What-is-Ethical-Hacking-and-How-is-it-Used_-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> <h2 class="blog-relatedBlogPostsFooter_item__content">
+What Is Ethical Hacking &amp; How Can One Becom... </h2>
+</a>
+</article>
+</li>
+<li class="col-lg-4 col-md-6">
+<article class="blog-relatedBlogPostsFooter_item">
+<a class="blog-relatedBlogPostsFooter_item-link" href="../css-media-queries/index.html" rel="bookmark norewrite" title="How To Improve User Experience With Responsive Web Pages (Using CSS Media Queries)">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/Guide-to-media-queries-CSS.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="../../wp-content/uploads/2022/11/Guide-to-media-queries-CSS.png 760w, ../../wp-content/uploads/2022/11/Guide-to-media-queries-CSS-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> <h2 class="blog-relatedBlogPostsFooter_item__content">
+How To Improve User Experience With Responsive ... </h2>
+</a>
+</article>
+</li>
+</ul>
+</div>
+
+
+
+
+</article> </div>
+<div class="col-lg-4 no-gutters">
+<aside id="sidebar" class="sidebar sidebar__single" role="complementary">
+<ul class="blog-sidebarBlogPosts">
+<li>
+<div class='yarpp yarpp-related yarpp-related-website yarpp-template-yarpp-template-blogPosts-sidebar-single'>
+<div class="blog-relatedBlogPosts">
+<h3 class="blog-relatedBlogPosts_title">
+<span>Related blogposts</span>
+<a href="../../blog">See all</a>
+</h3>
+<ul class="blog-relatedBlogPosts_list">
+<li>
+<a class="blog-relatedBlogPosts_item" href="../html-lists/index.html" rel="bookmark norewrite" title="How To Create HTML Lists">
+<p class="blog-relatedBlogPosts_itemTitle">How To Create HTML Lists </p></p>
+<p><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 5</span> <span class="rt-label rt-postfix">min read</span></span></p>
+</a>
+</li>
+<li>
+<a class="blog-relatedBlogPosts_item" href="../ethical-hacking/index.html" rel="bookmark norewrite" title="What Is Ethical Hacking &amp; How Can One Become An Ethical Hacker?">
+<p class="blog-relatedBlogPosts_itemTitle">What Is Ethical Hacking &amp; How Can One Becom... </p></p>
+<p><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 4</span> <span class="rt-label rt-postfix">min read</span></span></p>
+</a>
+</li>
+<li>
+<a class="blog-relatedBlogPosts_item" href="../css-media-queries/index.html" rel="bookmark norewrite" title="How To Improve User Experience With Responsive Web Pages (Using CSS Media Queries)">
+<p class="blog-relatedBlogPosts_itemTitle">How To Improve User Experience With Responsive ... </p></p>
+<p><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 6</span> <span class="rt-label rt-postfix">min read</span></span></p>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li id="block-7" class="widget-container widget_block"><div class="lazyblock-nav-banner-blog-post-1O61UQ wp-block-lazyblock-nav-banner-blog-post"><div class="blog-sidebarBanner">
+<h3 class="blog-sidebarBlogPosts_title">Learn on the go!</h3>
+<a href="https://www.sololearn.com/mobile" class="blog-sidebarBanner_image" target="_blank"><img decoding="async" src="https://sololearnblob.blob.core.windows.net/blog/2023/01/Group-26950.png" alt="" /></a>
+</div></div></li> </ul>
+</aside>
+</div>
+</div>
+</div>
+</main>
+<footer class="wp-sl-footer">
+<div class="wp-sl-footer__social-links">
+<div class="wp-sl-footer__social-links__container">
+<div class="wp-sl-footer__social-links__links-block">
+<a class="wp-sl-footer__social-links__item" href="https://www.linkedin.com/company/sololearn-inc-/" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:#0077b5"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoLinkedin.svg"></div><span class="wp-sl-footer__social-links__text">Follow us on Linkedin</span></a><a class="wp-sl-footer__social-links__item" href="https://www.facebook.com/SoloLearn" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:#4267b2"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoFacebook.svg"></div><span class="wp-sl-footer__social-links__text">Check out our facebook</span></a><a class="wp-sl-footer__social-links__item" href="https://twitter.com/SoloLearn" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:#1da1f2"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoTwitter.svg"></div><span class="wp-sl-footer__social-links__text">See what we tweet about</span></a><a class="wp-sl-footer__social-links__item" href="https://www.instagram.com/sololearn/" target="_blank"><div class="wp-sl-footer__social-links__icon"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoInstagram.svg"></div><span class="wp-sl-footer__social-links__text">Join our instagram</span></a><a class="wp-sl-footer__social-links__item" href="https://www.youtube.com/channel/UCXiOyrjY_jqNCFoQTotILTw" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:red"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoYoutube.svg"></div><span class="wp-sl-footer__social-links__text">Watch our Youtube</span></a> </div>
+<div class="wp-sl-footer__social-links__app-block">
+<a class="wp-sl-footer__social-links__item--app" id="logoAppStore" target="_blank"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoAppStore.svg"></a><a class="wp-sl-footer__social-links__item--app" id="logoGooglePlay" target="_blank"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoGooglePlay.svg"></a> </div>
+</div>
+</div>
+<div class="wp-sl-footer-links">
+<div class="wp-sl-footer-links__container">
+<div class="wp-sl-footer-links__links-block">
+<a class="wp-sl-footer-links__item" href="../../home">Home</a><a class="wp-sl-footer-links__item" href="../../leaderboard">Top Learners</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/payments/pro">Pro</a><a class="wp-sl-footer-links__item" href="../../FAQ">FAQ</a><a class="wp-sl-footer-links__item" href="../../contact">Contact</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/bug-bounty">Bug Bounty Program</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/career">Careers</a><a class="wp-sl-footer-links__item" href="../../terms-of-use">Terms of Use</a><a class="wp-sl-footer-links__item" href="../../privacy-policy">Privacy Policy</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/mobile">Sololearn mobile</a><a class="wp-sl-footer-links__item" href="../../codes">Code Bits</a> </div>
+<div class="wp-sl-footer-links__copyright">
+Made with
+<div class="wp-sl-footer-links__heart-icon">
+<img src="../../wp-content/themes/sololearn/assets/icons/heart.svg" alt="heart_icon" class='style-svg'>
+</div>
+by &nbsp;
+<span class="wp-sl-footer-links__marked-text">Sololearn </span>&nbsp;| ©2023 </div>
+</div>
+</div>
+</footer>
+<script src="../../wp-content/themes/sololearn/assets/scripts/common.js" type="818dac2e4cf1fa80f41cf38c-text/javascript"></script>
+<script src="../../wp-content/themes/sololearn/assets/scripts/profile.js" type="818dac2e4cf1fa80f41cf38c-text/javascript"></script>
+<script type="818dac2e4cf1fa80f41cf38c-text/javascript">
+        jQuery(document).ready(function($) {
+
+            var deviceAgent = navigator.userAgent.toLowerCase();
+            var html = $("html");
+            if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
+
+                html.addClass("ios");
+                html.addClass("mobile");
+            }
+            if (deviceAgent.match(/(Android)/)) {
+                html.addClass("android");
+                html.addClass("mobile");
+            }
+            if (navigator.userAgent.search("MSIE") >= 0) {
+                html.addClass("ie");
+            } else if (navigator.userAgent.search("Chrome") >= 0) {
+                html.addClass("chrome");
+            } else if (navigator.userAgent.search("Firefox") >= 0) {
+                html.addClass("firefox");
+            } else if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+                html.addClass("safari");
+            } else if (navigator.userAgent.search("Opera") >= 0) {
+                html.addClass("opera");
+            }
+        });
+    </script>
+<style id='wp-block-paragraph-inline-css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}p.has-background{padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}
+</style>
+<style id='wp-block-heading-inline-css'>
+h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}
+</style>
+<style id='wp-block-table-inline-css'>
+.wp-block-table{overflow-x:auto}.wp-block-table table{border-collapse:collapse;width:100%}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{border:1px solid;padding:.5em}.wp-block-table .has-fixed-layout{table-layout:fixed;width:100%}.wp-block-table .has-fixed-layout td,.wp-block-table .has-fixed-layout th{word-break:break-word}.wp-block-table.aligncenter,.wp-block-table.alignleft,.wp-block-table.alignright{display:table;width:auto}.wp-block-table.aligncenter td,.wp-block-table.aligncenter th,.wp-block-table.alignleft td,.wp-block-table.alignleft th,.wp-block-table.alignright td,.wp-block-table.alignright th{word-break:break-word}.wp-block-table .has-subtle-light-gray-background-color{background-color:#f3f4f5}.wp-block-table .has-subtle-pale-green-background-color{background-color:#e9fbe5}.wp-block-table .has-subtle-pale-blue-background-color{background-color:#e7f5fe}.wp-block-table .has-subtle-pale-pink-background-color{background-color:#fcf0ef}.wp-block-table.is-style-stripes{background-color:transparent;border-bottom:1px solid #f0f0f0;border-collapse:inherit;border-spacing:0}.wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f0f0f0}.wp-block-table.is-style-stripes.has-subtle-light-gray-background-color tbody tr:nth-child(odd){background-color:#f3f4f5}.wp-block-table.is-style-stripes.has-subtle-pale-green-background-color tbody tr:nth-child(odd){background-color:#e9fbe5}.wp-block-table.is-style-stripes.has-subtle-pale-blue-background-color tbody tr:nth-child(odd){background-color:#e7f5fe}.wp-block-table.is-style-stripes.has-subtle-pale-pink-background-color tbody tr:nth-child(odd){background-color:#fcf0ef}.wp-block-table.is-style-stripes td,.wp-block-table.is-style-stripes th{border-color:transparent}.wp-block-table .has-border-color td,.wp-block-table .has-border-color th,.wp-block-table .has-border-color tr,.wp-block-table .has-border-color>*{border-color:inherit}.wp-block-table table[style*=border-top-color] tr:first-child,.wp-block-table table[style*=border-top-color] tr:first-child td,.wp-block-table table[style*=border-top-color] tr:first-child th,.wp-block-table table[style*=border-top-color]>*,.wp-block-table table[style*=border-top-color]>* td,.wp-block-table table[style*=border-top-color]>* th{border-top-color:inherit}.wp-block-table table[style*=border-top-color] tr:not(:first-child){border-top-color:currentColor}.wp-block-table table[style*=border-right-color] td:last-child,.wp-block-table table[style*=border-right-color] th,.wp-block-table table[style*=border-right-color] tr,.wp-block-table table[style*=border-right-color]>*{border-right-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:last-child,.wp-block-table table[style*=border-bottom-color] tr:last-child td,.wp-block-table table[style*=border-bottom-color] tr:last-child th,.wp-block-table table[style*=border-bottom-color]>*,.wp-block-table table[style*=border-bottom-color]>* td,.wp-block-table table[style*=border-bottom-color]>* th{border-bottom-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:not(:last-child){border-bottom-color:currentColor}.wp-block-table table[style*=border-left-color] td:first-child,.wp-block-table table[style*=border-left-color] th,.wp-block-table table[style*=border-left-color] tr,.wp-block-table table[style*=border-left-color]>*{border-left-color:inherit}.wp-block-table table[style*=border-style] td,.wp-block-table table[style*=border-style] th,.wp-block-table table[style*=border-style] tr,.wp-block-table table[style*=border-style]>*{border-style:inherit}.wp-block-table table[style*=border-width] td,.wp-block-table table[style*=border-width] th,.wp-block-table table[style*=border-width] tr,.wp-block-table table[style*=border-width]>*{border-style:inherit;border-width:inherit}
+</style>
+<style id='wp-block-list-inline-css'>
+ol,ul{box-sizing:border-box}ol.has-background,ul.has-background{padding:1.25em 2.375em}
+</style>
+<script src='https://www.sololearn.com/wp-content/plugins/enlighter/cache/enlighterjs.min.js?ver=5ldjK8WLazRmDr7' id='enlighterjs-js' type="818dac2e4cf1fa80f41cf38c-text/javascript"></script>
+<script id='enlighterjs-js-after' type="818dac2e4cf1fa80f41cf38c-text/javascript">
+!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":4,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"dracula","language":"generic","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
+</script>
+<script src="https://www.sololearn.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="818dac2e4cf1fa80f41cf38c-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7d8f022f6e3bb794","version":"2023.4.0","b":1,"token":"3cd70a6c7768490094eebf19abc1a33f","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

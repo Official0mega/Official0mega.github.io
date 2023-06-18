@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#" itemscope itemtype="https://schema.org/Article">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+
+
+<title>Introduction to C++ Array - Sololearn</title>
+<meta name="description" content="The types of arrays within C++ are numerous. In this article, we&#039;ll give an overview of the most common types of arrays and the uses for them." />
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Introduction to C++ Array - Sololearn" />
+<meta property="og:description" content="The types of arrays within C++ are numerous. In this article, we&#039;ll give an overview of the most common types of arrays and the uses for them." />
+<meta property="og:url" content="https://www.sololearn.com/blog/c-plus-plus-array/" />
+<meta property="og:site_name" content="Sololearn Blog" />
+<meta property="article:section" content="Guides" />
+<meta property="og:updated_time" content="2023-03-04T03:08:26+00:00" />
+<meta property="og:image" content="https://www.sololearn.com/wp-content/uploads/2022/11/C-array_-what-are-they-what-are-they-for-and-how-to-use-them_-760x300.png" />
+<meta property="og:image:secure_url" content="https://www.sololearn.com/wp-content/uploads/2022/11/C-array_-what-are-they-what-are-they-for-and-how-to-use-them_-760x300.png" />
+<meta property="og:image:width" content="760" />
+<meta property="og:image:height" content="300" />
+<meta property="og:image:alt" content="Introduction to C++ Array" />
+<meta property="og:image:type" content="image/png" />
+<meta property="article:published_time" content="2022-11-21T15:16:40+00:00" />
+<meta property="article:modified_time" content="2023-03-04T03:08:26+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Introduction to C++ Array - Sololearn" />
+<meta name="twitter:description" content="The types of arrays within C++ are numerous. In this article, we&#039;ll give an overview of the most common types of arrays and the uses for them." />
+<meta name="twitter:image" content="https://www.sololearn.com/wp-content/uploads/2022/11/C-array_-what-are-they-what-are-they-for-and-how-to-use-them_-760x300.png" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Sololearn Growth" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="11 minutes" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.sololearn.com/blog/#organization","name":"Sololearn Blog","logo":{"@type":"ImageObject","@id":"https://www.sololearn.com/blog/#logo","url":"https://blog-dev.sololearn.com/wp-content/uploads/2022/11/sololearn_color_dark-2.png","contentUrl":"https://blog-dev.sololearn.com/wp-content/uploads/2022/11/sololearn_color_dark-2.png","caption":"Sololearn Blog","inLanguage":"en-US","width":"1112","height":"213"}},{"@type":"WebSite","@id":"https://www.sololearn.com/blog/#website","url":"https://www.sololearn.com/blog","name":"Sololearn Blog","publisher":{"@id":"https://www.sololearn.com/blog/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.sololearn.com/wp-content/uploads/2022/11/C-array_-what-are-they-what-are-they-for-and-how-to-use-them_.png","url":"https://www.sololearn.com/wp-content/uploads/2022/11/C-array_-what-are-they-what-are-they-for-and-how-to-use-them_.png","width":"760","height":"900","inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://www.sololearn.com/blog/c-plus-plus-array/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://www.sololearn.com/blog","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://www.sololearn.com/blog/category/guides/","name":"Guides"}},{"@type":"ListItem","position":"3","item":{"@id":"https://www.sololearn.com/blog/c-plus-plus-array/","name":"Introduction to C++ Array"}}]},{"@type":"WebPage","@id":"https://www.sololearn.com/blog/c-plus-plus-array/#webpage","url":"https://www.sololearn.com/blog/c-plus-plus-array/","name":"Introduction to C++ Array - Sololearn","datePublished":"2022-11-21T15:16:40+00:00","dateModified":"2023-03-04T03:08:26+00:00","isPartOf":{"@id":"https://www.sololearn.com/blog/#website"},"primaryImageOfPage":{"@id":"https://www.sololearn.com/wp-content/uploads/2022/11/C-array_-what-are-they-what-are-they-for-and-how-to-use-them_.png"},"inLanguage":"en-US","breadcrumb":{"@id":"https://www.sololearn.com/blog/c-plus-plus-array/#breadcrumb"}},{"@type":"Person","@id":"https://www.sololearn.com/blog/author/sololearn/","name":"Sololearn Growth","url":"https://www.sololearn.com/blog/author/sololearn/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/c7e8224ac7ad8328638086ea96255fb7?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/c7e8224ac7ad8328638086ea96255fb7?s=96&amp;d=mm&amp;r=g","caption":"Sololearn Growth","inLanguage":"en-US"},"worksFor":{"@id":"https://www.sololearn.com/blog/#organization"}},{"@type":"BlogPosting","headline":"Introduction to C++ Array - Sololearn","datePublished":"2022-11-21T15:16:40+00:00","dateModified":"2023-03-04T03:08:26+00:00","articleSection":"Guides","author":{"@id":"https://www.sololearn.com/blog/author/sololearn/"},"publisher":{"@id":"https://www.sololearn.com/blog/#organization"},"description":"The types of arrays within C++ are numerous. In this article, we&#039;ll give an overview of the most common types of arrays and the uses for them.","name":"Introduction to C++ Array - Sololearn","@id":"https://www.sololearn.com/blog/c-plus-plus-array/#richSnippet","isPartOf":{"@id":"https://www.sololearn.com/blog/c-plus-plus-array/#webpage"},"image":{"@id":"https://www.sololearn.com/wp-content/uploads/2022/11/C-array_-what-are-they-what-are-they-for-and-how-to-use-them_.png"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://www.sololearn.com/blog/c-plus-plus-array/#webpage"}}]}</script>
+
+<link rel="alternate" type="application/rss+xml" title="Sololearn &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Sololearn &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Sololearn &raquo; Introduction to C++ Array Comments Feed" href="feed/index.html" />
+<script type="48768e5602317e216db6d441-text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.sololearn.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}figure{margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://www.sololearn.com/wp-includes/css/classic-themes.min.css?ver=6.2.2' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('index.html');--wp--preset--duotone--grayscale: url('index.html');--wp--preset--duotone--purple-yellow: url('index.html');--wp--preset--duotone--blue-red: url('index.html');--wp--preset--duotone--midnight: url('index.html');--wp--preset--duotone--magenta-yellow: url('index.html');--wp--preset--duotone--purple-green: url('index.html');--wp--preset--duotone--blue-orange: url('index.html');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='sololearn-style-css' href='https://www.sololearn.com/wp-content/themes/sololearn/style.css?ver=6.2.2' media='all' />
+<link rel='stylesheet' id='enlighterjs-css' href='https://www.sololearn.com/wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=5ldjK8WLazRmDr7' media='all' />
+<script src='https://www.sololearn.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js' type="48768e5602317e216db6d441-text/javascript"></script>
+<script src='https://www.sololearn.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js' type="48768e5602317e216db6d441-text/javascript"></script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" type="application/json" href="../wp-json/wp/v2/posts/1746" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.sololearn.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.2.2" />
+<link rel='shortlink' href='https://www.sololearn.com/blog/?p=1746' />
+<link rel="alternate" type="application/json+oembed" href="https://www.sololearn.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sololearn.com%2Fblog%2Fc-plus-plus-array%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.sololearn.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sololearn.com%2Fblog%2Fc-plus-plus-array%2F&#038;format=xml" />
+
+
+<script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["guides"],"pagePostAuthor":"Sololearn Growth"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7MQKF7');
+</script>
+
+<link rel="pingback" href="https://www.sololearn.com/xmlrpc.php" />
+<script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js" type="48768e5602317e216db6d441-text/javascript"></script>
+</head>
+<body class="post-template-default single single-post postid-1746 single-format-standard wp-embed-responsive">
+<a href="index.html#content" class="skip-link screen-reader-text">Skip to the content</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7MQKF7" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+
+<script type="48768e5602317e216db6d441-text/javascript">
+    if(!JSON.parse(window.localStorage.user)?.data?.isPro) {
+        document.querySelector('.wp-navbar__pro-button-wrapper').style.display = 'block';
+    }
+</script>
+<nav class="wp-navbar light">
+<div class="wp-navbar__container">
+<a class="wp-navbar__main-logo wp-navbar__main-logo--desktop" href="../../home">
+<img src="../../wp-content/themes/sololearn/assets/icons/logoAppDesktop.svg" alt="brand_logo-desktop" class='style-svg'>
+</a>
+<a class="wp-navbar__main-logo wp-navbar__main-logo--mobile" href="../../home">
+<img src="../../wp-content/themes/sololearn/assets/icons/logoAppMobile.svg" alt="brand_logo-mobile" class='style-svg'>
+</a>
+<div class="wp-navbar__content" id="navbar_content">
+<div class="wp-navbar__content-wrapper">
+<ul class='wp-navbar__content-list'>
+<li class="wp-navbar__content-list__item"><a href="../../Courses/index.html">Catalog</a></li>
+<li class="wp-navbar__content-list__item"><a href="../../compiler-playground">Online Compiler</a></li>
+<li class="wp-navbar__content-list__item"><a href="../../discuss">Discuss</a></li>
+<li class="wp-navbar__content-list__item"><a href="../../blog">Blog</a></li>
+<li class="wp-navbar__content-list__item"><a href="https://www.sololearn.com/payments/pro">Get Pro</a></li>
+</ul>
+</div>
+<div class="wp-navbar__actions-wrapper">
+<div class="wp-navbar__actions">
+<a href="https://www.sololearn.com/users/login?tr_source=login&amp;tr_source_detail=blog">
+<button type="button" class="sol-button sol-button-secondary sol-button-block sol-button-m" tabindex="0">Log in
+</button>
+</a>
+<a href="https://www.sololearn.com/onboarding/auth/signup?tr_source=register&amp;tr_source_detail=blog">
+<button type="button" class="sol-button sol-button-primary sol-button-block sol-button-m" tabindex="0">Register
+</button>
+</a>
+</div>
+</div>
+</div>
+<div class="wp-navbar__hamburger" id="hamburger_menu">
+Menu
+<div class="wp-navbar__hamburger__button" id="hamburger_menu_btn">
+<span class="arrow first"></span>
+<span class="arrow second"></span>
+<span class="arrow third"></span>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<main id="content" role="main">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="wp-breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Sololearn." href="../../blog" class="home"><span property="name">Sololearn blog</span></a><meta property="position" content="1"></span><span class="wp-breadcrumbs-separator"></span><span property="itemListElement" typeof="ListItem"><span property="name" class="post post-post current-item">Introduction to C++ Array</span><meta property="url" content="https://www.sololearn.com/blog/c-plus-plus-array/"><meta property="position" content="2"></span> </div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-8">
+<article id="post-1746" class="post-1746 post type-post status-publish format-standard has-post-thumbnail hentry category-guides">
+<header>
+<div class="share-container">
+<span>Share:</span>
+<button data-sharer="facebook" data-url="https://www.sololearn.com/blog/c-plus-plus-array/">
+<img src="../../wp-content/themes/sololearn/assets/icons/facebook.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="linkedin" data-url="https://www.sololearn.com/blog/c-plus-plus-array/">
+<img src="../../wp-content/themes/sololearn/assets/icons/linkedin.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="twitter" data-url="https://www.sololearn.com/blog/c-plus-plus-array/">
+<img src="../../wp-content/themes/sololearn/assets/icons/twitter.svg" alt="share-icons" class="style-svg">
+</button>
+</div> <div class="reading-time">
+<img src="../../wp-content/themes/sololearn/assets/icons/timeToRead.svg" alt="time to read" class='style-svg'>
+<span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 9</span> <span class="rt-label rt-postfix">min read</span></span> </div>
+</header>
+<div class="entry-content" itemprop="mainEntityOfPage">
+<a href="../../wp-content/uploads/2022/11/C-array_-what-are-they-what-are-they-for-and-how-to-use-them_.png" title="C++ array_ what are they, what are they for, and how to use them_">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/C-array_-what-are-they-what-are-they-for-and-how-to-use-them_.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="../../wp-content/uploads/2022/11/C-array_-what-are-they-what-are-they-for-and-how-to-use-them_.png 760w, ../../wp-content/uploads/2022/11/C-array_-what-are-they-what-are-they-for-and-how-to-use-them_-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> </a>
+<div class="entry-content__body">
+<h1 class="entry-title" itemprop="headline"> Introduction to C++ Array </h1> <meta itemprop="description" content="Let&#8217;s understand with an example —&nbsp; suppose we want to store 5 students&#8217; marks for some calculation. Marks are integer types, so we can declare variables something like this. If we declare it like above, it&#8217;ll be very difficult for us to manipulate such data. What if students are increasing, then it is very difficult ... Introduction to C++ Array" />
+<p>Let&#8217;s understand with an example —&nbsp; suppose we want to store 5 students&#8217; marks for some calculation. Marks are integer types, so we can declare variables something like this.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int st1, st2, st3, st4, st5</pre>
+<p>If we declare it like above, it&#8217;ll be very difficult for us to manipulate such data.</p>
+<p>What if students are increasing, then it is very difficult to declare numerous variables and keep track of them.</p>
+<p>To overcome this kind of situation, we have arrays. So now we can define the Arrays — used to store multiple values in a single variable of the same type, instead of declaring separate variables for each value. Or we can say it&#8217;s a collection of the same type of data in a single variable.</p>
+<p><strong>To declare an array</strong>:</p>
+<ul>
+<li>Define the variable type (array type)</li>
+<li>Specify the name of the array followed by square brackets</li>
+<li>Specify the number of elements it should store in between square brackets&nbsp;</li>
+</ul>
+<p>For example: </p>
+<ol>
+<li>int marks[10];&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (int type)</li>
+<li>string names[20];&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (string type)</li>
+<li>double prices[15]; &nbsp; &nbsp; &nbsp; &nbsp; (double type)</li>
+<li>char letters[5]; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (char type)</li>
+</ol>
+<h2 class="wp-block-heading"><strong>Initializing the Array&nbsp;</strong></h2>
+<p><strong>Initializing the Array during the declaration</strong></p>
+<p>Initializing the array during declaration means with the time of declaration array we initialize the array elements or values. How can we do that:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int marks[5] = {
+  80,
+  78,
+  92,
+  97,
+  86
+};</pre>
+<p>Here, we place the value of 5 students marks in an array at the time of declaration.</p>
+<p><strong>Assigning the values after the declaration</strong></p>
+<p>Sometimes we declare the array without initializing elements like this.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int marks[5];</pre>
+<p>But for initializing the array, we place the value to the index number.&nbsp;</p>
+<ul>
+<li>marks[0] = 80;</li>
+<li>marks[1] = 78;</li>
+<li>marks[2] = 92;</li>
+<li>marks[3] = 97;</li>
+<li>marks[4] = 86;</li>
+</ul>
+<p>Note: 0,1,2,3,4 are the index numbers that start from 0.</p>
+<p><strong>Few things to remember about array:</strong></p>
+<ul>
+<li>The array indices start with 0. Meaning arr[0] is the first element stored at index 0.</li>
+<li>If the size of an array is N, the last element is stored at index (N-1). In this example, marks[4] is the last element.</li>
+<li>Elements of an array have consecutive addresses. For example, suppose the starting address of marks[0] is 8484. Then, the address of the next element marks[1] will be 8488, the address of marks[2] will be 8492, and so on.</li>
+<li>Here, the size of each element is increased by 4. This is because the size of int is 4 bytes.</li>
+<li>If we forget to declare the size of an array during initialisation then compiler automatically assigns the size of an array.</li>
+<li></li>
+</ul>
+<p><strong>Let&#8217;s discuss about types of array in C++</strong></p>
+<p>Basically, there are two types of array in <a href="../c-plus-plus-or-c-sharp/index.html" data-type="post" data-id="1642">C++</a>:</p>
+<ul>
+<li><em>One dimensional array</em></li>
+<li><em>Multi dimensional array</em></li>
+</ul>
+<p><strong>One dimensional array —</strong> in this type of array, the elements are stored in a single dimension or we can say single row.</p>
+<p>Example: int bikes[20]</p>
+<p><strong>Multi dimensional array —</strong> in this type of array, the elements are stored in multi dimensions row and column wise. Two indices describe each element, the first index represents a row, and the second index represents a column.</p>
+<p>Example: int cars[10][20], int rooms[5][10][15]</p>
+<h2 class="wp-block-heading"><strong>Manipulating the Array</strong></h2>
+<h3 class="wp-block-heading"><strong>Accessing the Elements of an Array</strong></h3>
+<p>Each element in an array is associated with an index number. We can access the elements of an array by using those indices.</p>
+<p>Like: cout&lt;&lt;arr[0];</p>
+<p>This will print the first element of an array.</p>
+<h3 class="wp-block-heading"><strong>How to print whole Array</strong></h3>
+<p>For printing all elements of an array, we&#8217;ll use loops to print the elements of an array.</p>
+<p>There are many ways to print the whole array elements. Here we&#8217;re using a for-each loop to print elements.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int arr[3] = {
+  8,
+  7,
+  9
+};
+for (int i: arr) {
+  cout &lt;&lt; i &lt;&lt; " ";
+}
+//Output: 8 7 9</pre>
+<p><strong>How to check if the index number goes to out of range</strong></p>
+<p>Let&#8217;s suppose we&#8217;ve an array of size 10. So what if someone wants to access the value at index 12. So here we need to first check the range of the index whether it&#8217;s in range or not.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int arr[] = {
+  1,
+  2,
+  3,
+  4,
+  5
+};
+int sizeOfArray = sizeof(arr) / sizeof(int);
+int index = 20;
+if (index &lt; 0 || index > sizeOfArray) {
+  count &lt;&lt; "index out of range";
+}</pre>
+<p><strong>Array operations in C++</strong></p>
+<ul>
+<li>Traversal&nbsp;</li>
+<li>Insertion</li>
+<li>Search&nbsp;</li>
+<li>Updation</li>
+<li>Deletion&nbsp;</li>
+</ul>
+<p><strong>Let&#8217;s discuss one-by-one</strong></p>
+<p><strong>1: Traversal</strong> <strong>—</strong> Traversal in an array means printing the elements of the array one by one. Means we&#8217;re accessing the elements of the array. This can done using a simple code:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int main() {
+  int arr[3] = {
+    1,
+    3,
+    2
+  };
+  for (int i = 0; i &lt; 3; i++) {
+    cout &lt;&lt; arr[i] &lt;&lt; endl;
+  }
+  return 0;
+}</pre>
+<p><strong>2: Insertion —</strong></p>
+<p>Insertion of element in the end of the Array&nbsp;</p>
+<p>Now we want to add some extra values to an existing array. In the above array we want to add 6 and 7. How to do this?</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int arr[] = {
+  1,
+  2,
+  3,
+  4,
+  5
+};
+// Here last index is 4 so we've to add extra value to next 
+indexarr[5] = 6;
+arr[6] = 7;
+// We can add more values to an array</pre>
+<p><strong>Insertion of element at the specific Index</strong></p>
+<ul>
+<li>First get the element to be inserted, let say elem</li>
+</ul>
+<ul>
+<li>Then get the position at which this element is to be inserted, let say position</li>
+</ul>
+<ul>
+<li>Then shift the array elements from this position to one position forward, and do this for all the other elements next to position.</li>
+</ul>
+<ul>
+<li>Insert the element elem now at the position position.</li>
+</ul>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int arr[] = {
+  1,
+  2,
+  3,
+  4,
+  5
+};
+int i;
+int sizeOfArray = sizeof(arr) / sizeof(int);
+int position = 3, elem = 8;
+cout &lt;&lt; sizeOfArray &lt;&lt; endl;
+for (i = sizeOfArray; i >= position; i--)
+  arr[i] = arr[i - 1];
+arr[i] = elem;
+sizeOfArray++;
+for (int j; j &lt; sizeOfArray; j++) {
+  cout &lt;&lt; arr[j];
+}</pre>
+<p>In the above code we want to add element 8 at index number 3. Let&#8217;s understand this code in detail.</p>
+<p>Here,</p>
+<p>arr[0] = 1;</p>
+<p>arr[1] = 2;</p>
+<p>arr[2] = 3;</p>
+<p>arr[3] = 4;</p>
+<p>arr[4] = 5;</p>
+<p>The size of the array is 5.</p>
+<p><strong>Inside the first for loop:</strong></p>
+<ul>
+<li>i = 5</li>
+</ul>
+<ul>
+<li>Now the condition, i &gt;= position or 5 &gt;= 3 evaluates to be true, therefore program flow goes inside the loop</li>
+</ul>
+<ul>
+<li>Inside the loop, arr[i-1] or arr[5-1] or arr[4] or 5 gets initialised to arr[i] or arr[5]. So arr[5] = 5.</li>
+</ul>
+<ul>
+<li>Now the program flow goes to the update part of the for loop decrements the value of i. So i=4, and evaluates the condition again</li>
+</ul>
+<ul>
+<li>That is the condition i &gt;= position or 4&gt;=3 evaluates to be true again, therefore program flow again goes inside the loop</li>
+</ul>
+<ul>
+<li>This process continues, until the condition of the for loop evaluates to be false. Before its condition evaluated to be false, here are the new values of arr[]:</li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[5] = 5;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[4] = 4;</p>
+<ul>
+<li>Now 4 element is placed on the 4th index that was placed on the 3rd index.</li>
+</ul>
+<ul>
+<li>Now the 3rd index is free to placed new element.</li>
+</ul>
+<h2 class="wp-block-heading"><strong>Check if an element is in Array</strong></h2>
+<p><strong>3: Search</strong> <strong>—</strong> Now we&#8217;re going to search a specific element in the array. For that we need to ask the user to enter the element that you want to search in the array. Then traverse the whole array and check the entered value is matched with any element in the array. Let&#8217;s understand with an example.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int main() {
+  int arr[3] = {
+    25,
+    76,
+    63
+  };
+  int userInput;
+  cin >> userInput;
+  for (int i: arr) {
+    if (i == userInput) {
+      cout &lt;&lt; "Found";
+    } else {
+      cout &lt;&lt; "Not found";
+      break;
+    }
+  }
+  return 0;
+}</pre>
+<h3 class="wp-block-heading"><strong>How to change or update the elements&nbsp;</strong></h3>
+<p><strong>4: Updation</strong> — Updating refers to updating an existing array element at a particular index value to a new element.&nbsp;</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int main() {
+  int arr[4] = {
+    10,
+    20,
+    30,
+    50
+  };
+  int pos = 4;
+  int newElem = 40;
+  cout &lt;&lt; "Original array :" &lt;&lt; endl;
+  for (int i = 0; i &lt; 4; i++) {
+    cout &lt;&lt; arr[i] &lt;&lt; endl;
+  }
+  arr[pos - 1] = newElem;
+  cout &lt;&lt; "after updating the array :" &lt;&lt; endl;
+  for (int i = 0; i &lt; 4; i++) {
+    cout &lt;&lt; arr[i] &lt;&lt; endl;
+  }
+  return 0;
+}</pre>
+<p><strong>5: Deletion</strong> — Deletion operation is used to delete an element from the array. A simple program to perform deletion in an array is shown below.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int main() {
+  int arr[] = {
+    1,
+    2,
+    3,
+    4
+  };
+  int pos = 2, size = 4;
+  int j = pos;
+  while (j &lt; size) {
+    arr[j - 1] = arr[j];
+    j = j + 1;
+  }
+  size = size - 1;
+  for (int i = 0; i &lt; size; i++) {
+    cout &lt;&lt; arr[i] &lt;&lt; endl;
+  }
+  return 0;
+}</pre>
+<p><strong>What are Empty Arrays?</strong></p>
+<p>Empty arrays means those arrays have no elements. How can we declare empty arrays? There are some ways to declare empty arrays.</p>
+<p>For example:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int arr[10];
+int arr[10] = {};
+int arr[50] = {
+  0
+};</pre>
+<h3 class="wp-block-heading"><strong>Creating the Array using loop</strong></h3>
+<p>By using the loop, we&#8217;ll create the arrays and initialise the array with user input.</p>
+<p>To fill an array with user input. We need to ask the user to enter the size of the array then the elements of an array. Let&#8217;s understand with an example.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int main() {
+    int size;
+    cin >> size;
+    int arr[size];
+    for (int i = 0; i &lt; size; i++) {
+      int j;
+      cin >> j;
+      arr[i] = j;
+    }
+    for (int k: arr) {
+      cout &lt;&lt; k &lt;&lt; endl;
+    }</pre>
+<p><strong>How to know the size or length of an array?</strong></p>
+<p>Basically, when we say the length of an array actually we refer to the total number of elements present in the array.&nbsp;</p>
+<p>For example:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int books[8] = {
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+};</pre>
+<p>Here we can count the total number of elements in the array. But what if there are many more elements?</p>
+<p>We&#8217;re going to learn about the various ways to find the array length.</p>
+<p><strong>Ways to find Length of an Array</strong></p>
+<ul>
+<li>Counting element-by-element</li>
+<li>begin() and end() function&nbsp;</li>
+<li>sizeof() function</li>
+<li>Pointers.</li>
+</ul>
+<p>Let&#8217;s understand one by one:</p>
+<p><strong>Counting element-by-element</strong></p>
+<p>In this method we&#8217;ll traverse all the elements of an array and simultaneously we&#8217;ll count the elements. Let&#8217;s understand with an example.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int main() {
+  int count;
+  int arr[] = {
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  };
+  for (int i: arr) {
+    cout &lt;&lt; i &lt;&lt; endl;
+    count++;
+  }
+  cout &lt;&lt; "The length of the array is: " &lt;&lt; count;
+  return 0;
+}</pre>
+<p><strong>Using begin() and end() function</strong>&nbsp;</p>
+<p>We can also calculate the length of an array using the standard library’s begin() and end() functions. See below code.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int main() {
+  int count;
+  int arr[] = {
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  };
+  count = end(arr) - begin(arr);
+  cout &lt;&lt; "The length of the array is: " &lt;&lt; count;
+  return 0;
+}</pre>
+<p><strong>By using sizeof() operator</strong></p>
+<p>The sizeof() operator returns the size of the passed variable or data in bytes. But for finding total numbers of elements in an array we divide the whole bytes with the size of data type of an array. See below example.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int main() {
+  int arr[] = {
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80
+  };
+  int count = sizeof(arr) / sizeof(int);
+  cout &lt;&lt; "The length of the array is: " &lt;&lt; count;
+  return 0;
+}</pre>
+<h3 class="wp-block-heading"><strong>Find the array length using pointer&nbsp;</strong></h3>
+<p><strong>By using pointer</strong></p>
+<p>We can also calculate the length of an array by using a pointer. See example:</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int main() {
+  int arr[] = {
+    8,
+    6,
+    9,
+    5,
+    3,
+    5
+  };
+  int count = * ( &amp; arr + 1) - arr;
+  cout &lt;&lt; "The length of the array is: " &lt;&lt; count;
+  return 0;
+}</pre>
+<p><strong>Sometimes we need to check the array whether it&#8217;s full or not?</strong></p>
+<p>Full array means all the elements are filled with equal to the array size. For example an array size is 20 then it&#8217;ll be called full array when the total number of elements are 20.</p>
+<p>So how to check with code?&nbsp;</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">int main() {
+  int arr[2] = {
+    1,
+    2
+  };
+  int count = 0;
+  int size = sizeof(arr) / sizeof(int);
+  for (int i: arr) {
+    if (arr[i] != 0) count++;
+  }
+  if (count == size) cout &lt;&lt; "Array is full";
+  else cout &lt;&lt; "Array isn't full";
+  return 0;
+}</pre>
+<p><strong>Array in Classes or Array of objects</strong></p>
+<p>When a class is defined, only the specification for the object is defined; no memory or storage is allocated. To use the data and access functions defined in the class, you need to create objects of class type. Let&#8217;s have a look at the code.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">class emp {
+  public: int id;
+  string name;
+  void get() {
+    cin >> id >> name;
+  }
+  void show() {
+    cout &lt;&lt; id &lt;&lt; " " &lt;&lt; name &lt;&lt; endl;
+  }
+};
+int main() {
+  emp e[2];
+  for (int j = 0; j &lt; 2; j++) {
+    e[j].get();
+  }
+  for (int j = 0; j &lt; 2; j++) {
+    e[j].show();
+  }
+  return 0;
+}</pre>
+<p>Here we created an emp class with a public member ( id type of int, name type of string ) two member functions: get() for getting employee details and show() for printing the details of employees.</p>
+<p>Next we created an array of type class in the main function.</p>
+<h3 class="wp-block-heading"><strong>Passing Array to a function&nbsp;</strong></h3>
+<p>Just like normal variables, Arrays can also be passed to a function as an argument of a function, but in <a href="../what-is-c-plus-plus-used-for/index.html" data-type="post" data-id="1242">C++</a> whenever we pass an array as a function argument then it is always treated as a pointer by a function. It means a function argument can never be an array – they&#8217;re always converted to the <strong>pointers.</strong></p>
+<p>Basically there are three ways to pass an array to a function argument.</p>
+<ul>
+<li><strong>Formal parameter as a sized array</strong></li>
+<li><strong>Formal parameter as a unsized array</strong></li>
+<li><strong>Formal parameter as a pointers&nbsp;</strong></li>
+</ul>
+<p>Let&#8217;s understand one-by-one:</p>
+<p><strong>1. Formal parameter as a sized array —&nbsp;</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">#include&lt;iostream>using namespace std;int sum(int []); int main(){   int arr[3] = {2, 3, 4};   cout&lt;&lt;sum(arr);   return 0;}
+
+int sum(int array[3]) { // here we pass the array with size   int total =0;   for(int i=0;i&lt;3;i++){       total += array[i];   }   return total;}</pre>
+<p>Even though the parameter array is declared as an int array of <strong>3</strong> <strong>elements</strong>, the compiler automatically converts it to an int <strong>pointer</strong> like this <strong>int *array</strong>. This is necessary because no parameter can actually receive an entire array. A pointer to an array gets passed when an array is passed to the function.</p>
+<p><strong>2. Formal parameter as a unsized array —</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">#include&lt;iostream>using namespace std;int sum(int [],int);int main(){int arr[3] = {2, 3, 4}; int size = 3; cout&lt;&lt;sum(arr,size); // we pass the array as well size of the array as an argument return 0;}
+
+int sum(int array[3], int n) {
+  int total = 0;
+  for (int i = 0; i &lt; n; i++) {
+    total += array[i];
+  }
+  return total;
+}</pre>
+<p>In this method, we pass the array with the size of an array as an argument.</p>
+<p><strong>3 Formal parameter as a pointer —</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">#include&lt;iostream>using namespace std;int sum(int [],int);int main(){   int arr[3] = {2, 3, 4};   int size = 3;   cout&lt;&lt;sum(arr,size); // we pass the array as well size of the array as an argument    return 0;}
+
+int sum(int * array, int n) {
+  int total = 0;
+  for (int i = 0; i &lt; n; i++) {
+    total += array[i];
+  }
+  return total;
+}</pre>
+<p>Here we&#8217;re not using square brackets because the function argument can&#8217;t be an array – they&#8217;re always converted to the <strong>pointers</strong>. So here we directly used pointers.</p>
+</div>
+</div>
+<div class="share-container">
+<span>Share:</span>
+<button data-sharer="facebook" data-url="https://www.sololearn.com/blog/c-plus-plus-array/">
+<img src="../../wp-content/themes/sololearn/assets/icons/facebook.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="linkedin" data-url="https://www.sololearn.com/blog/c-plus-plus-array/">
+<img src="../../wp-content/themes/sololearn/assets/icons/linkedin.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="twitter" data-url="https://www.sololearn.com/blog/c-plus-plus-array/">
+<img src="../../wp-content/themes/sololearn/assets/icons/twitter.svg" alt="share-icons" class="style-svg">
+</button>
+</div>
+<div class='yarpp yarpp-related yarpp-related-website yarpp-template-yarpp-template-blogPosts-footer'>
+<div class="blog-relatedBlogPostsFooter">
+<h3 class="blog-sidebarBlogPosts_title">Related blogposts</h3>
+<ul class="row blog-relatedBlogPostsFooter_list">
+<li class="col-lg-4 col-md-6">
+<article class="blog-relatedBlogPostsFooter_item">
+<a class="blog-relatedBlogPostsFooter_item-link" href="../html-lists/index.html" rel="bookmark norewrite" title="How To Create HTML Lists">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/How-to-create-lists-in-html-will-cover-ul_ol_-HTML.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="../../wp-content/uploads/2022/11/How-to-create-lists-in-html-will-cover-ul_ol_-HTML.png 760w, ../../wp-content/uploads/2022/11/How-to-create-lists-in-html-will-cover-ul_ol_-HTML-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> <h2 class="blog-relatedBlogPostsFooter_item__content">
+How To Create HTML Lists </h2>
+</a>
+</article>
+</li>
+<li class="col-lg-4 col-md-6">
+<article class="blog-relatedBlogPostsFooter_item">
+<a class="blog-relatedBlogPostsFooter_item-link" href="../ethical-hacking/index.html" rel="bookmark norewrite" title="What Is Ethical Hacking &amp; How Can One Become An Ethical Hacker?">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/What-is-Ethical-Hacking-and-How-is-it-Used_.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="../../wp-content/uploads/2022/11/What-is-Ethical-Hacking-and-How-is-it-Used_.png 760w, ../../wp-content/uploads/2022/11/What-is-Ethical-Hacking-and-How-is-it-Used_-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> <h2 class="blog-relatedBlogPostsFooter_item__content">
+What Is Ethical Hacking &amp; How Can One Becom... </h2>
+</a>
+</article>
+</li>
+<li class="col-lg-4 col-md-6">
+<article class="blog-relatedBlogPostsFooter_item">
+<a class="blog-relatedBlogPostsFooter_item-link" href="../sql-join/index.html" rel="bookmark norewrite" title="SQL Joins: What They are, How They Work, and How Many Types Exist">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist..png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="../../wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist..png 760w, ../../wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist.-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> <h2 class="blog-relatedBlogPostsFooter_item__content">
+SQL Joins: What They are, How They Work, and Ho... </h2>
+</a>
+</article>
+</li>
+</ul>
+</div>
+
+
+
+
+</article> </div>
+<div class="col-lg-4 no-gutters">
+<aside id="sidebar" class="sidebar sidebar__single" role="complementary">
+<ul class="blog-sidebarBlogPosts">
+<li>
+<div class='yarpp yarpp-related yarpp-related-website yarpp-template-yarpp-template-blogPosts-sidebar-single'>
+<div class="blog-relatedBlogPosts">
+<h3 class="blog-relatedBlogPosts_title">
+<span>Related blogposts</span>
+<a href="../../blog">See all</a>
+</h3>
+<ul class="blog-relatedBlogPosts_list">
+<li>
+<a class="blog-relatedBlogPosts_item" href="../html-lists/index.html" rel="bookmark norewrite" title="How To Create HTML Lists">
+<p class="blog-relatedBlogPosts_itemTitle">How To Create HTML Lists </p></p>
+<p><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 5</span> <span class="rt-label rt-postfix">min read</span></span></p>
+</a>
+</li>
+<li>
+<a class="blog-relatedBlogPosts_item" href="../ethical-hacking/index.html" rel="bookmark norewrite" title="What Is Ethical Hacking &amp; How Can One Become An Ethical Hacker?">
+<p class="blog-relatedBlogPosts_itemTitle">What Is Ethical Hacking &amp; How Can One Becom... </p></p>
+<p><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 4</span> <span class="rt-label rt-postfix">min read</span></span></p>
+</a>
+</li>
+<li>
+<a class="blog-relatedBlogPosts_item" href="../sql-join/index.html" rel="bookmark norewrite" title="SQL Joins: What They are, How They Work, and How Many Types Exist">
+<p class="blog-relatedBlogPosts_itemTitle">SQL Joins: What They are, How They Work, and Ho... </p></p>
+<p><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 5</span> <span class="rt-label rt-postfix">min read</span></span></p>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li id="block-7" class="widget-container widget_block"><div class="lazyblock-nav-banner-blog-post-1O61UQ wp-block-lazyblock-nav-banner-blog-post"><div class="blog-sidebarBanner">
+<h3 class="blog-sidebarBlogPosts_title">Learn on the go!</h3>
+<a href="https://www.sololearn.com/mobile" class="blog-sidebarBanner_image" target="_blank"><img decoding="async" src="https://sololearnblob.blob.core.windows.net/blog/2023/01/Group-26950.png" alt="" /></a>
+</div></div></li> </ul>
+</aside>
+</div>
+</div>
+</div>
+</main>
+<footer class="wp-sl-footer">
+<div class="wp-sl-footer__social-links">
+<div class="wp-sl-footer__social-links__container">
+<div class="wp-sl-footer__social-links__links-block">
+<a class="wp-sl-footer__social-links__item" href="https://www.linkedin.com/company/sololearn-inc-/" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:#0077b5"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoLinkedin.svg"></div><span class="wp-sl-footer__social-links__text">Follow us on Linkedin</span></a><a class="wp-sl-footer__social-links__item" href="https://www.facebook.com/SoloLearn" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:#4267b2"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoFacebook.svg"></div><span class="wp-sl-footer__social-links__text">Check out our facebook</span></a><a class="wp-sl-footer__social-links__item" href="https://twitter.com/SoloLearn" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:#1da1f2"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoTwitter.svg"></div><span class="wp-sl-footer__social-links__text">See what we tweet about</span></a><a class="wp-sl-footer__social-links__item" href="https://www.instagram.com/sololearn/" target="_blank"><div class="wp-sl-footer__social-links__icon"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoInstagram.svg"></div><span class="wp-sl-footer__social-links__text">Join our instagram</span></a><a class="wp-sl-footer__social-links__item" href="https://www.youtube.com/channel/UCXiOyrjY_jqNCFoQTotILTw" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:red"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoYoutube.svg"></div><span class="wp-sl-footer__social-links__text">Watch our Youtube</span></a> </div>
+<div class="wp-sl-footer__social-links__app-block">
+<a class="wp-sl-footer__social-links__item--app" id="logoAppStore" target="_blank"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoAppStore.svg"></a><a class="wp-sl-footer__social-links__item--app" id="logoGooglePlay" target="_blank"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoGooglePlay.svg"></a> </div>
+</div>
+</div>
+<div class="wp-sl-footer-links">
+<div class="wp-sl-footer-links__container">
+<div class="wp-sl-footer-links__links-block">
+<a class="wp-sl-footer-links__item" href="../../home">Home</a><a class="wp-sl-footer-links__item" href="../../leaderboard">Top Learners</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/payments/pro">Pro</a><a class="wp-sl-footer-links__item" href="../../FAQ">FAQ</a><a class="wp-sl-footer-links__item" href="../../contact">Contact</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/bug-bounty">Bug Bounty Program</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/career">Careers</a><a class="wp-sl-footer-links__item" href="../../terms-of-use">Terms of Use</a><a class="wp-sl-footer-links__item" href="../../privacy-policy">Privacy Policy</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/mobile">Sololearn mobile</a><a class="wp-sl-footer-links__item" href="../../codes">Code Bits</a> </div>
+<div class="wp-sl-footer-links__copyright">
+Made with
+<div class="wp-sl-footer-links__heart-icon">
+<img src="../../wp-content/themes/sololearn/assets/icons/heart.svg" alt="heart_icon" class='style-svg'>
+</div>
+by &nbsp;
+<span class="wp-sl-footer-links__marked-text">Sololearn </span>&nbsp;| ©2023 </div>
+</div>
+</div>
+</footer>
+<script src="../../wp-content/themes/sololearn/assets/scripts/common.js" type="48768e5602317e216db6d441-text/javascript"></script>
+<script src="../../wp-content/themes/sololearn/assets/scripts/profile.js" type="48768e5602317e216db6d441-text/javascript"></script>
+<script type="48768e5602317e216db6d441-text/javascript">
+        jQuery(document).ready(function($) {
+
+            var deviceAgent = navigator.userAgent.toLowerCase();
+            var html = $("html");
+            if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
+
+                html.addClass("ios");
+                html.addClass("mobile");
+            }
+            if (deviceAgent.match(/(Android)/)) {
+                html.addClass("android");
+                html.addClass("mobile");
+            }
+            if (navigator.userAgent.search("MSIE") >= 0) {
+                html.addClass("ie");
+            } else if (navigator.userAgent.search("Chrome") >= 0) {
+                html.addClass("chrome");
+            } else if (navigator.userAgent.search("Firefox") >= 0) {
+                html.addClass("firefox");
+            } else if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+                html.addClass("safari");
+            } else if (navigator.userAgent.search("Opera") >= 0) {
+                html.addClass("opera");
+            }
+        });
+    </script>
+<style id='wp-block-paragraph-inline-css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}p.has-background{padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}
+</style>
+<style id='wp-block-heading-inline-css'>
+h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}
+</style>
+<style id='wp-block-list-inline-css'>
+ol,ul{box-sizing:border-box}ol.has-background,ul.has-background{padding:1.25em 2.375em}
+</style>
+<script src='https://www.sololearn.com/wp-content/plugins/enlighter/cache/enlighterjs.min.js?ver=5ldjK8WLazRmDr7' id='enlighterjs-js' type="48768e5602317e216db6d441-text/javascript"></script>
+<script id='enlighterjs-js-after' type="48768e5602317e216db6d441-text/javascript">
+!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":4,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"dracula","language":"generic","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
+</script>
+<script src="https://www.sololearn.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="48768e5602317e216db6d441-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7d8efc041a930b5c","version":"2023.4.0","b":1,"token":"3cd70a6c7768490094eebf19abc1a33f","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#" itemscope itemtype="https://schema.org/Article">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+
+
+<title>Deep Dive Into Node.js - Sololearn</title>
+<meta name="description" content="JavaScript has risen to prominence over the past decade especially, as the features and tools it offers are ideally designed for modern web development (among" />
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Deep Dive Into Node.js - Sololearn" />
+<meta property="og:description" content="JavaScript has risen to prominence over the past decade especially, as the features and tools it offers are ideally designed for modern web development (among" />
+<meta property="og:url" content="https://www.sololearn.com/blog/deep-dive-into-node-js/" />
+<meta property="og:site_name" content="Sololearn Blog" />
+<meta property="article:tag" content="5 MINUTES READ" />
+<meta property="article:section" content="Coding Languages" />
+<meta property="og:updated_time" content="2023-03-30T17:24:57+00:00" />
+<meta property="og:image" content="https://www.sololearn.com/wp-content/uploads/2022/11/Deep_Dive_Into_Node_js_blog_01-1.jpg" />
+<meta property="og:image:secure_url" content="https://www.sololearn.com/wp-content/uploads/2022/11/Deep_Dive_Into_Node_js_blog_01-1.jpg" />
+<meta property="og:image:width" content="525" />
+<meta property="og:image:height" content="300" />
+<meta property="og:image:alt" content="Deep Dive Into Node.js" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="article:published_time" content="2021-11-03T09:17:00+00:00" />
+<meta property="article:modified_time" content="2023-03-30T17:24:57+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Deep Dive Into Node.js - Sololearn" />
+<meta name="twitter:description" content="JavaScript has risen to prominence over the past decade especially, as the features and tools it offers are ideally designed for modern web development (among" />
+<meta name="twitter:image" content="https://www.sololearn.com/wp-content/uploads/2022/11/Deep_Dive_Into_Node_js_blog_01-1.jpg" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Sololearn Growth" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="7 minutes" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.sololearn.com/blog/#organization","name":"Sololearn Blog","logo":{"@type":"ImageObject","@id":"https://www.sololearn.com/blog/#logo","url":"https://blog-dev.sololearn.com/wp-content/uploads/2022/11/sololearn_color_dark-2.png","contentUrl":"https://blog-dev.sololearn.com/wp-content/uploads/2022/11/sololearn_color_dark-2.png","caption":"Sololearn Blog","inLanguage":"en-US","width":"1112","height":"213"}},{"@type":"WebSite","@id":"https://www.sololearn.com/blog/#website","url":"https://www.sololearn.com/blog","name":"Sololearn Blog","publisher":{"@id":"https://www.sololearn.com/blog/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.sololearn.com/wp-content/uploads/2022/11/Deep_Dive_Into_Node_js_blog_01-1.jpg","url":"https://www.sololearn.com/wp-content/uploads/2022/11/Deep_Dive_Into_Node_js_blog_01-1.jpg","width":"1500","height":"857","inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://www.sololearn.com/blog/deep-dive-into-node-js/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://www.sololearn.com/blog","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://www.sololearn.com/blog/category/coding-languages/","name":"Coding Languages"}},{"@type":"ListItem","position":"3","item":{"@id":"https://www.sololearn.com/blog/deep-dive-into-node-js/","name":"Deep Dive Into Node.js"}}]},{"@type":"WebPage","@id":"https://www.sololearn.com/blog/deep-dive-into-node-js/#webpage","url":"https://www.sololearn.com/blog/deep-dive-into-node-js/","name":"Deep Dive Into Node.js - Sololearn","datePublished":"2021-11-03T09:17:00+00:00","dateModified":"2023-03-30T17:24:57+00:00","isPartOf":{"@id":"https://www.sololearn.com/blog/#website"},"primaryImageOfPage":{"@id":"https://www.sololearn.com/wp-content/uploads/2022/11/Deep_Dive_Into_Node_js_blog_01-1.jpg"},"inLanguage":"en-US","breadcrumb":{"@id":"https://www.sololearn.com/blog/deep-dive-into-node-js/#breadcrumb"}},{"@type":"Person","@id":"https://www.sololearn.com/blog/author/sololearn/","name":"Sololearn Growth","url":"https://www.sololearn.com/blog/author/sololearn/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/c7e8224ac7ad8328638086ea96255fb7?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/c7e8224ac7ad8328638086ea96255fb7?s=96&amp;d=mm&amp;r=g","caption":"Sololearn Growth","inLanguage":"en-US"},"worksFor":{"@id":"https://www.sololearn.com/blog/#organization"}},{"@type":"BlogPosting","headline":"Deep Dive Into Node.js - Sololearn","datePublished":"2021-11-03T09:17:00+00:00","dateModified":"2023-03-30T17:24:57+00:00","articleSection":"Coding Languages","author":{"@id":"https://www.sololearn.com/blog/author/sololearn/"},"publisher":{"@id":"https://www.sololearn.com/blog/#organization"},"description":"JavaScript has risen to prominence over the past decade especially, as the features and tools it offers are ideally designed for modern web development (among","name":"Deep Dive Into Node.js - Sololearn","@id":"https://www.sololearn.com/blog/deep-dive-into-node-js/#richSnippet","isPartOf":{"@id":"https://www.sololearn.com/blog/deep-dive-into-node-js/#webpage"},"image":{"@id":"https://www.sololearn.com/wp-content/uploads/2022/11/Deep_Dive_Into_Node_js_blog_01-1.jpg"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://www.sololearn.com/blog/deep-dive-into-node-js/#webpage"}}]}</script>
+
+<link rel="alternate" type="application/rss+xml" title="Sololearn &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Sololearn &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Sololearn &raquo; Deep Dive Into Node.js Comments Feed" href="feed/index.html" />
+<script type="291c2471b377f694109b7c9f-text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.sololearn.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}figure{margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://www.sololearn.com/wp-includes/css/classic-themes.min.css?ver=6.2.2' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('index.html');--wp--preset--duotone--grayscale: url('index.html');--wp--preset--duotone--purple-yellow: url('index.html');--wp--preset--duotone--blue-red: url('index.html');--wp--preset--duotone--midnight: url('index.html');--wp--preset--duotone--magenta-yellow: url('index.html');--wp--preset--duotone--purple-green: url('index.html');--wp--preset--duotone--blue-orange: url('index.html');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='sololearn-style-css' href='https://www.sololearn.com/wp-content/themes/sololearn/style.css?ver=6.2.2' media='all' />
+<link rel='stylesheet' id='enlighterjs-css' href='https://www.sololearn.com/wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=5ldjK8WLazRmDr7' media='all' />
+<script src='https://www.sololearn.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js' type="291c2471b377f694109b7c9f-text/javascript"></script>
+<script src='https://www.sololearn.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js' type="291c2471b377f694109b7c9f-text/javascript"></script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" type="application/json" href="../wp-json/wp/v2/posts/1466" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.sololearn.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.2.2" />
+<link rel='shortlink' href='https://www.sololearn.com/blog/?p=1466' />
+<link rel="alternate" type="application/json+oembed" href="https://www.sololearn.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sololearn.com%2Fblog%2Fdeep-dive-into-node-js%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.sololearn.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sololearn.com%2Fblog%2Fdeep-dive-into-node-js%2F&#038;format=xml" />
+
+
+<script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["coding-languages"],"pageAttributes":["5-minutes-read"],"pagePostAuthor":"Sololearn Growth"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7MQKF7');
+</script>
+
+<link rel="pingback" href="https://www.sololearn.com/xmlrpc.php" />
+<script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js" type="291c2471b377f694109b7c9f-text/javascript"></script>
+</head>
+<body class="post-template-default single single-post postid-1466 single-format-standard wp-embed-responsive">
+<a href="index.html#content" class="skip-link screen-reader-text">Skip to the content</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7MQKF7" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+
+<script type="291c2471b377f694109b7c9f-text/javascript">
+    if(!JSON.parse(window.localStorage.user)?.data?.isPro) {
+        document.querySelector('.wp-navbar__pro-button-wrapper').style.display = 'block';
+    }
+</script>
+<nav class="wp-navbar light">
+<div class="wp-navbar__container">
+<a class="wp-navbar__main-logo wp-navbar__main-logo--desktop" href="../../home">
+<img src="../../wp-content/themes/sololearn/assets/icons/logoAppDesktop.svg" alt="brand_logo-desktop" class='style-svg'>
+</a>
+<a class="wp-navbar__main-logo wp-navbar__main-logo--mobile" href="../../home">
+<img src="../../wp-content/themes/sololearn/assets/icons/logoAppMobile.svg" alt="brand_logo-mobile" class='style-svg'>
+</a>
+<div class="wp-navbar__content" id="navbar_content">
+<div class="wp-navbar__content-wrapper">
+<ul class='wp-navbar__content-list'>
+<li class="wp-navbar__content-list__item"><a href="../../Courses/index.html">Catalog</a></li>
+<li class="wp-navbar__content-list__item"><a href="../../compiler-playground">Online Compiler</a></li>
+<li class="wp-navbar__content-list__item"><a href="../../discuss">Discuss</a></li>
+<li class="wp-navbar__content-list__item"><a href="../../blog">Blog</a></li>
+<li class="wp-navbar__content-list__item"><a href="https://www.sololearn.com/payments/pro">Get Pro</a></li>
+</ul>
+</div>
+<div class="wp-navbar__actions-wrapper">
+<div class="wp-navbar__actions">
+<a href="https://www.sololearn.com/users/login?tr_source=login&amp;tr_source_detail=blog">
+<button type="button" class="sol-button sol-button-secondary sol-button-block sol-button-m" tabindex="0">Log in
+</button>
+</a>
+<a href="https://www.sololearn.com/onboarding/auth/signup?tr_source=register&amp;tr_source_detail=blog">
+<button type="button" class="sol-button sol-button-primary sol-button-block sol-button-m" tabindex="0">Register
+</button>
+</a>
+</div>
+</div>
+</div>
+<div class="wp-navbar__hamburger" id="hamburger_menu">
+Menu
+<div class="wp-navbar__hamburger__button" id="hamburger_menu_btn">
+<span class="arrow first"></span>
+<span class="arrow second"></span>
+<span class="arrow third"></span>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<main id="content" role="main">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="wp-breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Sololearn." href="../../blog" class="home"><span property="name">Sololearn blog</span></a><meta property="position" content="1"></span><span class="wp-breadcrumbs-separator"></span><span property="itemListElement" typeof="ListItem"><span property="name" class="post post-post current-item">Deep Dive Into Node.js</span><meta property="url" content="https://www.sololearn.com/blog/deep-dive-into-node-js/"><meta property="position" content="2"></span> </div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-8">
+<article id="post-1466" class="post-1466 post type-post status-publish format-standard has-post-thumbnail hentry category-coding-languages tag-5-minutes-read">
+<header>
+<div class="share-container">
+<span>Share:</span>
+<button data-sharer="facebook" data-url="https://www.sololearn.com/blog/deep-dive-into-node-js/">
+<img src="../../wp-content/themes/sololearn/assets/icons/facebook.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="linkedin" data-url="https://www.sololearn.com/blog/deep-dive-into-node-js/">
+<img src="../../wp-content/themes/sololearn/assets/icons/linkedin.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="twitter" data-url="https://www.sololearn.com/blog/deep-dive-into-node-js/">
+<img src="../../wp-content/themes/sololearn/assets/icons/twitter.svg" alt="share-icons" class="style-svg">
+</button>
+</div> <div class="reading-time">
+<img src="../../wp-content/themes/sololearn/assets/icons/timeToRead.svg" alt="time to read" class='style-svg'>
+<span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 5</span> <span class="rt-label rt-postfix">min read</span></span> </div>
+</header>
+<div class="entry-content" itemprop="mainEntityOfPage">
+<a href="../../wp-content/uploads/2022/11/Deep_Dive_Into_Node_js_blog_01-1.jpg" title="Deep_Dive_Into_Node_js_blog_01-1">
+<img width="1500" height="857" src="../../wp-content/uploads/2022/11/Deep_Dive_Into_Node_js_blog_01-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="../../wp-content/uploads/2022/11/Deep_Dive_Into_Node_js_blog_01-1.jpg 1500w, ../../wp-content/uploads/2022/11/Deep_Dive_Into_Node_js_blog_01-1-300x171.jpg 300w, ../../wp-content/uploads/2022/11/Deep_Dive_Into_Node_js_blog_01-1-1024x585.jpg 1024w, ../../wp-content/uploads/2022/11/Deep_Dive_Into_Node_js_blog_01-1-768x439.jpg 768w" sizes="(max-width: 1500px) 100vw, 1500px" /> </a>
+<div class="entry-content__body">
+<h1 class="entry-title" itemprop="headline"> Deep Dive Into Node.js </h1> <meta itemprop="description" content="JavaScript has risen to prominence over the past decade especially, as the features and tools it offers are ideally designed for modern web development (among many other use cases). JavaScript’s combination of speed, accessibility, and a massive developer base worldwide has led to a rising number of tools based in the language. And perhaps the ... Deep Dive Into Node.js" />
+<p><a href="https://www.sololearn.com/learning/1024"><span style="font-weight: 400;">JavaScript</span></a><span style="font-weight: 400;"> has risen to prominence over the past decade especially, as the features and tools it offers are ideally designed for modern web development (among many other use cases). JavaScript’s combination of speed, accessibility, and a massive developer base worldwide has led to a rising number of tools based in the language. And perhaps the most popular tool in that set is </span><a href="https://www.sololearn.com/Blog/55/what-is-node-js-an-essential-tool-for-javascript-coders/"><span style="font-weight: 400;">Node.js</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">Why all the hype around </span><a href="https://nodejs.org/" target="_blank" rel="noopener"><span style="font-weight: 400;">Node.js</span></a><span style="font-weight: 400;">? A package of tools written primarily in JavaScript, including Google’s V8 JavaScript engine, the libuv platform abstraction layer, and a core library, Node.js was specifically designed for developers as a tool for working in the non-blocking, event-driven I/O paradigm. In simpler terms, Node.js was designed to shine specifically in real-time web applications which employ push technology.&nbsp;</span></p>
+<p><span style="font-weight: 400;">As apps become more and more real-time (with information refreshing in margins of seconds, as opposed to the minutes and longer of the Internet of the past), solutions for building these types of apps become equally more and more important. That’s why Node.js continues to draw loyal developers, and offer a robust solution for modern programming challenges and needs. But to know why it’s such a useful asset for your </span><a href="../../home"><span style="font-weight: 400;">programming knowledge</span></a><span style="font-weight: 400;">, you need to know what Node.js includes, and what it can do. That’s where this guide can help.</span></p>
+<figure class="wp-block-image"><img decoding="async" src="https://api.sololearn.com/Uploads/Deep_Dive_Into_Node_js_blog_02.jpg" alt="Deep Dive Into Node.js" /></figure>
+<h2 class="wp-block-heading"><strong>Why Was Node.js Initially Developed?&nbsp;</strong></h2>
+<p><span style="font-weight: 400;">After years and years of stateless-web (founded on the stateless request-response paradigm), modern web applications are now more and more real-time, two-way connections. In simpler terms, these are cases where both the server and client can initiate communication, allowing for a more free data exchange. This is very different to the historical stateless web response paradigm, where the client always initiates communication. Additionally, it’s all based on the open web stack.</span></p>
+<p><span style="font-weight: 400;">Many people point to tools like Java Applets and Flash as examples of how this type of functionality has existed for years. However, those tools were actually just sandboxed environments using the web as a transport protocol to be delivered to the client. Additionally, they were run in isolation and often operated over non-standard ports, which may have required extra permissions and other annoying hurdles to jump through.</span></p>
+<p><span style="font-weight: 400;">As a result of its aforementioned advantages (and this new web paradigm), Node.js now plays a critical role in the technology stack of many high-profile companies who depend on its unique benefits.&nbsp;</span></p>
+<h2 class="wp-block-heading"><strong>How Does Node.js Work?&nbsp;</strong></h2>
+<p><span style="font-weight: 400;">Simply put, Node.js fills a very specific and essential need in modern web development. For example, Node.js is not ideal for CPU-intensive operations, which actually removes most of the advantages it offers programmers. Instead, Node.js is ideal for building fast and scalable network applications (scalability, which allows software to function optimally on a variety of systems, is also an essential element of modern web development). This is due to its ability to handle a huge amount of simultaneous connections via high throughput. Put another way, Node.js can help you manage intense surges of real-time traffic and server requests.</span></p>
+<p><span style="font-weight: 400;">So what does the actual nuts and bolts of this functionality look like? Well, compared to traditional web-serving techniques where every connection (or request) generates a new thread, which thus chews up <a href="../what-is-ram/index.html" data-type="post" data-id="2649">system RAM</a> and eventually maxes out at the amount of RAM available, Node.js operates on a single-thread, using non-blocking I/O calls. This allows Node.js to support thousands upon thousands of concurrent connections held within the event loop.</span></p>
+<p><span style="font-weight: 400;">One potential downside of writing Node.js applications is the potential of sharing a single thread between all clients requests. This is problematic because heavy computation could clog up Node’s single thread and cause problems for all of the clients, as incoming requests would be blocked until this computation was completed. Fortunately, the rapidly growing Node.js developer community has already generated a variety of useful tools to solve this issue (as well as others that have emerged).</span></p>
+<h2 class="wp-block-heading"><strong>What Should You Know About The Node Package Manager (NPM)?</strong></h2>
+<p><span style="font-weight: 400;">One of the most popular and useful elements of Node.js is the standard built-in support for package management using NPM, which is included by default with any Node.js installation. Very similar to the idea of Ruby Gems, NPM offers programmers a set of publicly available and&nbsp; reusable components. These are all available through easy installation via an online repository, and come along with version and dependency management.</span></p>
+<p><span style="font-weight: 400;">Some of the most useful npm modules today are:</span></p>
+<ul>
+<li><a href="http://expressjs.com/" target="_blank" rel="noopener"><span style="font-weight: 400;">express</span></a><span style="font-weight: 400;"> &#8211; otherwise known as Express.js, this tool is a Sinatra-inspired web development framework for Node.js, and the go-to standard for the majority of Node.js applications in use on the modern web (including by some of the biggest names in software)</span></li>
+<li><a href="http://socket.io/" target="_blank" rel="noopener"><span style="font-weight: 400;">socket.io</span></a><span style="font-weight: 400;"> and </span><a href="https://github.com/sockjs" target="_blank" rel="noopener"><span style="font-weight: 400;">sockjs</span></a><span style="font-weight: 400;"> &#8211; Server-side component of the two most common websockets components in use today</span></li>
+<li><span style="font-weight: 400;">lodash (underscore, lazy.js) &#8211; This is your standard JavaScript utility belt (and there are several to choose from)</span></li>
+<li><span style="font-weight: 400;">hapi &#8211; hapi is a configuration-centric framework for building web and services applications, which is gaining popularity because of its ease-of-use</span></li>
+<li><span style="font-weight: 400;">moment &#8211; A JavaScript date library for parsing, validating, manipulating, and formatting dates</span></li>
+<li><a href="http://www.senchalabs.org/connect/" target="_blank" rel="noopener"><span style="font-weight: 400;">connect</span></a><span style="font-weight: 400;"> &#8211; as an HTTP server framework, this offers a collection of high performance “plugins” known as middleware, which functions as a base for Express</span></li>
+<li><span style="font-weight: 400;">pug (formerly Jade) &#8211; One of the more popular templating engines, inspired by HAML, as well as a default in Express</span></li>
+<li><a href="https://npmjs.org/package/mongodb" target="_blank" rel="noopener"><span style="font-weight: 400;">mongodb</span></a><span style="font-weight: 400;"> and </span><a href="https://github.com/gett/mongojs" target="_blank" rel="noopener"><span style="font-weight: 400;">mongojs</span></a><span style="font-weight: 400;"> &#8211; MongoDB wrappers to provide the API for MongoDB object databases in Node.js.</span></li>
+<li><a href="https://github.com/mranney/node_redis" target="_blank" rel="noopener"><span style="font-weight: 400;">redis</span></a><span style="font-weight: 400;"> &#8211; Redis client library.</span></li>
+<li><a href="https://npmjs.org/package/forever" target="_blank" rel="noopener"><span style="font-weight: 400;">forever</span></a><span style="font-weight: 400;"> &#8211; Probably the most common utility for ensuring that a given node script runs continuously. This is essential for keeping a Node.js production upright during specific bugs and failures</span></li>
+<li><span style="font-weight: 400;">bluebird &#8211; A full featured Promises/A+ implementation with exceptionally good performance</span></li>
+</ul>
+<p><span style="font-weight: 400;">There are tons and tons more tools available, and more being added by the global JavaScript community every day. Like any good and popular language, the more bugs and issues that are found, the more solutions are developed to solve them for you.</span></p>
+<h2 class="wp-block-heading"><strong>What Are Some Popular Use Cases For Node.js?</strong></h2>
+<h3 class="wp-block-heading"><strong>Queued Inputs&nbsp;</strong></h3>
+<p><span style="font-weight: 400;">In the case where you may be intaking a high amount of concurrent data, your database can become a bottleneck. Fortunately, Node.js can easily handle concurrent connections themselves. However, since database access can be a blocking operation, this can cause trouble on the back-end. The solution is to acknowledge the client’s behavior before the data is truly written to the database.</span></p>
+<p><span style="font-weight: 400;">With that approach, the system maintains its responsiveness even when being taxed by a heavy load. This is particularly useful when the client doesn’t need firm confirmation of a successful data write. This might include situations like the logging or writing of user-tracking data, processed in batches and not used until a later time; as well as operations that don’t need to be reflected instantly (like updating a ‘Likes’ count on Facebook) where eventual consistency is acceptable.</span></p>
+<p><span style="font-weight: 400;">Data gets queued through a cacheing or message queuing infrastructure and subsequently digested by a separate database batch-write process, or computation intensive processing backend services, written in a better performing platform for such tasks. While other languages and frameworks can perform similar behavior, the hardware is not the same, and Node.js does it more efficiently and reliably.</span></p>
+<h3 class="wp-block-heading"><strong>Chat&nbsp;</strong></h3>
+<p><span style="font-weight: 400;">Chat is the most common real-time, multi-user application where Node.js is often employed. The chat application is really the ideal example for the benefits Node.js offers, since it’s a lightweight, high traffic, data-intensive (but low processing/computation) application that runs across distributed devices. For those of you who are just </span><a href="../../Courses/index.html"><span style="font-weight: 400;">beginning to learn</span></a><span style="font-weight: 400;"> Node.js, this is also a great place to learn the ins and outs, since chat is simple but also covers most of the paradigms you’d ever use in any typical Node.js application.</span></p>
+<h3 class="wp-block-heading"><strong>Data Streaming&nbsp;</strong></h3>
+<p><span style="font-weight: 400;">In more traditional web platforms, HTTP requests and responses are often handled like isolated events, while in actuality they’re streams. This observation can be utilized in Node.js to build some cool features, such as processing files while they’re still being uploaded (since the data comes in through a stream and thus can be processed in an online fashion). This is particularly useful in the case of real-time audio or video encoding, and proxying between different data sources.</span></p>
+<h3 class="wp-block-heading"><strong>Proxy&nbsp;</strong></h3>
+<p><span style="font-weight: 400;">Speaking of proxying, Node.js is easily employed as a server-side proxy, where it can tackle a significant amount of simultaneous connections in a non-blocking manner. It’s particularly useful for proxying different services with different response times, or for collecting data from multiple source points.</span></p>
+</div>
+</div>
+<div class="share-container">
+<span>Share:</span>
+<button data-sharer="facebook" data-url="https://www.sololearn.com/blog/deep-dive-into-node-js/">
+<img src="../../wp-content/themes/sololearn/assets/icons/facebook.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="linkedin" data-url="https://www.sololearn.com/blog/deep-dive-into-node-js/">
+<img src="../../wp-content/themes/sololearn/assets/icons/linkedin.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="twitter" data-url="https://www.sololearn.com/blog/deep-dive-into-node-js/">
+<img src="../../wp-content/themes/sololearn/assets/icons/twitter.svg" alt="share-icons" class="style-svg">
+</button>
+</div>
+<div class='yarpp yarpp-related yarpp-related-website yarpp-template-yarpp-template-blogPosts-footer'>
+<div class="blog-relatedBlogPostsFooter">
+<h3 class="blog-sidebarBlogPosts_title">Related blogposts</h3>
+<ul class="row blog-relatedBlogPostsFooter_list">
+<li class="col-lg-4 col-md-6">
+<article class="blog-relatedBlogPostsFooter_item">
+<a class="blog-relatedBlogPostsFooter_item-link" href="../46/how-long-does-it-take-to-learn-python-what-you-need-to-know/index.html" rel="bookmark norewrite" title="How Long Does It Take To Learn Python? What You Need to Know">
+<img width="1500" height="1000" src="../../wp-content/uploads/2022/11/blogpost_learnpython_1-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="../../wp-content/uploads/2022/11/blogpost_learnpython_1-2.jpg 1500w, ../../wp-content/uploads/2022/11/blogpost_learnpython_1-2-300x200.jpg 300w, ../../wp-content/uploads/2022/11/blogpost_learnpython_1-2-1024x683.jpg 1024w, ../../wp-content/uploads/2022/11/blogpost_learnpython_1-2-768x512.jpg 768w" sizes="(max-width: 1500px) 100vw, 1500px" /> <h2 class="blog-relatedBlogPostsFooter_item__content">
+How Long Does It Take To Learn Python? What You... </h2>
+</a>
+</article>
+</li>
+<li class="col-lg-4 col-md-6">
+<article class="blog-relatedBlogPostsFooter_item">
+<a class="blog-relatedBlogPostsFooter_item-link" href="../what-is-ruby-used-for/index.html" rel="bookmark norewrite" title="What Is Ruby Used For? Learn About Ruby Programming Language Uses">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/What-is-Ruby-Used-For_-Learn-More-About-This-Popular-Programming-Language.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="../../wp-content/uploads/2022/11/What-is-Ruby-Used-For_-Learn-More-About-This-Popular-Programming-Language.png 760w, ../../wp-content/uploads/2022/11/What-is-Ruby-Used-For_-Learn-More-About-This-Popular-Programming-Language-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> <h2 class="blog-relatedBlogPostsFooter_item__content">
+What Is Ruby Used For? Learn About Ruby Program... </h2>
+</a>
+</article>
+</li>
+<li class="col-lg-4 col-md-6">
+<article class="blog-relatedBlogPostsFooter_item">
+<a class="blog-relatedBlogPostsFooter_item-link" href="../what-is-reactjs/index.html" rel="bookmark norewrite" title="What is ReactJS?">
+<img width="1200" height="800" src="../../wp-content/uploads/2022/11/What_is_ReactJS_1-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="../../wp-content/uploads/2022/11/What_is_ReactJS_1-2.jpg 1200w, ../../wp-content/uploads/2022/11/What_is_ReactJS_1-2-300x200.jpg 300w, ../../wp-content/uploads/2022/11/What_is_ReactJS_1-2-1024x683.jpg 1024w, ../../wp-content/uploads/2022/11/What_is_ReactJS_1-2-768x512.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" /> <h2 class="blog-relatedBlogPostsFooter_item__content">
+What is ReactJS? </h2>
+</a>
+</article>
+</li>
+</ul>
+</div>
+
+
+
+
+</article> </div>
+<div class="col-lg-4 no-gutters">
+<aside id="sidebar" class="sidebar sidebar__single" role="complementary">
+<ul class="blog-sidebarBlogPosts">
+<li>
+<div class='yarpp yarpp-related yarpp-related-website yarpp-template-yarpp-template-blogPosts-sidebar-single'>
+<div class="blog-relatedBlogPosts">
+<h3 class="blog-relatedBlogPosts_title">
+<span>Related blogposts</span>
+<a href="../../blog">See all</a>
+</h3>
+<ul class="blog-relatedBlogPosts_list">
+<li>
+<a class="blog-relatedBlogPosts_item" href="../46/how-long-does-it-take-to-learn-python-what-you-need-to-know/index.html" rel="bookmark norewrite" title="How Long Does It Take To Learn Python? What You Need to Know">
+<p class="blog-relatedBlogPosts_itemTitle">How Long Does It Take To Learn Python? What You... </p></p>
+<p><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 4</span> <span class="rt-label rt-postfix">min read</span></span></p>
+</a>
+</li>
+<li>
+<a class="blog-relatedBlogPosts_item" href="../what-is-ruby-used-for/index.html" rel="bookmark norewrite" title="What Is Ruby Used For? Learn About Ruby Programming Language Uses">
+<p class="blog-relatedBlogPosts_itemTitle">What Is Ruby Used For? Learn About Ruby Program... </p></p>
+<p><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 5</span> <span class="rt-label rt-postfix">min read</span></span></p>
+</a>
+</li>
+<li>
+<a class="blog-relatedBlogPosts_item" href="../what-is-reactjs/index.html" rel="bookmark norewrite" title="What is ReactJS?">
+<p class="blog-relatedBlogPosts_itemTitle">What is ReactJS? </p></p>
+<p><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 4</span> <span class="rt-label rt-postfix">min read</span></span></p>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li id="block-7" class="widget-container widget_block"><div class="lazyblock-nav-banner-blog-post-1O61UQ wp-block-lazyblock-nav-banner-blog-post"><div class="blog-sidebarBanner">
+<h3 class="blog-sidebarBlogPosts_title">Learn on the go!</h3>
+<a href="https://www.sololearn.com/mobile" class="blog-sidebarBanner_image" target="_blank"><img decoding="async" src="https://sololearnblob.blob.core.windows.net/blog/2023/01/Group-26950.png" alt="" /></a>
+</div></div></li> </ul>
+</aside>
+</div>
+</div>
+</div>
+</main>
+<footer class="wp-sl-footer">
+<div class="wp-sl-footer__social-links">
+<div class="wp-sl-footer__social-links__container">
+<div class="wp-sl-footer__social-links__links-block">
+<a class="wp-sl-footer__social-links__item" href="https://www.linkedin.com/company/sololearn-inc-/" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:#0077b5"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoLinkedin.svg"></div><span class="wp-sl-footer__social-links__text">Follow us on Linkedin</span></a><a class="wp-sl-footer__social-links__item" href="https://www.facebook.com/SoloLearn" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:#4267b2"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoFacebook.svg"></div><span class="wp-sl-footer__social-links__text">Check out our facebook</span></a><a class="wp-sl-footer__social-links__item" href="https://twitter.com/SoloLearn" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:#1da1f2"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoTwitter.svg"></div><span class="wp-sl-footer__social-links__text">See what we tweet about</span></a><a class="wp-sl-footer__social-links__item" href="https://www.instagram.com/sololearn/" target="_blank"><div class="wp-sl-footer__social-links__icon"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoInstagram.svg"></div><span class="wp-sl-footer__social-links__text">Join our instagram</span></a><a class="wp-sl-footer__social-links__item" href="https://www.youtube.com/channel/UCXiOyrjY_jqNCFoQTotILTw" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:red"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoYoutube.svg"></div><span class="wp-sl-footer__social-links__text">Watch our Youtube</span></a> </div>
+<div class="wp-sl-footer__social-links__app-block">
+<a class="wp-sl-footer__social-links__item--app" id="logoAppStore" target="_blank"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoAppStore.svg"></a><a class="wp-sl-footer__social-links__item--app" id="logoGooglePlay" target="_blank"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoGooglePlay.svg"></a> </div>
+</div>
+</div>
+<div class="wp-sl-footer-links">
+<div class="wp-sl-footer-links__container">
+<div class="wp-sl-footer-links__links-block">
+<a class="wp-sl-footer-links__item" href="../../home">Home</a><a class="wp-sl-footer-links__item" href="../../leaderboard">Top Learners</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/payments/pro">Pro</a><a class="wp-sl-footer-links__item" href="../../FAQ">FAQ</a><a class="wp-sl-footer-links__item" href="../../contact">Contact</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/bug-bounty">Bug Bounty Program</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/career">Careers</a><a class="wp-sl-footer-links__item" href="../../terms-of-use">Terms of Use</a><a class="wp-sl-footer-links__item" href="../../privacy-policy">Privacy Policy</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/mobile">Sololearn mobile</a><a class="wp-sl-footer-links__item" href="../../codes">Code Bits</a> </div>
+<div class="wp-sl-footer-links__copyright">
+Made with
+<div class="wp-sl-footer-links__heart-icon">
+<img src="../../wp-content/themes/sololearn/assets/icons/heart.svg" alt="heart_icon" class='style-svg'>
+</div>
+by &nbsp;
+<span class="wp-sl-footer-links__marked-text">Sololearn </span>&nbsp;| ©2023 </div>
+</div>
+</div>
+</footer>
+<script src="../../wp-content/themes/sololearn/assets/scripts/common.js" type="291c2471b377f694109b7c9f-text/javascript"></script>
+<script src="../../wp-content/themes/sololearn/assets/scripts/profile.js" type="291c2471b377f694109b7c9f-text/javascript"></script>
+<script type="291c2471b377f694109b7c9f-text/javascript">
+        jQuery(document).ready(function($) {
+
+            var deviceAgent = navigator.userAgent.toLowerCase();
+            var html = $("html");
+            if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
+
+                html.addClass("ios");
+                html.addClass("mobile");
+            }
+            if (deviceAgent.match(/(Android)/)) {
+                html.addClass("android");
+                html.addClass("mobile");
+            }
+            if (navigator.userAgent.search("MSIE") >= 0) {
+                html.addClass("ie");
+            } else if (navigator.userAgent.search("Chrome") >= 0) {
+                html.addClass("chrome");
+            } else if (navigator.userAgent.search("Firefox") >= 0) {
+                html.addClass("firefox");
+            } else if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+                html.addClass("safari");
+            } else if (navigator.userAgent.search("Opera") >= 0) {
+                html.addClass("opera");
+            }
+        });
+    </script>
+<style id='wp-block-paragraph-inline-css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}p.has-background{padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}
+</style>
+<style id='wp-block-heading-inline-css'>
+h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}
+</style>
+<style id='wp-block-image-inline-css'>
+.wp-block-image img{height:auto;max-width:100%;vertical-align:bottom}.wp-block-image img,.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image figcaption{margin-bottom:1em;margin-top:.5em}.wp-block-image .is-style-rounded img,.wp-block-image.is-style-circle-mask img,.wp-block-image.is-style-rounded img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}.wp-block-image :where(.has-border-color){border-style:solid}.wp-block-image :where([style*=border-top-color]){border-top-style:solid}.wp-block-image :where([style*=border-right-color]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-color]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-color]){border-left-style:solid}.wp-block-image :where([style*=border-width]){border-style:solid}.wp-block-image :where([style*=border-top-width]){border-top-style:solid}.wp-block-image :where([style*=border-right-width]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-width]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-width]){border-left-style:solid}.wp-block-image figure{margin:0}
+</style>
+<style id='wp-block-list-inline-css'>
+ol,ul{box-sizing:border-box}ol.has-background,ul.has-background{padding:1.25em 2.375em}
+</style>
+<script src='https://www.sololearn.com/wp-content/plugins/enlighter/cache/enlighterjs.min.js?ver=5ldjK8WLazRmDr7' id='enlighterjs-js' type="291c2471b377f694109b7c9f-text/javascript"></script>
+<script id='enlighterjs-js-after' type="291c2471b377f694109b7c9f-text/javascript">
+!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":4,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"dracula","language":"generic","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
+</script>
+<script src="https://www.sololearn.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="291c2471b377f694109b7c9f-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7d8f49874b261b07","version":"2023.4.0","b":1,"token":"3cd70a6c7768490094eebf19abc1a33f","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

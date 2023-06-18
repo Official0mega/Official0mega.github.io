@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#" itemscope itemtype="https://schema.org/Article">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+
+
+<title>Python For Loop - Sololearn</title>
+<meta name="description" content="An in-depth discussion of for loops in Python and how to use them to do things like iterate over a list, do conditionals, and quite a lot more." />
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Python For Loop - Sololearn" />
+<meta property="og:description" content="An in-depth discussion of for loops in Python and how to use them to do things like iterate over a list, do conditionals, and quite a lot more." />
+<meta property="og:url" content="https://www.sololearn.com/blog/python-for-loop/" />
+<meta property="og:site_name" content="Sololearn Blog" />
+<meta property="article:tag" content="loops" />
+<meta property="article:tag" content="python" />
+<meta property="article:tag" content="python loop" />
+<meta property="article:section" content="Coding 101" />
+<meta property="og:updated_time" content="2023-03-04T02:53:11+00:00" />
+<meta property="og:image" content="https://www.sololearn.com/wp-content/uploads/2022/11/Python-for-loop_-what-is-it-and-what-is-it-for_-760x300.png" />
+<meta property="og:image:secure_url" content="https://www.sololearn.com/wp-content/uploads/2022/11/Python-for-loop_-what-is-it-and-what-is-it-for_-760x300.png" />
+<meta property="og:image:width" content="760" />
+<meta property="og:image:height" content="300" />
+<meta property="og:image:alt" content="Python For Loop" />
+<meta property="og:image:type" content="image/png" />
+<meta property="article:published_time" content="2022-11-16T20:56:59+00:00" />
+<meta property="article:modified_time" content="2023-03-04T02:53:11+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Python For Loop - Sololearn" />
+<meta name="twitter:description" content="An in-depth discussion of for loops in Python and how to use them to do things like iterate over a list, do conditionals, and quite a lot more." />
+<meta name="twitter:image" content="https://www.sololearn.com/wp-content/uploads/2022/11/Python-for-loop_-what-is-it-and-what-is-it-for_-760x300.png" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Sololearn Growth" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="14 minutes" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.sololearn.com/blog/#organization","name":"Sololearn Blog","logo":{"@type":"ImageObject","@id":"https://www.sololearn.com/blog/#logo","url":"https://blog-dev.sololearn.com/wp-content/uploads/2022/11/sololearn_color_dark-2.png","contentUrl":"https://blog-dev.sololearn.com/wp-content/uploads/2022/11/sololearn_color_dark-2.png","caption":"Sololearn Blog","inLanguage":"en-US","width":"1112","height":"213"}},{"@type":"WebSite","@id":"https://www.sololearn.com/blog/#website","url":"https://www.sololearn.com/blog","name":"Sololearn Blog","publisher":{"@id":"https://www.sololearn.com/blog/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.sololearn.com/wp-content/uploads/2022/11/Python-for-loop_-what-is-it-and-what-is-it-for_.png","url":"https://www.sololearn.com/wp-content/uploads/2022/11/Python-for-loop_-what-is-it-and-what-is-it-for_.png","width":"760","height":"900","inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://www.sololearn.com/blog/python-for-loop/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://www.sololearn.com/blog","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://www.sololearn.com/blog/category/coding-101/","name":"Coding 101"}},{"@type":"ListItem","position":"3","item":{"@id":"https://www.sololearn.com/blog/python-for-loop/","name":"Python For Loop"}}]},{"@type":"WebPage","@id":"https://www.sololearn.com/blog/python-for-loop/#webpage","url":"https://www.sololearn.com/blog/python-for-loop/","name":"Python For Loop - Sololearn","datePublished":"2022-11-16T20:56:59+00:00","dateModified":"2023-03-04T02:53:11+00:00","isPartOf":{"@id":"https://www.sololearn.com/blog/#website"},"primaryImageOfPage":{"@id":"https://www.sololearn.com/wp-content/uploads/2022/11/Python-for-loop_-what-is-it-and-what-is-it-for_.png"},"inLanguage":"en-US","breadcrumb":{"@id":"https://www.sololearn.com/blog/python-for-loop/#breadcrumb"}},{"@type":"Person","@id":"https://www.sololearn.com/blog/author/sololearn/","name":"Sololearn Growth","url":"https://www.sololearn.com/blog/author/sololearn/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/c7e8224ac7ad8328638086ea96255fb7?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/c7e8224ac7ad8328638086ea96255fb7?s=96&amp;d=mm&amp;r=g","caption":"Sololearn Growth","inLanguage":"en-US"},"worksFor":{"@id":"https://www.sololearn.com/blog/#organization"}},{"@type":"BlogPosting","headline":"Python For Loop - Sololearn","datePublished":"2022-11-16T20:56:59+00:00","dateModified":"2023-03-04T02:53:11+00:00","articleSection":"Coding 101","author":{"@id":"https://www.sololearn.com/blog/author/sololearn/"},"publisher":{"@id":"https://www.sololearn.com/blog/#organization"},"description":"An in-depth discussion of for loops in Python and how to use them to do things like iterate over a list, do conditionals, and quite a lot more.","name":"Python For Loop - Sololearn","@id":"https://www.sololearn.com/blog/python-for-loop/#richSnippet","isPartOf":{"@id":"https://www.sololearn.com/blog/python-for-loop/#webpage"},"image":{"@id":"https://www.sololearn.com/wp-content/uploads/2022/11/Python-for-loop_-what-is-it-and-what-is-it-for_.png"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://www.sololearn.com/blog/python-for-loop/#webpage"}}]}</script>
+
+<link rel="alternate" type="application/rss+xml" title="Sololearn &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Sololearn &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Sololearn &raquo; Python For Loop Comments Feed" href="feed/index.html" />
+<script type="d4ef9a7d6a43ec31da1c2f46-text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.sololearn.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}figure{margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://www.sololearn.com/wp-includes/css/classic-themes.min.css?ver=6.2.2' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('index.html');--wp--preset--duotone--grayscale: url('index.html');--wp--preset--duotone--purple-yellow: url('index.html');--wp--preset--duotone--blue-red: url('index.html');--wp--preset--duotone--midnight: url('index.html');--wp--preset--duotone--magenta-yellow: url('index.html');--wp--preset--duotone--purple-green: url('index.html');--wp--preset--duotone--blue-orange: url('index.html');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='sololearn-style-css' href='https://www.sololearn.com/wp-content/themes/sololearn/style.css?ver=6.2.2' media='all' />
+<link rel='stylesheet' id='enlighterjs-css' href='https://www.sololearn.com/wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=5ldjK8WLazRmDr7' media='all' />
+<script src='https://www.sololearn.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js' type="d4ef9a7d6a43ec31da1c2f46-text/javascript"></script>
+<script src='https://www.sololearn.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js' type="d4ef9a7d6a43ec31da1c2f46-text/javascript"></script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" type="application/json" href="../wp-json/wp/v2/posts/1653" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.sololearn.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.2.2" />
+<link rel='shortlink' href='https://www.sololearn.com/blog/?p=1653' />
+<link rel="alternate" type="application/json+oembed" href="https://www.sololearn.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sololearn.com%2Fblog%2Fpython-for-loop%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.sololearn.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sololearn.com%2Fblog%2Fpython-for-loop%2F&#038;format=xml" />
+
+
+<script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["coding-101"],"pageAttributes":["loops","python","python-loop"],"pagePostAuthor":"Sololearn Growth"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7MQKF7');
+</script>
+
+<link rel="pingback" href="https://www.sololearn.com/xmlrpc.php" />
+<script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js" type="d4ef9a7d6a43ec31da1c2f46-text/javascript"></script>
+</head>
+<body class="post-template-default single single-post postid-1653 single-format-standard wp-embed-responsive">
+<a href="index.html#content" class="skip-link screen-reader-text">Skip to the content</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7MQKF7" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+
+<script type="d4ef9a7d6a43ec31da1c2f46-text/javascript">
+    if(!JSON.parse(window.localStorage.user)?.data?.isPro) {
+        document.querySelector('.wp-navbar__pro-button-wrapper').style.display = 'block';
+    }
+</script>
+<nav class="wp-navbar light">
+<div class="wp-navbar__container">
+<a class="wp-navbar__main-logo wp-navbar__main-logo--desktop" href="../../home">
+<img src="../../wp-content/themes/sololearn/assets/icons/logoAppDesktop.svg" alt="brand_logo-desktop" class='style-svg'>
+</a>
+<a class="wp-navbar__main-logo wp-navbar__main-logo--mobile" href="../../home">
+<img src="../../wp-content/themes/sololearn/assets/icons/logoAppMobile.svg" alt="brand_logo-mobile" class='style-svg'>
+</a>
+<div class="wp-navbar__content" id="navbar_content">
+<div class="wp-navbar__content-wrapper">
+<ul class='wp-navbar__content-list'>
+<li class="wp-navbar__content-list__item"><a href="../../Courses/index.html">Catalog</a></li>
+<li class="wp-navbar__content-list__item"><a href="../../compiler-playground">Online Compiler</a></li>
+<li class="wp-navbar__content-list__item"><a href="../../discuss">Discuss</a></li>
+<li class="wp-navbar__content-list__item"><a href="../../blog">Blog</a></li>
+<li class="wp-navbar__content-list__item"><a href="https://www.sololearn.com/payments/pro">Get Pro</a></li>
+</ul>
+</div>
+<div class="wp-navbar__actions-wrapper">
+<div class="wp-navbar__actions">
+<a href="https://www.sololearn.com/users/login?tr_source=login&amp;tr_source_detail=blog">
+<button type="button" class="sol-button sol-button-secondary sol-button-block sol-button-m" tabindex="0">Log in
+</button>
+</a>
+<a href="https://www.sololearn.com/onboarding/auth/signup?tr_source=register&amp;tr_source_detail=blog">
+<button type="button" class="sol-button sol-button-primary sol-button-block sol-button-m" tabindex="0">Register
+</button>
+</a>
+</div>
+</div>
+</div>
+<div class="wp-navbar__hamburger" id="hamburger_menu">
+Menu
+<div class="wp-navbar__hamburger__button" id="hamburger_menu_btn">
+<span class="arrow first"></span>
+<span class="arrow second"></span>
+<span class="arrow third"></span>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<main id="content" role="main">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="wp-breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Sololearn." href="../../blog" class="home"><span property="name">Sololearn blog</span></a><meta property="position" content="1"></span><span class="wp-breadcrumbs-separator"></span><span property="itemListElement" typeof="ListItem"><span property="name" class="post post-post current-item">Python For Loop</span><meta property="url" content="https://www.sololearn.com/blog/python-for-loop/"><meta property="position" content="2"></span> </div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-8">
+<article id="post-1653" class="post-1653 post type-post status-publish format-standard has-post-thumbnail hentry category-coding-101 tag-loops tag-python tag-python-loop">
+<header>
+<div class="share-container">
+<span>Share:</span>
+<button data-sharer="facebook" data-url="https://www.sololearn.com/blog/python-for-loop/">
+<img src="../../wp-content/themes/sololearn/assets/icons/facebook.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="linkedin" data-url="https://www.sololearn.com/blog/python-for-loop/">
+<img src="../../wp-content/themes/sololearn/assets/icons/linkedin.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="twitter" data-url="https://www.sololearn.com/blog/python-for-loop/">
+<img src="../../wp-content/themes/sololearn/assets/icons/twitter.svg" alt="share-icons" class="style-svg">
+</button>
+</div> <div class="reading-time">
+<img src="../../wp-content/themes/sololearn/assets/icons/timeToRead.svg" alt="time to read" class='style-svg'>
+<span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 11</span> <span class="rt-label rt-postfix">min read</span></span> </div>
+</header>
+<div class="entry-content" itemprop="mainEntityOfPage">
+<a href="../../wp-content/uploads/2022/11/Python-for-loop_-what-is-it-and-what-is-it-for_.png" title="Python for loop_ what is it and what is it for_">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/Python-for-loop_-what-is-it-and-what-is-it-for_.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="../../wp-content/uploads/2022/11/Python-for-loop_-what-is-it-and-what-is-it-for_.png 760w, ../../wp-content/uploads/2022/11/Python-for-loop_-what-is-it-and-what-is-it-for_-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> </a>
+<div class="entry-content__body">
+<h1 class="entry-title" itemprop="headline"> Python For Loop </h1> <meta itemprop="description" content="Many times, we need to repeat certain processes on a specific task. The repetition of these processes is called loops. They are very important in programming to execute tasks effectively. We ask the process to repeat the same operations on different values for a specific task to be solved.. In python, we can make use ... Python For Loop" />
+<p>Many times, we need to repeat certain processes on a specific task. The repetition of these processes is called loops. They are very important in programming to execute tasks effectively.</p>
+<p>We ask the process to repeat the same operations on different values for a specific task to be solved.. In <a href="../python-data-structures/index.html" data-type="post" data-id="1800">python</a>, we can make use of “for” loops when we want to repeat some operations on different values in a program.  A python for loop accesses values from a data sequence (called iterables because they are the elements we work with). This sequence of data can be a string, tuple or list.  </p>
+<h2 class="wp-block-heading">Syntax Of a For Loop</h2>
+<p>We start with the “for” keyword, then a &lt; variable_name&gt; that stores the values accessed by the loop, then the “in” keyword to access the actual data we are getting values from &lt;sequence_data(iterables)&gt; and end the statement with a colon “:”.</p>
+<p>After that, we pass in the “statements” the instructions we want the loop to perform.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for  &lt;variable_name>  in &lt;sequence_data(iterables)> :
+    statements</pre>
+<p><strong>Note:</strong> the indentation is important when writing statements in the code block . If you are making use of some code editors they may indent it automatically otherwise, you click on the “tab” key once from the start of the line.</p>
+<figure class="wp-block-image size-full"><img decoding="async" loading="lazy" width="718" height="672" src="https://blog-dev.sololearn.com/wp-content/uploads/2022/11/flowchart-for-loop-python.png" alt="" class="wp-image-1654" srcset="../../wp-content/uploads/2022/11/flowchart-for-loop-python.png 718w, ../../wp-content/uploads/2022/11/flowchart-for-loop-python-300x281.png 300w" sizes="(max-width: 718px) 100vw, 718px" /></figure>
+<ul>
+<li>The python “for” loop is an iterator that goes through items in a data sequence, it picks an item and checks if that is the last or only item in the sequence.</li>
+<li>If it is not the only item in the data sequence, it repeats the same process till it gets to the last item in the data sequence and exits the loop.</li>
+</ul>
+<p>“For loops” can loop over iterators like lists, tuples, string, range, and even generators. Now that we know the format of the “for” loop, we look at some examples working with three data sequences; strings, lists and tuples.</p>
+<h3 class="wp-block-heading">Example I &#8211; Looping through a string.</h3>
+<ul>
+<li>First, we have the variable that stores the string we want to loop through(iterables)</li>
+<li>Second, we type in the “for” keyword, then assign a variable that will store the accessed values from the string</li>
+<li>Then type the “in” keyword and the name of the variable that stores the string, followed by a colon “:”</li>
+</ul>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">word = "firsttry"
+for char in word:</pre>
+<p>In the above code block; &lt;char&gt; is the name of the variable that stores the assessed value from the loop, while &lt;word&gt; is the name of the variable that we want to loop through. The statement will be anything we pass on the next line, let’s print the variable &lt;char&gt; to see the result.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">word = "firsttry"
+for char in word:
+print(char)
+   
+# result
+# f
+# i
+# r
+# s
+# t
+# t
+# r
+# y</pre>
+<p>In the above code block, we printed &lt;char&gt; and all the values from the strings were printed out. Till all the letters in the string were printed, the loop did not stop. Now, let’s try to add the letter “a” to each of the values from the string.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">word = "firsttry"
+for char in word:
+print(char + "a")
+   
+# result
+# fa
+# ia
+# ra
+# sa
+# ta
+# ta
+# ra
+# ya</pre>
+<p>It ran pretty smooth and added “a” to each values</p>
+<h3 class="wp-block-heading">Example II &#8211; with List</h3>
+<ul>
+<li>First, we have the variable that stores the list we want to loop through(iterables)</li>
+<li>Second, we type in the “for” keyword, then assign a variable that will store the assessed values from the list.</li>
+<li>Then type the “in” keyword and the name of the variable that stores the list, followed by a colon “:”</li>
+</ul>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">fruit_basket = ["orange", "apple", "banana","grapes"]
+for fruits in fruit_basket:
+print(fruits)
+   
+# Result
+# orange
+# apple
+# banana
+# grapes</pre>
+<p>In the above code block; &lt;fruits&gt; is the name of the variable that stores the assessed value from the loop while &lt;fruit_basket&gt; is the name of the variable that we want to loop through. The statement will be anything we pass on the next line, and we can see the results printed.&nbsp;</p>
+<p>Let’s say we want to print a statement that says “i love &lt;fruits&gt;”.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">fruit_basket = ["orange", "apple", "banana","grapes"]
+for fruits in fruit_basket:
+print("I love " + fruits)
+   
+# Result
+# I love orange
+# I love apple
+# I love banana
+# I love grapes</pre>
+<p>In the above code, we can see the phrase “I love” is repeated the number of times the fruits exist in the fruit basket. No fruit was repeated twice.&nbsp;</p>
+<p>Lists containing numbers</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">list_of_numbers = [1, 4, 6, 8, 9]
+for numbers in list_of_numbers:
+print(numbers)
+   
+# Result
+# 1
+# 4
+# 6
+# 8
+# 9</pre>
+<p>Let’s say we want each number to be multiplied by 2.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">list_of_numbers = [1, 4, 6, 8, 9]
+for numbers in list_of_numbers:
+print(2 * numbers)
+   
+# Result
+# 2
+# 8
+# 12
+# 16
+# 18</pre>
+<p>We see the results have been multiplied by 2.</p>
+<h3 class="wp-block-heading">Example III &#8211; with tuples</h3>
+<ul>
+<li>First, we have the variable that stores the tuple we want to loop through(iterables)</li>
+<li>Second, we type in the “for” keyword, then assign a variable that will store the assessed values from the tuple.</li>
+<li>Then type the “in” keyword and the name of the variable that stores the tuple, followed by a colon “:”</li>
+</ul>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">color_box = ("Red", "Yellow", "Blue", "Purple")
+for colors in color_box:
+print(colors)
+   
+# Result
+# Red
+# Yellow
+# Blue
+# Purple</pre>
+<p>In the above code block; &lt;colors&gt; is the name of the variable that stores the assessed value from the loop while &lt;color_box&gt; is the name of the variable that we want to loop through. The statement will be anything we pass on the next line, and we can see the results printed.&nbsp;</p>
+<p>Let’s say we want to print a statement that says “&lt;colors&gt; is very pretty”.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">color_box = ("Red", "Yellow", "Blue", "Purple")
+for colors in color_box:
+print(colors + " is very pretty ")
+   
+# Result
+# Red is very pretty
+# Yellow is very pretty
+# Blue is very pretty
+# Purple is very pretty</pre>
+<p>We can see in the above examples that all items are accessed in the loops and you can pass in any statement to modify its results.</p>
+<h2 class="wp-block-heading"><strong>The range() function</strong></h2>
+<p>The range() function is another method of looping through items in a data sequence. It returns a range of numbers using a starting value(optional)&nbsp; and a stopping value.&nbsp; A step value is optional, but the default is 1.&nbsp;</p>
+<p><strong>Format</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">&lt;range(stop)>
+&lt;range(start, stop)>
+&lt;range(start, stop, step)></pre>
+<ul>
+<li>start: specifies the number the range starts from.</li>
+<li>stop: specifies the end of the range. This value would not be included in the range.</li>
+<li>step: this value specifies the increment in the numbers.</li>
+</ul>
+<p>Example:</p>
+<p>We are to find a range of 5 numbers; we can do this in two ways;</p>
+<p>The first way is giving a start value of 0 and a stop value of 5. It becomes;</p>
+<p>range(0,5), the numbers are; 0, 1, 2, 3, 4.</p>
+<p>It stops at 4 because, in the range, the last number is not included, but when you count the numbers, they are 5 in total.&nbsp;&nbsp;</p>
+<p>The second way is passing in 5 in the range, the start value is assumed to be 0. It becomes;</p>
+<p>range(5), and the numbers are: 0, 1, 2, 3, 4</p>
+<p>If we are to increase each number by 2, that is the step value. It becomes;</p>
+<p>range(0,5,2), the numbers are 0, 2,4&nbsp;</p>
+<h3 class="wp-block-heading"><strong>Implementing range in for loop</strong></h3>
+<p>“For” loop and the range() function goes hand in hand. The process needs to be repeated to get the numbers from a specific range.</p>
+<h4 class="wp-block-heading"><strong>Syntax</strong></h4>
+<pre class="EnlighterJSRAW" data-enlighter-language="raw" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for &lt;variable_name> in range(stop):
+statement
+
+Or
+
+for &lt;variable_name> in range(start,stop):
+statement
+
+Or
+
+for &lt;variable_name> in range(start, stop, step):
+statement</pre>
+<h4 class="wp-block-heading">Examples</h4>
+<p>Let’s find the range of 5 numbers.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for num in range(5):
+    print(num)
+   
+# Result
+# 0
+# 1
+# 2
+# 3
+# 4</pre>
+<p>We can see that the numbers started from 0 and ended at 4.</p>
+<p>Let’s add a starting range value&nbsp;</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for num in range(1, 10):
+    print(num)
+   
+# Result
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9</pre>
+<p>We see in the above code, the start value is 1, the stop value is 10 but the last number is 9. The range of the values is 1 &#8211; 9</p>
+<p>Let’s add a step value</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for num in range(1, 10, 2):
+    print(num)
+   
+
+# Result# 1# 3# 5# 7# 9</pre>
+<p>In the above code block, the step value is 2, the numbers printed are increased by 2 every time.</p>
+<h2 class="wp-block-heading"><strong>Iterating By Sequence Index</strong></h2>
+<p>Apart from looping through lists and tuples, we can access elements using the indexing from the range() function.</p>
+<p>Indexing = variable_name[index_number]</p>
+<p>Example</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">fruit_basket = ["orange", "apple", "banana", "grapes"]
+print(fruit_basket[0])  # orange
+print(fruit_basket[1])  # apple
+print(fruit_basket[2])  # banana
+print(fruit_basket[3])  # grapes
+
+color_box = ("Red", "Yellow", "Blue", "Purple")
+print(color_box[0])  # Red
+print(color_box[1])  # Yellow
+print(color_box[2])  # Blue
+print(color_box[3])  # Purple</pre>
+<p>Instead of entering the numbers manually, we can set a range. Lists and tuples have an element at 0, which will be our start value, and our stop value will be the length of our list.</p>
+<p>Format</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for variable_name in range(0, len(list)):</pre>
+<p>Or</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for variable_name in range(len(list)):
+
+# recall that start value by default is 0 using this format</pre>
+<p>Let’s print the length of the list to know the stop value</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">fruit_basket = ["orange", "apple", "banana","grapes"]
+print(len(fruit_basket)) # 4</pre>
+<p>The output is 4, therefore, our stop value is 4. When working with range, the last number is not added. The loop starts at 0 and ends at 3.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">fruit_basket = ["orange", "apple", "banana", "grapes"]
+count_of_fruits = len(fruit_basket)
+for fruit_index in range(count_of_fruits):
+    print(fruit_index)
+
+# Result
+# 0
+# 1
+# 2
+# 3</pre>
+<p>In the above code block, the numbers are printed out. To access the elements, we make use of indexing &lt;actual_variable_container[variable_name_storing_numbers]&gt;. In this code sample, the format is;</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">&lt;fruit_basket[fruit_index]></pre>
+<p>We have;</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">fruit_basket = ["orange", "apple", "banana", "grapes"]
+count_of_fruits = len(fruit_basket)
+for fruit_index in range(count_of_fruits):
+    print(fruit_basket[fruit_index])
+
+# Result
+# orange
+# apple
+# banana
+# grapes</pre>
+<p>The same process applies to tuples,</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">color_box = ("Red", "Yellow", "Blue", "Purple")
+count_of_colors = len(color_box)
+for color_index in range(count_of_colors):
+    print(color_box[color_index])
+# Result
+# Red
+# Yellow
+# Blue
+# Purple</pre>
+<p>I can also&nbsp; set a start value for the list or tuple.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">color_box = ("Red", "Yellow", "Blue", "Purple")
+count_of_colors = len(color_box)
+for color_index in range(1, count_of_colors):
+    print(color_box[color_index])
+# Result
+# Yellow
+# Blue
+# Purple</pre>
+<p>The start value starts from index 1 and ends at index 3.</p>
+<h2 class="wp-block-heading"><strong>Using conditional statements in For loop</strong></h2>
+<p>In for loops, we can have conditional statements in the code block.</p>
+<p>Format</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for  &lt;variable_name>  in &lt;sequence_data(iterables)> :    conditional statement:        print()</pre>
+<p>In the format above, we see that the conditional statement is indented under the for loop and ended with a colon “:” and the print statement is indented under the the conditional statement.&nbsp;</p>
+<p>The print has to be inside the code block of the conditional statement because if the condition is true , it returns the output, if it is not it does not return any output.</p>
+<p>What happens if you put the print() statement outside the indent of the conditional statement?</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for  &lt;variable_name>  in &lt;sequence_data(iterables)> :
+    conditional statement:
+print()</pre>
+<p>Or&nbsp;</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for  &lt;variable_name>  in &lt;sequence_data(iterables)> :
+    conditional statement:
+    print()</pre>
+<p>If the print() statement is put on the same indent as the for loop or same indent as the conditional statement, it throws an error saying there is an issue with the indentation.</p>
+<p>Examples</p>
+<p>Exercise I: in a list containing numbers print the numbers less than 5.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">list_of_numbers = [1, 4, 6, 8, 9]
+for numbers in list_of_numbers:
+    if numbers > 5:
+        print(numbers)
+
+# Result
+# 6
+# 8
+# 9</pre>
+<p>In the above code block, we see that the condition is to check if any number is greater than 5, after that we indented the print statement under the conditional statement “if” and the output is returned when the condition is true.</p>
+<p>If the print statement is brought outside the if statement( on the same indent as the if statement) or on the same indent as the for keyword, it throws an error.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">list_of_numbers = [1, 4, 6, 8, 9]
+for numbers in list_of_numbers:
+    if numbers > 5:
+    print(numbers)
+
+# Result
+#     print(numbers)
+#     ^
+# IndentationError: expected an indented block</pre>
+<p>Or&nbsp;</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">list_of_numbers = [1, 4, 6, 8, 9]
+for numbers in list_of_numbers:
+    if numbers > 5:
+print(numbers)
+
+# Result
+#     print(numbers)
+#     ^
+# IndentationError: expected an indented block</pre>
+<p>II : print out fruits that have the letter “e” in their names.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">fruit_basket = ["orange", "apple", "banana","grapes"]
+for fruits in fruit_basket:
+    if "e" in fruits:
+        print(fruits)
+
+# Result
+# orange
+# apple
+# grapes</pre>
+<p>In the fruit basket, we see 4 fruits but in the result, we see 3 fruits. The conditional statement checks if the letter “e” is in each name of the fruit. “Banana” is not printed because there is no letter “e” in the word.</p>
+<p>III: print out only numbers lesser&nbsp; than 6 in the range of 20 numbers.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for numbers in range(1,20):
+    if numbers &lt; 6:
+        print(numbers)
+# Result
+# 1
+# 2
+# 3
+# 4
+# 5</pre>
+<p>We see in the result above that the numbers returned are less than 6.</p>
+<h2 class="wp-block-heading"><strong>Break Statement</strong></h2>
+<p>Loops are repetitive and the process continues. When a break statement is introduced, the loop ends and the execution stops.</p>
+<p>Format</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for  &lt;variable_name>  in &lt;sequence_data(iterables)> :
+    conditional statement:
+    break
+    print()</pre>
+<p>The “break” statement is indented under the conditional statement and the print statement is on the same indent as the conditional statement. The “break” tells the loop to end the operation and the result printed are&nbsp; all the values before the break statement is used.</p>
+<p>Examples</p>
+<p>I&nbsp;</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for numbers in range(1,20):
+    if numbers == 6:
+        break
+    print(numbers)
+
+# Result
+# 1
+# 2
+# 3
+# 4
+# 5</pre>
+<p>In the above code block, the condition says when the variable &lt;numbers&gt; is equal “==” to “6”, end the loop “break” and the remaining numbers are printed. The double equals to sign “==” is used to compare values on the lefthand side and righthand side.&nbsp; The result shows 1 to 5, those numbers are not equal to 6 that is why they are printed.</p>
+<p>II&nbsp;</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">color_box = ("Red", "Yellow", "Blue", "Purple")
+for color in color_box:
+    if color == "Blue":
+        break
+    print(color)
+   
+# Result
+# Red
+# Yellow</pre>
+<p>In the above code block, the condition says when the variable &lt;color&gt; is equals to “Blue” at the end of&nbsp; the loop, the colors before “Blue” are printed.</p>
+<h2 class="wp-block-heading"><strong>Continue statement</strong></h2>
+<p>When the “Continue” statement is used in the for loop,&nbsp; the loop skips that iteration if the statement is true. The continue statement is placed after the conditional statement. The results printed are values after the conditional statement.</p>
+<p>Format</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for  &lt;variable_name>  in &lt;sequence_data(iterables)> :
+conditional statement:
+      continue
+print()</pre>
+<p>Example</p>
+<p>I</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for numbers in range(0,20):
+    if numbers % 3 == 0:
+        continue
+    print(numbers)
+
+# Result
+# 1
+# 2
+# 4
+# 5
+# 7
+# 8
+# 10
+# 11
+# 13
+# 14
+# 16
+# 17
+# 19</pre>
+<p>In the above code block, the condition statement says when the variable &lt;numbers&gt; is divided by “3” and the remainder is 0 , the continue statement follows. Every time a number is divided by 3 and the remainder is 0, the number is skipped to the next.&nbsp;</p>
+<p>II</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">fruit_basket = ["orange", "apple", "banana","grapes"]
+for fruits in fruit_basket:
+    if "an" in fruits:
+        continue
+    print(fruits)</pre>
+<p>We can see that any fruit that has “an” in its spelling is skipped and the rest is printed.</p>
+<p><strong>Else in For Loop</strong></p>
+<p>e “else” statement es the exception in the loop. When the condition passed in the loop is false, the “else” statements handle it.</p>
+<p><br>Format</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for  &lt;variable_name>  in &lt;sequence_data(iterables)> :
+    conditional statement:
+        print()
+    else:
+        print()</pre>
+<p>Example</p>
+<p>I</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for numbers in range(1,10):
+    if numbers % 3 == 0:
+        print(numbers)
+    else:
+        print("Not divisible by 3")
+       
+# Result
+# Not divisible by 3
+# Not divisible by 3
+# 3
+# Not divisible by 3
+# Not divisible by 3
+# 6
+# Not divisible by 3
+# Not divisible by 3
+# 9</pre>
+<p>In the code block above, the else statement tackles the result of the condition when it is false. Let’s take the value “1”; when divided by 3, it does not give a reminder of 0; therefore the condition is false and the else statement is checked. For values that are not divisible by 3, print “Not divisible by 3” instead of the number. That is why the numbers not divisible by 3 have the phrase printed in the console.</p>
+<p>II</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">fruit_basket = ["orange", "apple", "banana","grapes"]
+for fruits in fruit_basket:
+    if "an" in fruits:
+        print(fruits)
+    else:
+        print("This is a fruit")
+       
+# Result
+# orange
+# This is a fruit
+# banana
+# This is a fruit</pre>
+<p>In the code block, the condition says if the fruits have the letter “an” in their spelling they should be printed; if not(for the else statement), the phrase “This is a fruit” is printed instead.</p>
+<h2 class="wp-block-heading"><strong>Nested Loops</strong></h2>
+<p>A Nested loop consists of another “for” loop to access elements in a data sequence.&nbsp;</p>
+<p>Format&nbsp;</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">for &lt;variable_name> in &lt;sequence_data(iterables)>:
+for &lt;new_variable_name> in &lt;variable_name>:
+statement</pre>
+<p>Example</p>
+<p>Result using one “for” loop.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">fruit_basket = ["orange", "apple"]
+for fruits in fruit_basket:
+    print("Fruit - " + fruits)
+   
+# Result
+# Fruit - orange
+# Fruit - apple</pre>
+<p>Nested loop</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">fruit_basket = ["orange", "apple"]
+for fruits in fruit_basket:
+    for letters in fruits:
+        print("Letter - " + letters)
+# Result
+# Letter - o
+# Letter - r
+# Letter - a
+# Letter - n
+# Letter - g
+# Letter - e
+# Letter - a
+# Letter - p
+# Letter - p
+# Letter - l
+# Letter - e</pre>
+<p>In the code block, we see that the first time we looped through the items in the basket, the result was the fruit names. Now we loop through each fruit name with a new variable &lt;letters&gt; to get the new result.</p>
+<p><strong>Conclusion</strong></p>
+<p>Loops make the execution of tasks simpler and faster. You can play around with it to get familiar with it.&nbsp; Remember to practice to master the use of loops. To learn more about python for loops, check <a href="https://www.sololearn.com/learn/python/introduction">here</a>.</p>
+</div>
+</div>
+<div class="share-container">
+<span>Share:</span>
+<button data-sharer="facebook" data-url="https://www.sololearn.com/blog/python-for-loop/">
+<img src="../../wp-content/themes/sololearn/assets/icons/facebook.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="linkedin" data-url="https://www.sololearn.com/blog/python-for-loop/">
+<img src="../../wp-content/themes/sololearn/assets/icons/linkedin.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="twitter" data-url="https://www.sololearn.com/blog/python-for-loop/">
+<img src="../../wp-content/themes/sololearn/assets/icons/twitter.svg" alt="share-icons" class="style-svg">
+</button>
+</div>
+<div class='yarpp yarpp-related yarpp-related-website yarpp-template-yarpp-template-blogPosts-footer'>
+<div class="blog-relatedBlogPostsFooter">
+<h3 class="blog-sidebarBlogPosts_title">Related blogposts</h3>
+<ul class="row blog-relatedBlogPostsFooter_list">
+<li class="col-lg-4 col-md-6">
+<article class="blog-relatedBlogPostsFooter_item">
+<a class="blog-relatedBlogPostsFooter_item-link" href="../what-is-python-used-for/index.html" rel="bookmark norewrite" title="What is Python Used For?">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/How-Python-is-Used-For.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="../../wp-content/uploads/2022/11/How-Python-is-Used-For.png 760w, ../../wp-content/uploads/2022/11/How-Python-is-Used-For-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> <h2 class="blog-relatedBlogPostsFooter_item__content">
+What is Python Used For? </h2>
+</a>
+</article>
+</li>
+<li class="col-lg-4 col-md-6">
+<article class="blog-relatedBlogPostsFooter_item">
+<a class="blog-relatedBlogPostsFooter_item-link" href="../python-data-structures/index.html" rel="bookmark norewrite" title="Ultimate Guide to Python Data Structures">
+<img width="760" height="900" src="../../wp-content/uploads/2022/12/Ultimate-Guide-to-Python-Data-Structures.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="../../wp-content/uploads/2022/12/Ultimate-Guide-to-Python-Data-Structures.png 760w, ../../wp-content/uploads/2022/12/Ultimate-Guide-to-Python-Data-Structures-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> <h2 class="blog-relatedBlogPostsFooter_item__content">
+ Ultimate Guide to Python Data Structures </h2>
+</a>
+</article>
+</li>
+<li class="col-lg-4 col-md-6">
+<article class="blog-relatedBlogPostsFooter_item">
+<a class="blog-relatedBlogPostsFooter_item-link" href="../python-dictionaries/index.html" rel="bookmark norewrite" title="Python Dictionaries">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/Python-dictionaries.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="../../wp-content/uploads/2022/11/Python-dictionaries.png 760w, ../../wp-content/uploads/2022/11/Python-dictionaries-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> <h2 class="blog-relatedBlogPostsFooter_item__content">
+Python Dictionaries </h2>
+</a>
+</article>
+</li>
+</ul>
+</div>
+
+
+
+
+</article> </div>
+<div class="col-lg-4 no-gutters">
+<aside id="sidebar" class="sidebar sidebar__single" role="complementary">
+<ul class="blog-sidebarBlogPosts">
+<li>
+<div class='yarpp yarpp-related yarpp-related-website yarpp-template-yarpp-template-blogPosts-sidebar-single'>
+<div class="blog-relatedBlogPosts">
+<h3 class="blog-relatedBlogPosts_title">
+<span>Related blogposts</span>
+<a href="../../blog">See all</a>
+</h3>
+<ul class="blog-relatedBlogPosts_list">
+<li>
+<a class="blog-relatedBlogPosts_item" href="../what-is-python-used-for/index.html" rel="bookmark norewrite" title="What is Python Used For?">
+<p class="blog-relatedBlogPosts_itemTitle">What is Python Used For? </p></p>
+<p><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 4</span> <span class="rt-label rt-postfix">min read</span></span></p>
+</a>
+</li>
+<li>
+<a class="blog-relatedBlogPosts_item" href="../python-data-structures/index.html" rel="bookmark norewrite" title="Ultimate Guide to Python Data Structures">
+<p class="blog-relatedBlogPosts_itemTitle">Ultimate Guide to Python Data Structures </p></p>
+<p><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 6</span> <span class="rt-label rt-postfix">min read</span></span></p>
+</a>
+</li>
+<li>
+<a class="blog-relatedBlogPosts_item" href="../python-dictionaries/index.html" rel="bookmark norewrite" title="Python Dictionaries">
+<p class="blog-relatedBlogPosts_itemTitle">Python Dictionaries </p></p>
+<p><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 7</span> <span class="rt-label rt-postfix">min read</span></span></p>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li id="block-7" class="widget-container widget_block"><div class="lazyblock-nav-banner-blog-post-1O61UQ wp-block-lazyblock-nav-banner-blog-post"><div class="blog-sidebarBanner">
+<h3 class="blog-sidebarBlogPosts_title">Learn on the go!</h3>
+<a href="https://www.sololearn.com/mobile" class="blog-sidebarBanner_image" target="_blank"><img decoding="async" src="https://sololearnblob.blob.core.windows.net/blog/2023/01/Group-26950.png" alt="" /></a>
+</div></div></li> </ul>
+</aside>
+</div>
+</div>
+</div>
+</main>
+<footer class="wp-sl-footer">
+<div class="wp-sl-footer__social-links">
+<div class="wp-sl-footer__social-links__container">
+<div class="wp-sl-footer__social-links__links-block">
+<a class="wp-sl-footer__social-links__item" href="https://www.linkedin.com/company/sololearn-inc-/" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:#0077b5"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoLinkedin.svg"></div><span class="wp-sl-footer__social-links__text">Follow us on Linkedin</span></a><a class="wp-sl-footer__social-links__item" href="https://www.facebook.com/SoloLearn" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:#4267b2"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoFacebook.svg"></div><span class="wp-sl-footer__social-links__text">Check out our facebook</span></a><a class="wp-sl-footer__social-links__item" href="https://twitter.com/SoloLearn" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:#1da1f2"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoTwitter.svg"></div><span class="wp-sl-footer__social-links__text">See what we tweet about</span></a><a class="wp-sl-footer__social-links__item" href="https://www.instagram.com/sololearn/" target="_blank"><div class="wp-sl-footer__social-links__icon"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoInstagram.svg"></div><span class="wp-sl-footer__social-links__text">Join our instagram</span></a><a class="wp-sl-footer__social-links__item" href="https://www.youtube.com/channel/UCXiOyrjY_jqNCFoQTotILTw" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:red"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoYoutube.svg"></div><span class="wp-sl-footer__social-links__text">Watch our Youtube</span></a> </div>
+<div class="wp-sl-footer__social-links__app-block">
+<a class="wp-sl-footer__social-links__item--app" id="logoAppStore" target="_blank"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoAppStore.svg"></a><a class="wp-sl-footer__social-links__item--app" id="logoGooglePlay" target="_blank"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoGooglePlay.svg"></a> </div>
+</div>
+</div>
+<div class="wp-sl-footer-links">
+<div class="wp-sl-footer-links__container">
+<div class="wp-sl-footer-links__links-block">
+<a class="wp-sl-footer-links__item" href="../../home">Home</a><a class="wp-sl-footer-links__item" href="../../leaderboard">Top Learners</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/payments/pro">Pro</a><a class="wp-sl-footer-links__item" href="../../FAQ">FAQ</a><a class="wp-sl-footer-links__item" href="../../contact">Contact</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/bug-bounty">Bug Bounty Program</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/career">Careers</a><a class="wp-sl-footer-links__item" href="../../terms-of-use">Terms of Use</a><a class="wp-sl-footer-links__item" href="../../privacy-policy">Privacy Policy</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/mobile">Sololearn mobile</a><a class="wp-sl-footer-links__item" href="../../codes">Code Bits</a> </div>
+<div class="wp-sl-footer-links__copyright">
+Made with
+<div class="wp-sl-footer-links__heart-icon">
+<img src="../../wp-content/themes/sololearn/assets/icons/heart.svg" alt="heart_icon" class='style-svg'>
+</div>
+by &nbsp;
+<span class="wp-sl-footer-links__marked-text">Sololearn </span>&nbsp;| ©2023 </div>
+</div>
+</div>
+</footer>
+<script src="../../wp-content/themes/sololearn/assets/scripts/common.js" type="d4ef9a7d6a43ec31da1c2f46-text/javascript"></script>
+<script src="../../wp-content/themes/sololearn/assets/scripts/profile.js" type="d4ef9a7d6a43ec31da1c2f46-text/javascript"></script>
+<script type="d4ef9a7d6a43ec31da1c2f46-text/javascript">
+        jQuery(document).ready(function($) {
+
+            var deviceAgent = navigator.userAgent.toLowerCase();
+            var html = $("html");
+            if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
+
+                html.addClass("ios");
+                html.addClass("mobile");
+            }
+            if (deviceAgent.match(/(Android)/)) {
+                html.addClass("android");
+                html.addClass("mobile");
+            }
+            if (navigator.userAgent.search("MSIE") >= 0) {
+                html.addClass("ie");
+            } else if (navigator.userAgent.search("Chrome") >= 0) {
+                html.addClass("chrome");
+            } else if (navigator.userAgent.search("Firefox") >= 0) {
+                html.addClass("firefox");
+            } else if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+                html.addClass("safari");
+            } else if (navigator.userAgent.search("Opera") >= 0) {
+                html.addClass("opera");
+            }
+        });
+    </script>
+<style id='wp-block-paragraph-inline-css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}p.has-background{padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}
+</style>
+<style id='wp-block-heading-inline-css'>
+h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}
+</style>
+<style id='wp-block-image-inline-css'>
+.wp-block-image img{height:auto;max-width:100%;vertical-align:bottom}.wp-block-image img,.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image figcaption{margin-bottom:1em;margin-top:.5em}.wp-block-image .is-style-rounded img,.wp-block-image.is-style-circle-mask img,.wp-block-image.is-style-rounded img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}.wp-block-image :where(.has-border-color){border-style:solid}.wp-block-image :where([style*=border-top-color]){border-top-style:solid}.wp-block-image :where([style*=border-right-color]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-color]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-color]){border-left-style:solid}.wp-block-image :where([style*=border-width]){border-style:solid}.wp-block-image :where([style*=border-top-width]){border-top-style:solid}.wp-block-image :where([style*=border-right-width]){border-right-style:solid}.wp-block-image :where([style*=border-bottom-width]){border-bottom-style:solid}.wp-block-image :where([style*=border-left-width]){border-left-style:solid}.wp-block-image figure{margin:0}
+</style>
+<style id='wp-block-list-inline-css'>
+ol,ul{box-sizing:border-box}ol.has-background,ul.has-background{padding:1.25em 2.375em}
+</style>
+<script src='https://www.sololearn.com/wp-content/plugins/enlighter/cache/enlighterjs.min.js?ver=5ldjK8WLazRmDr7' id='enlighterjs-js' type="d4ef9a7d6a43ec31da1c2f46-text/javascript"></script>
+<script id='enlighterjs-js-after' type="d4ef9a7d6a43ec31da1c2f46-text/javascript">
+!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":4,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"dracula","language":"generic","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
+</script>
+<script src="https://www.sololearn.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="d4ef9a7d6a43ec31da1c2f46-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7d8ed97d3eccb908","version":"2023.4.0","b":1,"token":"3cd70a6c7768490094eebf19abc1a33f","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

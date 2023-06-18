@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#" itemscope itemtype="https://schema.org/Article">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+
+
+<title>A Complete Guide To Flexbox - Sololearn</title>
+<meta name="description" content="Flexbox is a CSS layout module that allows you to create adaptive, reusable containers and flow the content within those containers." />
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="A Complete Guide To Flexbox - Sololearn" />
+<meta property="og:description" content="Flexbox is a CSS layout module that allows you to create adaptive, reusable containers and flow the content within those containers." />
+<meta property="og:url" content="https://www.sololearn.com/blog/css-flexbox/" />
+<meta property="og:site_name" content="Sololearn Blog" />
+<meta property="article:tag" content="css" />
+<meta property="article:tag" content="flexbox" />
+<meta property="article:section" content="Guides" />
+<meta property="og:updated_time" content="2023-03-02T02:04:29+00:00" />
+<meta property="og:image" content="https://www.sololearn.com/wp-content/uploads/2022/11/Guide-to-flex-box-CSS-760x300.png" />
+<meta property="og:image:secure_url" content="https://www.sololearn.com/wp-content/uploads/2022/11/Guide-to-flex-box-CSS-760x300.png" />
+<meta property="og:image:width" content="760" />
+<meta property="og:image:height" content="300" />
+<meta property="og:image:alt" content="A Complete Guide To Flexbox" />
+<meta property="og:image:type" content="image/png" />
+<meta property="article:published_time" content="2022-11-16T20:19:25+00:00" />
+<meta property="article:modified_time" content="2023-03-02T02:04:29+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="A Complete Guide To Flexbox - Sololearn" />
+<meta name="twitter:description" content="Flexbox is a CSS layout module that allows you to create adaptive, reusable containers and flow the content within those containers." />
+<meta name="twitter:image" content="https://www.sololearn.com/wp-content/uploads/2022/11/Guide-to-flex-box-CSS-760x300.png" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Sololearn Growth" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="10 minutes" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.sololearn.com/blog/#organization","name":"Sololearn Blog","logo":{"@type":"ImageObject","@id":"https://www.sololearn.com/blog/#logo","url":"https://blog-dev.sololearn.com/wp-content/uploads/2022/11/sololearn_color_dark-2.png","contentUrl":"https://blog-dev.sololearn.com/wp-content/uploads/2022/11/sololearn_color_dark-2.png","caption":"Sololearn Blog","inLanguage":"en-US","width":"1112","height":"213"}},{"@type":"WebSite","@id":"https://www.sololearn.com/blog/#website","url":"https://www.sololearn.com/blog","name":"Sololearn Blog","publisher":{"@id":"https://www.sololearn.com/blog/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.sololearn.com/wp-content/uploads/2022/11/Guide-to-flex-box-CSS.png","url":"https://www.sololearn.com/wp-content/uploads/2022/11/Guide-to-flex-box-CSS.png","width":"760","height":"900","inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://www.sololearn.com/blog/css-flexbox/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://www.sololearn.com/blog","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://www.sololearn.com/blog/category/guides/","name":"Guides"}},{"@type":"ListItem","position":"3","item":{"@id":"https://www.sololearn.com/blog/css-flexbox/","name":"A Complete Guide To Flexbox"}}]},{"@type":"WebPage","@id":"https://www.sololearn.com/blog/css-flexbox/#webpage","url":"https://www.sololearn.com/blog/css-flexbox/","name":"A Complete Guide To Flexbox - Sololearn","datePublished":"2022-11-16T20:19:25+00:00","dateModified":"2023-03-02T02:04:29+00:00","isPartOf":{"@id":"https://www.sololearn.com/blog/#website"},"primaryImageOfPage":{"@id":"https://www.sololearn.com/wp-content/uploads/2022/11/Guide-to-flex-box-CSS.png"},"inLanguage":"en-US","breadcrumb":{"@id":"https://www.sololearn.com/blog/css-flexbox/#breadcrumb"}},{"@type":"Person","@id":"https://www.sololearn.com/blog/author/sololearn/","name":"Sololearn Growth","url":"https://www.sololearn.com/blog/author/sololearn/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/c7e8224ac7ad8328638086ea96255fb7?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/c7e8224ac7ad8328638086ea96255fb7?s=96&amp;d=mm&amp;r=g","caption":"Sololearn Growth","inLanguage":"en-US"},"worksFor":{"@id":"https://www.sololearn.com/blog/#organization"}},{"@type":"BlogPosting","headline":"A Complete Guide To Flexbox - Sololearn","datePublished":"2022-11-16T20:19:25+00:00","dateModified":"2023-03-02T02:04:29+00:00","articleSection":"Guides","author":{"@id":"https://www.sololearn.com/blog/author/sololearn/"},"publisher":{"@id":"https://www.sololearn.com/blog/#organization"},"description":"Flexbox is a CSS layout module that allows you to create adaptive, reusable containers and flow the content within those containers.","name":"A Complete Guide To Flexbox - Sololearn","@id":"https://www.sololearn.com/blog/css-flexbox/#richSnippet","isPartOf":{"@id":"https://www.sololearn.com/blog/css-flexbox/#webpage"},"image":{"@id":"https://www.sololearn.com/wp-content/uploads/2022/11/Guide-to-flex-box-CSS.png"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://www.sololearn.com/blog/css-flexbox/#webpage"}}]}</script>
+
+<link rel="alternate" type="application/rss+xml" title="Sololearn &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Sololearn &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Sololearn &raquo; A Complete Guide To Flexbox Comments Feed" href="feed/index.html" />
+<script type="e4711ee21a4c45947d87ddad-text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.sololearn.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}figure{margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://www.sololearn.com/wp-includes/css/classic-themes.min.css?ver=6.2.2' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('index.html');--wp--preset--duotone--grayscale: url('index.html');--wp--preset--duotone--purple-yellow: url('index.html');--wp--preset--duotone--blue-red: url('index.html');--wp--preset--duotone--midnight: url('index.html');--wp--preset--duotone--magenta-yellow: url('index.html');--wp--preset--duotone--purple-green: url('index.html');--wp--preset--duotone--blue-orange: url('index.html');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='sololearn-style-css' href='https://www.sololearn.com/wp-content/themes/sololearn/style.css?ver=6.2.2' media='all' />
+<link rel='stylesheet' id='enlighterjs-css' href='https://www.sololearn.com/wp-content/plugins/enlighter/cache/enlighterjs.min.css?ver=5ldjK8WLazRmDr7' media='all' />
+<script src='https://www.sololearn.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js' type="e4711ee21a4c45947d87ddad-text/javascript"></script>
+<script src='https://www.sololearn.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js' type="e4711ee21a4c45947d87ddad-text/javascript"></script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" type="application/json" href="../wp-json/wp/v2/posts/1628" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.sololearn.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.2.2" />
+<link rel='shortlink' href='https://www.sololearn.com/blog/?p=1628' />
+<link rel="alternate" type="application/json+oembed" href="https://www.sololearn.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sololearn.com%2Fblog%2Fcss-flexbox%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.sololearn.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sololearn.com%2Fblog%2Fcss-flexbox%2F&#038;format=xml" />
+
+
+<script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["guides"],"pageAttributes":["css","flexbox"],"pagePostAuthor":"Sololearn Growth"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7MQKF7');
+</script>
+
+<link rel="pingback" href="https://www.sololearn.com/xmlrpc.php" />
+<script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js" type="e4711ee21a4c45947d87ddad-text/javascript"></script>
+</head>
+<body class="post-template-default single single-post postid-1628 single-format-standard wp-embed-responsive">
+<a href="index.html#content" class="skip-link screen-reader-text">Skip to the content</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7MQKF7" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+
+<script type="e4711ee21a4c45947d87ddad-text/javascript">
+    if(!JSON.parse(window.localStorage.user)?.data?.isPro) {
+        document.querySelector('.wp-navbar__pro-button-wrapper').style.display = 'block';
+    }
+</script>
+<nav class="wp-navbar light">
+<div class="wp-navbar__container">
+<a class="wp-navbar__main-logo wp-navbar__main-logo--desktop" href="../../home">
+<img src="../../wp-content/themes/sololearn/assets/icons/logoAppDesktop.svg" alt="brand_logo-desktop" class='style-svg'>
+</a>
+<a class="wp-navbar__main-logo wp-navbar__main-logo--mobile" href="../../home">
+<img src="../../wp-content/themes/sololearn/assets/icons/logoAppMobile.svg" alt="brand_logo-mobile" class='style-svg'>
+</a>
+<div class="wp-navbar__content" id="navbar_content">
+<div class="wp-navbar__content-wrapper">
+<ul class='wp-navbar__content-list'>
+<li class="wp-navbar__content-list__item"><a href="../../Courses/index.html">Catalog</a></li>
+<li class="wp-navbar__content-list__item"><a href="../../compiler-playground">Online Compiler</a></li>
+<li class="wp-navbar__content-list__item"><a href="../../discuss">Discuss</a></li>
+<li class="wp-navbar__content-list__item"><a href="../../blog">Blog</a></li>
+<li class="wp-navbar__content-list__item"><a href="https://www.sololearn.com/payments/pro">Get Pro</a></li>
+</ul>
+</div>
+<div class="wp-navbar__actions-wrapper">
+<div class="wp-navbar__actions">
+<a href="https://www.sololearn.com/users/login?tr_source=login&amp;tr_source_detail=blog">
+<button type="button" class="sol-button sol-button-secondary sol-button-block sol-button-m" tabindex="0">Log in
+</button>
+</a>
+<a href="https://www.sololearn.com/onboarding/auth/signup?tr_source=register&amp;tr_source_detail=blog">
+<button type="button" class="sol-button sol-button-primary sol-button-block sol-button-m" tabindex="0">Register
+</button>
+</a>
+</div>
+</div>
+</div>
+<div class="wp-navbar__hamburger" id="hamburger_menu">
+Menu
+<div class="wp-navbar__hamburger__button" id="hamburger_menu_btn">
+<span class="arrow first"></span>
+<span class="arrow second"></span>
+<span class="arrow third"></span>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<main id="content" role="main">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="wp-breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Sololearn." href="../../blog" class="home"><span property="name">Sololearn blog</span></a><meta property="position" content="1"></span><span class="wp-breadcrumbs-separator"></span><span property="itemListElement" typeof="ListItem"><span property="name" class="post post-post current-item">A Complete Guide To Flexbox</span><meta property="url" content="https://www.sololearn.com/blog/css-flexbox/"><meta property="position" content="2"></span> </div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-8">
+<article id="post-1628" class="post-1628 post type-post status-publish format-standard has-post-thumbnail hentry category-guides tag-css tag-flexbox">
+<header>
+<div class="share-container">
+<span>Share:</span>
+<button data-sharer="facebook" data-url="https://www.sololearn.com/blog/css-flexbox/">
+<img src="../../wp-content/themes/sololearn/assets/icons/facebook.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="linkedin" data-url="https://www.sololearn.com/blog/css-flexbox/">
+<img src="../../wp-content/themes/sololearn/assets/icons/linkedin.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="twitter" data-url="https://www.sololearn.com/blog/css-flexbox/">
+<img src="../../wp-content/themes/sololearn/assets/icons/twitter.svg" alt="share-icons" class="style-svg">
+</button>
+</div> <div class="reading-time">
+<img src="../../wp-content/themes/sololearn/assets/icons/timeToRead.svg" alt="time to read" class='style-svg'>
+<span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 7</span> <span class="rt-label rt-postfix">min read</span></span> </div>
+</header>
+<div class="entry-content" itemprop="mainEntityOfPage">
+<a href="../../wp-content/uploads/2022/11/Guide-to-flex-box-CSS.png" title="Guide to flex box (CSS)">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/Guide-to-flex-box-CSS.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="../../wp-content/uploads/2022/11/Guide-to-flex-box-CSS.png 760w, ../../wp-content/uploads/2022/11/Guide-to-flex-box-CSS-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> </a>
+<div class="entry-content__body">
+<h1 class="entry-title" itemprop="headline"> A Complete Guide To Flexbox </h1> <meta itemprop="description" content="Flexibility in the human body allows better movement of the body and enhances the body&#8217;s performance physically. In web design, Flexbox brings much-needed flexibility when used to align items on the webpage and allows better movements of the items, which enhances web layout performance on different screen sizes.  Flexbox is a CSS module that is ... A Complete Guide To Flexbox" />
+<p>Flexibility in the human body allows better movement of the body and enhances the body&#8217;s performance physically. In web design, Flexbox brings much-needed flexibility when used to align items on the webpage and allows <a href="../centering-in-css/index.html" data-type="post" data-id="1670">better movements of the items</a>, which enhances web layout performance on different screen sizes. </p>
+<p>Flexbox is a CSS module that is being hyped in the web design and development community. The reason for this hype is not wrong, as Flexbox has a lot of cool things under its belt.&nbsp;</p>
+<p>Before the flexbox, web developers used the <strong>float</strong> or <a href="../html-tables/index.html" data-type="post" data-id="1723"><strong>tables</strong> </a>property to align items in the CSS. Nowadays, flexbox allows you to create better, and  more responsive layouts.</p>
+<h2 class="wp-block-heading">Main size and Cross size</h2>
+<p>When designing with CSS, you use <strong>Containers</strong> (<a href="https://www.sololearn.com/learn/languages/html">HTML tags</a>) to group items of similar properties. </p>
+<p>You define a <strong>flex container</strong> in CSS by inserting <strong>display: flex;</strong> to your container or item tag on your style sheet.</p>
+<p>Flex Containers have various features such as the following. </p>
+<h3 class="wp-block-heading">Main Axis</h3>
+<p>The main axis is the <strong>basic axis</strong> of the flexbox. It could be horizontal or vertical, depending on the <strong>flex-direction.&nbsp;</strong></p>
+<p><strong>For example:</strong></p>
+<p><strong>Let&#8217;s assume that the layout below is a flexbox layout.</strong></p>
+<p>The <strong><em>flex-direction </em></strong>of the layout below is set to <strong><em>row,</em></strong> the <strong><em>main axis </em></strong>will be from <strong><em>left to right </em></strong>(which means it is horizontal )</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;-&gt; <strong>main axis (from home to contact)</strong></p>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; HOME&nbsp;</strong></td><td><strong>&nbsp; &nbsp; &nbsp; ABOUT</strong></td><td><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CONTACT</strong></td></tr></tbody></table></figure>
+<p><strong>Example</strong>;&nbsp; Below is how it will look when the <strong><em>flex-direction</em></strong> is set to a column. The main axis will be vertical (top to bottom).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<figure class="wp-block-table"><table><tbody><tr><td><br><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>HOME</strong></td></tr><tr><td><br><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>ABOUT</strong></td></tr><tr><td><br><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>CONTACT</strong></td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Flex-direction</strong></td><td><strong>Main axis</strong></td></tr><tr><td><strong>Row</strong></td><td><strong>Horizontal ( text-direction)</strong></td></tr><tr><td><strong>Column</strong></td><td><strong>Vertical&nbsp; ( top to bottom)</strong></td></tr><tr><td><strong>Row-reverse</strong></td><td><strong>Horizontal (opposite to text direction )</strong></td></tr><tr><td><strong>column-reverse</strong></td><td><strong>Same as row reverse but vertical</strong></td></tr></tbody></table></figure>
+<h3 class="wp-block-heading">Main Size&nbsp;</h3>
+<p>The main size refers to the dimension of the main axis, which could be its height or width. The property specifies how tall or long your <strong>flexbox</strong> will be.</p>
+<h3 class="wp-block-heading">Main Start or Main End</h3>
+<p>The main start and end are where the main axis of the flexbox starts and ends.&nbsp;</p>
+<h3 class="wp-block-heading">Cross Axis&nbsp;</h3>
+<p>The Flexbox secondary axis is the <strong>cross axis</strong>. It is the <strong>inverse</strong> of the main axis. This means that if the main axis is vertical, the cross axis will be horizontal, and vice versa.&nbsp;</p>
+<p>In other words, the <strong><em>cross axis is perpendicular to the main</em></strong> axis.</p>
+<h3 class="wp-block-heading">Cross Size</h3>
+<p>The cross size is the <strong>dimension</strong> of the cross axis. It works together with the main size to determine the total size of your flexbox.</p>
+<h3 class="wp-block-heading">Cross Start or Cross End&nbsp;</h3>
+<p>The cross start or end specifies where your flexbox’s secondary axis begins and ends.</p>
+<h2 class="wp-block-heading">Flexbox properties</h2>
+<p>Flexbox properties are ways you can manipulate the <strong>containers and their items</strong> in a <strong>Flexbox layout</strong>.&nbsp;</p>
+<p>You can use values to apply the various properties to your flexbox layout. There are many flexbox properties grouped into the container and item properties.&nbsp;</p>
+<h3 class="wp-block-heading">Flexbox Container Properties</h3>
+<p>The flex container is the parent element of a <strong>flexbox layout</strong>. The value of the property is a reference to a flexbox container. We’ve many <strong>container </strong>properties. They include:</p>
+<h4 class="wp-block-heading">Display</h4>
+<p>This property must be declared using one of its two values to create a flex container.</p>
+<p>The property has two layouts, including.</p>
+<ul>
+<li><strong>Flex Layout&nbsp;</strong></li>
+</ul>
+<ul>
+<li><strong>in-Line Flex&nbsp;</strong></li>
+</ul>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare the flex display */
+  display: flex;
+}
+
+.container {
+  /* to declare the inline-flex display */
+  display: inline-flex;
+}</pre>
+<h4 class="wp-block-heading">Flex Direction&nbsp;</h4>
+<p>After declaring your <strong>flexbox container model,</strong> you will need to specify the direction of the flex items. You can use several <strong>values</strong> to specify the direction. The values are:</p>
+<ul>
+<li><strong>Row&nbsp;</strong></li>
+</ul>
+<p>It is the <strong>default</strong> value of the <a href="../css-media-queries/index.html" data-type="post" data-id="1741">CSS flex items</a>. This value displays the flex items in a row.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare the row direction */
+  flex-direction: row;
+}</pre>
+<ul>
+<li><strong>Column</strong></li>
+</ul>
+<p>The column value displays flex items in a column.&nbsp;</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare the column direction */
+  flex-direction: column;
+}</pre>
+<ul>
+<li><strong>Row Reverse&nbsp;</strong></li>
+</ul>
+<p>The row reverse value inversely displays flex items in a row.&nbsp;</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare the row-reverse direction */
+  flex-direction: row-reverse;
+}</pre>
+<ul>
+<li><strong>Column Reverse&nbsp;</strong></li>
+</ul>
+<p>This value inversely displays the flex items in a column.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare the column-reverse direction */
+  flex-direction: column-reverse;
+}</pre>
+<h4 class="wp-block-heading">Flex wrap&nbsp;</h4>
+<p>The next property you need to add to your Flexbox to make it <a href="../responsive-web-design/index.html" data-type="post" data-id="1725"><strong>responsive</strong> </a>to different layouts is the Flex wrap. </p>
+<p>Flex items will try to fit on one line, but with this property, you can change it and allow the items to wrap as desired. The values you can use are:</p>
+<ul>
+<li><strong>Nowrap</strong></li>
+</ul>
+<p>This value wraps your flex items into a single line. It is the <strong>default</strong> format and flex items will display in this format if you don’t add the flex-wrap property.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare flex-wrap value */
+  flex-wrap: nowrap;
+}</pre>
+<ul>
+<li><strong>Wrap</strong></li>
+</ul>
+<p>This value wraps your items into multiple lines. It is the preferred value for developers because it gives flexibility to items.&nbsp;</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare flex-wrap value */
+  flex-wrap: wrap;
+}</pre>
+<ul>
+<li><strong>Wrap-Reverse&nbsp;</strong></li>
+</ul>
+<p>This value inversely wraps your&nbsp; items into multiple lines.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare flex-wrap value */
+  flex-wrap: wrap-reverse;
+}</pre>
+<p><strong>Flex-Flow</strong></p>
+<p>The flex-flow property is a combination of the flex-wrap and the flex-direction property. It allows you to declare the two properties in one line of code.</p>
+<p><strong>Example:</strong></p>
+<p>If you want your <strong>flex-directio</strong>n to be <strong>column </strong>and <strong>flex-wrap</strong> to be <strong>wrap</strong> you can use<strong> flex-flow to achieve that in one line of code.&nbsp;</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare flex-flow value */
+  flex-flow: column wrap;
+}</pre>
+<h4 class="wp-block-heading">Justify-Content&nbsp;</h4>
+<p>You can align your items on the main axis using this property. It places your items at the end, center, and start of the axis.&nbsp;</p>
+<p>You can also space the items using this property. The values you can use are:</p>
+<ul>
+<li><strong>Flex-Start</strong></li>
+</ul>
+<p>Flex-start aligns your items at the<strong> start of the flex-direction</strong>.</p>
+<p>The value is the default value, and items will display in this format if you don’t add the justify-content property.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare Justify content value */
+  justify-content: flex-start;
+}</pre>
+<ul>
+<li><strong>Center</strong></li>
+</ul>
+<p>This value moves your items to the center of the main axis.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare Justify content value */
+  justify-content: center;
+}</pre>
+<ul>
+<li><strong>Space Between&nbsp;</strong></li>
+</ul>
+<p>This value arranges items with spaces between them from the start to the end of the main axis.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">Example: Let's Code
+.container {
+/* to declare Justify content value */
+  justify-content: space-between;
+}</pre>
+<ul>
+<li><strong>Space Evenly</strong></li>
+</ul>
+<p>This value ensures that there are equal spaces between and around each item.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare Justify content value */
+  justify-content: space-evenly;
+}</pre>
+<ul>
+<li><strong>Flex-End</strong></li>
+</ul>
+<p>You can use this value to align items to the end of the flex-direction.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare Justify content value */
+  justify-content: flex-end;
+}</pre>
+<h4 class="wp-block-heading">Align items</h4>
+<p>The Align items’ property focuses on the cross axis. It moves items along the cross axis. The values you can use for this property are:<br></p>
+<ul>
+<li><strong>Stretch</strong></li>
+</ul>
+<p>This value is the default format. It spreads items to fill the container.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare align-items value */
+  align-items: stretch;
+}</pre>
+<ul>
+<li><strong>Flex-Start</strong></li>
+</ul>
+<p>Like the justify-content property, these values also move items to the start of the flex-direction or the writing mode on the cross axis.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare align-items value */
+  align-items: flex-start;
+}</pre>
+<ul>
+<li><strong>Center</strong></li>
+</ul>
+<p>The value moves items to the center of the cross axis.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare align-items value */
+  align-items: center;
+}</pre>
+<ul>
+<li><strong>Baseline&nbsp;</strong></li>
+</ul>
+<p>The value specifies the alignment of items according to their content’s baseline.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare align-items value */
+  align-items: baseline;
+}</pre>
+<ul>
+<li><strong>Flex-End</strong></li>
+</ul>
+<p>These values move items to the end of the flex-direction or writing modes on the cross axis.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.container {
+  /* to declare align-items value */
+  align-items: Flex-end;
+}</pre>
+<h4 class="wp-block-heading">Align Content</h4>
+<p>This property aligns items around the extra spaces of the cross axis. It performs a similar function to the justify-content property.&nbsp;</p>
+<p>However, this property only works when:&nbsp;</p>
+<ul>
+<li>You have<strong> multi-line flexible boxes;</strong>&nbsp;</li>
+<li>And <strong>flex-wrap</strong> is not the default (it should either be in <strong><em>wrap </em></strong>or<strong> </strong><strong><em>wrap-reverse</em></strong>).</li>
+</ul>
+<p>The values you can use are:&nbsp;</p>
+<ul>
+<li>Flex-start</li>
+<li>Flex-end</li>
+<li>Center</li>
+<li>Space-between</li>
+<li>Space-around</li>
+<li>Space-evenly</li>
+<li>Stretch</li>
+</ul>
+<h3 class="wp-block-heading">Flexbox Items Properties</h3>
+<p>The flexbox item property allows you to define the size and position of each item in a flexbox.&nbsp;&nbsp;</p>
+<h4 class="wp-block-heading">Order</h4>
+<p>You can use this property to change <a href="../css-absolute-fix-relative-positioning/index.html" data-type="post" data-id="1737">your item’s order or position</a>. To use this property, you simply add <em>order</em> to your item tag elements. </p>
+<p>The item with the lowest number will be at the start while the item with the highest order will be moved to the end.</p>
+<p>The order property values are numerically positive numbers, such as 1, 2, 3, and 4. The property’s default value is 0.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.item {
+  order: /* specify the order number of the item here*/ ;
+}</pre>
+<h4 class="wp-block-heading">Flex grow</h4>
+<p>This property makes the flex item grow to a specified width or size as desired. It is used to specify how an item should grow to use the extra space on the webpage.</p>
+<p>The flex-grow values are also numerically positive numbers, such as 1, 2, 3, and 4. The property’s default value is 0.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.item {
+  flex-grow: /* specify the flex-grow number of the item here*/ ;
+}</pre>
+<h4 class="wp-block-heading">Flex shrink</h4>
+<p>When necessary, this property shrinks a flex item to a specific size. Its values, like the flex-grow, are positive numerical values.</p>
+<p>Its default value is 1.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.item {
+  flex-shrink: /* specify the flex-shrink number of the item here*/ ;
+}</pre>
+<h4 class="wp-block-heading">Flex basis</h4>
+<p>The flex-basis specifies an item’s default size.&nbsp;</p>
+<p>When you use flex-basis to define an item&#8217;s size and set a flex-shrink default value for the item. It prevents your item from overflowing and makes your item grow according to the container or viewport’s size.</p>
+<p>If you want to use the item class size as your flex-basis size set flex-basis value to auto.</p>
+<p><strong>Note!</strong></p>
+<p>Flex-basis can be overridden by min and max-width values. So, you don’t have to set min and max-width values because flex-basis provides a better responsive layout.&nbsp;</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.item {
+  flex-basis: /* specify the flex-basis here */ ;
+}</pre>
+<h4 class="wp-block-heading">Flex</h4>
+<p>This is a combination of<strong><em> flex-grow</em></strong>, <strong><em>flex-shrinks</em></strong>, and <strong><em>flex-basis</em></strong>. When using the flex property, you can place the 3&nbsp; values in a single line.&nbsp;</p>
+<p>The first value is for the <strong><em>flex-grow</em></strong>, while the second and last value is for the <strong><em>flex-shrink</em></strong> and the<strong><em> flex-basis.</em></strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.item {
+  flex: ; /* specify (flex-grow) (flex-shrink)  (flex-basis) here*/
+}</pre>
+<h4 class="wp-block-heading">Align self</h4>
+<p>This property allows the alignment of a particular item without affecting other items in the container.&nbsp;</p>
+<p>The property uses the same values as the align-items property.</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">.item {
+  align-self: /* specify your align-self value here */ ;
+}</pre>
+<h2 class="wp-block-heading"><strong>Prefixing Flexbox</strong></h2>
+<p>Prefixing is a concept that has been around for a while. It allows web developers to add support for new <a href="https://www.sololearn.com/blog/html-forms/" data-type="post" data-id="1728">CSS features</a> before it adapts to different browsers.</p>
+<p>&nbsp;Below are some CSS browser prefixes.</p>
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Browsers&nbsp;</strong></td><td><strong>Prefixes&nbsp;</strong></td></tr><tr><td>Android<br></td><td>-webkit-</td></tr><tr><td>Chrome<br></td><td>-webkit-</td></tr><tr><td>Firefox:<br></td><td>-moz-</td></tr><tr><td>Internet Explorer<br></td><td>-ms-</td></tr><tr><td>IOS<br></td><td>webkit-</td></tr><tr><td>Opera<br></td><td>-o-</td></tr><tr><td>Safari<br></td><td>-webkit-</td></tr></tbody></table></figure>
+<h3 class="wp-block-heading"><strong>Introducing a Prefix</strong></h3>
+<p>Before adding a prefix to your browser, make sure that the feature supports prefixes. This is because most CSS features do not need prefixes.&nbsp;</p>
+<p>To prefix a flexbox, you’ve to create the flexbox property and associate it with each CSS browser prefix.&nbsp;</p>
+<p><strong>Illustration:</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="css" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">/* let's use align-items for this feature*/
+.Feature {
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch;
+}</pre>
+<h2 class="wp-block-heading"><strong>Conclusion</strong></h2>
+<p>With Flexbox, you can align content according to your needs and requirements. Thus, making use of all available screen space the way you want on all devices.&nbsp;</p>
+<p>Do you want to learn more about Flexbox? consider taking a <a href="../../learning/1023">CSS course</a> on Sololearn’s website. Also, Sololearn offers courses on different programming languages that might interest you.<br><br></p>
+<p><strong>References</strong></p>
+<ul>
+<li>Kyrnin, J. (2020, November 22). How and why you would want to use CSS vendor prefixes in your website . ThoughtCo. Retrieved August 12, 2022, from <a href="https://www.thoughtco.com/css-vendor-prefixes-3466867#:~:text=CSS%20vendor%20prefixes%2C%20also%20sometimes,fully%20supported%20in%20all%20browsers" target="_blank" rel="noopener">https://www.thoughtco.com/css-vendor-prefixes-3466867#:~:text=CSS%20vendor%20prefixes%2C%20also%20sometimes,fully%20supported%20in%20all%20browsers</a>.&nbsp;</li>
+</ul>
+<ul>
+<li>Damme, T. V., Merkenich, J., Coyier, C., Mejia, L., Seyedi, M., Gaebel, D., Khare, M., Graham, G., Rendle, R., El-Alfy, A., Matuzovic, M., &amp;amp; Holt, B. (2022, April 29). A complete guide to flexbox: CSS-tricks. CSS. Retrieved August 12, 2022, from <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a>&nbsp;</li>
+</ul>
+<ul>
+<li>Andrew, R., About The AuthorRachel Andrew is a web developer, &amp;amp; Author, A. T. (2018, August 2). What happens when you create a Flexbox flex container? Smashing Magazine. Retrieved August 12, 2022, from <a href="https://www.smashingmagazine.com/2018/08/flexbox-display-flex-container/" target="_blank" rel="noopener">https://www.smashingmagazine.com/2018/08/flexbox-display-flex-container/</a>&nbsp;</li>
+</ul>
+</div>
+</div>
+<div class="share-container">
+<span>Share:</span>
+<button data-sharer="facebook" data-url="https://www.sololearn.com/blog/css-flexbox/">
+<img src="../../wp-content/themes/sololearn/assets/icons/facebook.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="linkedin" data-url="https://www.sololearn.com/blog/css-flexbox/">
+<img src="../../wp-content/themes/sololearn/assets/icons/linkedin.svg" alt="share-icons" class="style-svg">
+</button>
+<button data-sharer="twitter" data-url="https://www.sololearn.com/blog/css-flexbox/">
+<img src="../../wp-content/themes/sololearn/assets/icons/twitter.svg" alt="share-icons" class="style-svg">
+ </button>
+</div>
+<div class='yarpp yarpp-related yarpp-related-website yarpp-template-yarpp-template-blogPosts-footer'>
+<div class="blog-relatedBlogPostsFooter">
+<h3 class="blog-sidebarBlogPosts_title">Related blogposts</h3>
+<ul class="row blog-relatedBlogPostsFooter_list">
+<li class="col-lg-4 col-md-6">
+<article class="blog-relatedBlogPostsFooter_item">
+<a class="blog-relatedBlogPostsFooter_item-link" href="../add-css-to-html/index.html" rel="bookmark norewrite" title="How To Add CSS To HTML">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/CHEAT-SHEET_-How-To-Add-CSS-To-HTML.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="../../wp-content/uploads/2022/11/CHEAT-SHEET_-How-To-Add-CSS-To-HTML.png 760w, ../../wp-content/uploads/2022/11/CHEAT-SHEET_-How-To-Add-CSS-To-HTML-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> <h2 class="blog-relatedBlogPostsFooter_item__content">
+How To Add CSS To HTML </h2>
+</a>
+</article>
+</li>
+<li class="col-lg-4 col-md-6">
+<article class="blog-relatedBlogPostsFooter_item">
+<a class="blog-relatedBlogPostsFooter_item-link" href="../centering-in-css/index.html" rel="bookmark norewrite" title="How to Center anything with CSS &#8211; Text, Image, Elements  and more">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/How-to-center-in-CSS_.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="../../wp-content/uploads/2022/11/How-to-center-in-CSS_.png 760w, ../../wp-content/uploads/2022/11/How-to-center-in-CSS_-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> <h2 class="blog-relatedBlogPostsFooter_item__content">
+How to Center anything with CSS &#8211; Text, I... </h2>
+</a>
+</article>
+</li>
+<li class="col-lg-4 col-md-6">
+<article class="blog-relatedBlogPostsFooter_item">
+<a class="blog-relatedBlogPostsFooter_item-link" href="../sql-join/index.html" rel="bookmark norewrite" title="SQL Joins: What They are, How They Work, and How Many Types Exist">
+<img width="760" height="900" src="../../wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist..png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="../../wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist..png 760w, ../../wp-content/uploads/2022/11/SQL-joins_-what-they-are-how-they-work-and-how-many-types-exist.-253x300.png 253w" sizes="(max-width: 760px) 100vw, 760px" /> <h2 class="blog-relatedBlogPostsFooter_item__content">
+SQL Joins: What They are, How They Work, and Ho... </h2>
+</a>
+</article>
+</li>
+</ul>
+</div>
+
+
+
+
+</article> </div>
+<div class="col-lg-4 no-gutters">
+<aside id="sidebar" class="sidebar sidebar__single" role="complementary">
+<ul class="blog-sidebarBlogPosts">
+<li>
+<div class='yarpp yarpp-related yarpp-related-website yarpp-template-yarpp-template-blogPosts-sidebar-single'>
+<div class="blog-relatedBlogPosts">
+<h3 class="blog-relatedBlogPosts_title">
+<span>Related blogposts</span>
+<a href="../../blog">See all</a>
+</h3>
+<ul class="blog-relatedBlogPosts_list">
+<li>
+<a class="blog-relatedBlogPosts_item" href="../add-css-to-html/index.html" rel="bookmark norewrite" title="How To Add CSS To HTML">
+<p class="blog-relatedBlogPosts_itemTitle">How To Add CSS To HTML </p></p>
+<p><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 6</span> <span class="rt-label rt-postfix">min read</span></span></p>
+</a>
+</li>
+<li>
+<a class="blog-relatedBlogPosts_item" href="../centering-in-css/index.html" rel="bookmark norewrite" title="How to Center anything with CSS &#8211; Text, Image, Elements  and more">
+<p class="blog-relatedBlogPosts_itemTitle">How to Center anything with CSS &#8211; Text, I... </p></p>
+<p><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 4</span> <span class="rt-label rt-postfix">min read</span></span></p>
+</a>
+</li>
+<li>
+<a class="blog-relatedBlogPosts_item" href="../sql-join/index.html" rel="bookmark norewrite" title="SQL Joins: What They are, How They Work, and How Many Types Exist">
+<p class="blog-relatedBlogPosts_itemTitle">SQL Joins: What They are, How They Work, and Ho... </p></p>
+<p><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 5</span> <span class="rt-label rt-postfix">min read</span></span></p>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li id="block-7" class="widget-container widget_block"><div class="lazyblock-nav-banner-blog-post-1O61UQ wp-block-lazyblock-nav-banner-blog-post"><div class="blog-sidebarBanner">
+<h3 class="blog-sidebarBlogPosts_title">Learn on the go!</h3>
+<a href="https://www.sololearn.com/mobile" class="blog-sidebarBanner_image" target="_blank"><img decoding="async" src="https://sololearnblob.blob.core.windows.net/blog/2023/01/Group-26950.png" alt="" /></a>
+</div></div></li> </ul>
+</aside>
+</div>
+</div>
+</div>
+</main>
+<footer class="wp-sl-footer">
+<div class="wp-sl-footer__social-links">
+<div class="wp-sl-footer__social-links__container">
+<div class="wp-sl-footer__social-links__links-block">
+<a class="wp-sl-footer__social-links__item" href="https://www.linkedin.com/company/sololearn-inc-/" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:#0077b5"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoLinkedin.svg"></div><span class="wp-sl-footer__social-links__text">Follow us on Linkedin</span></a><a class="wp-sl-footer__social-links__item" href="https://www.facebook.com/SoloLearn" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:#4267b2"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoFacebook.svg"></div><span class="wp-sl-footer__social-links__text">Check out our facebook</span></a><a class="wp-sl-footer__social-links__item" href="https://twitter.com/SoloLearn" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:#1da1f2"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoTwitter.svg"></div><span class="wp-sl-footer__social-links__text">See what we tweet about</span></a><a class="wp-sl-footer__social-links__item" href="https://www.instagram.com/sololearn/" target="_blank"><div class="wp-sl-footer__social-links__icon"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoInstagram.svg"></div><span class="wp-sl-footer__social-links__text">Join our instagram</span></a><a class="wp-sl-footer__social-links__item" href="https://www.youtube.com/channel/UCXiOyrjY_jqNCFoQTotILTw" target="_blank"><div class="wp-sl-footer__social-links__icon" style="color:red"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoYoutube.svg"></div><span class="wp-sl-footer__social-links__text">Watch our Youtube</span></a> </div>
+<div class="wp-sl-footer__social-links__app-block">
+<a class="wp-sl-footer__social-links__item--app" id="logoAppStore" target="_blank"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoAppStore.svg"></a><a class="wp-sl-footer__social-links__item--app" id="logoGooglePlay" target="_blank"><img class="style-svg" src="../../wp-content/themes/sololearn/assets/icons/logoGooglePlay.svg"></a> </div>
+</div>
+</div>
+<div class="wp-sl-footer-links">
+<div class="wp-sl-footer-links__container">
+<div class="wp-sl-footer-links__links-block">
+<a class="wp-sl-footer-links__item" href="../../home">Home</a><a class="wp-sl-footer-links__item" href="../../leaderboard">Top Learners</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/payments/pro">Pro</a><a class="wp-sl-footer-links__item" href="../../FAQ">FAQ</a><a class="wp-sl-footer-links__item" href="../../contact">Contact</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/bug-bounty">Bug Bounty Program</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/career">Careers</a><a class="wp-sl-footer-links__item" href="../../terms-of-use">Terms of Use</a><a class="wp-sl-footer-links__item" href="../../privacy-policy">Privacy Policy</a><a class="wp-sl-footer-links__item" href="https://www.sololearn.com/mobile">Sololearn mobile</a><a class="wp-sl-footer-links__item" href="../../codes">Code Bits</a> </div>
+<div class="wp-sl-footer-links__copyright">
+Made with
+<div class="wp-sl-footer-links__heart-icon">
+<img src="../../wp-content/themes/sololearn/assets/icons/heart.svg" alt="heart_icon" class='style-svg'>
+</div>
+by &nbsp;
+<span class="wp-sl-footer-links__marked-text">Sololearn </span>&nbsp;| ©2023 </div>
+</div>
+</div>
+</footer>
+<script src="../../wp-content/themes/sololearn/assets/scripts/common.js" type="e4711ee21a4c45947d87ddad-text/javascript"></script>
+<script src="../../wp-content/themes/sololearn/assets/scripts/profile.js" type="e4711ee21a4c45947d87ddad-text/javascript"></script>
+<script type="e4711ee21a4c45947d87ddad-text/javascript">
+        jQuery(document).ready(function($) {
+
+            var deviceAgent = navigator.userAgent.toLowerCase();
+            var html = $("html");
+            if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
+
+                html.addClass("ios");
+                html.addClass("mobile");
+            }
+            if (deviceAgent.match(/(Android)/)) {
+                html.addClass("android");
+                html.addClass("mobile");
+            }
+            if (navigator.userAgent.search("MSIE") >= 0) {
+                html.addClass("ie");
+            } else if (navigator.userAgent.search("Chrome") >= 0) {
+                html.addClass("chrome");
+            } else if (navigator.userAgent.search("Firefox") >= 0) {
+                html.addClass("firefox");
+            } else if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+                html.addClass("safari");
+            } else if (navigator.userAgent.search("Opera") >= 0) {
+                html.addClass("opera");
+            }
+        });
+    </script>
+<style id='wp-block-paragraph-inline-css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}p.has-background{padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}
+</style>
+<style id='wp-block-heading-inline-css'>
+h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}
+</style>
+<style id='wp-block-table-inline-css'>
+.wp-block-table{overflow-x:auto}.wp-block-table table{border-collapse:collapse;width:100%}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{border:1px solid;padding:.5em}.wp-block-table .has-fixed-layout{table-layout:fixed;width:100%}.wp-block-table .has-fixed-layout td,.wp-block-table .has-fixed-layout th{word-break:break-word}.wp-block-table.aligncenter,.wp-block-table.alignleft,.wp-block-table.alignright{display:table;width:auto}.wp-block-table.aligncenter td,.wp-block-table.aligncenter th,.wp-block-table.alignleft td,.wp-block-table.alignleft th,.wp-block-table.alignright td,.wp-block-table.alignright th{word-break:break-word}.wp-block-table .has-subtle-light-gray-background-color{background-color:#f3f4f5}.wp-block-table .has-subtle-pale-green-background-color{background-color:#e9fbe5}.wp-block-table .has-subtle-pale-blue-background-color{background-color:#e7f5fe}.wp-block-table .has-subtle-pale-pink-background-color{background-color:#fcf0ef}.wp-block-table.is-style-stripes{background-color:transparent;border-bottom:1px solid #f0f0f0;border-collapse:inherit;border-spacing:0}.wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f0f0f0}.wp-block-table.is-style-stripes.has-subtle-light-gray-background-color tbody tr:nth-child(odd){background-color:#f3f4f5}.wp-block-table.is-style-stripes.has-subtle-pale-green-background-color tbody tr:nth-child(odd){background-color:#e9fbe5}.wp-block-table.is-style-stripes.has-subtle-pale-blue-background-color tbody tr:nth-child(odd){background-color:#e7f5fe}.wp-block-table.is-style-stripes.has-subtle-pale-pink-background-color tbody tr:nth-child(odd){background-color:#fcf0ef}.wp-block-table.is-style-stripes td,.wp-block-table.is-style-stripes th{border-color:transparent}.wp-block-table .has-border-color td,.wp-block-table .has-border-color th,.wp-block-table .has-border-color tr,.wp-block-table .has-border-color>*{border-color:inherit}.wp-block-table table[style*=border-top-color] tr:first-child,.wp-block-table table[style*=border-top-color] tr:first-child td,.wp-block-table table[style*=border-top-color] tr:first-child th,.wp-block-table table[style*=border-top-color]>*,.wp-block-table table[style*=border-top-color]>* td,.wp-block-table table[style*=border-top-color]>* th{border-top-color:inherit}.wp-block-table table[style*=border-top-color] tr:not(:first-child){border-top-color:currentColor}.wp-block-table table[style*=border-right-color] td:last-child,.wp-block-table table[style*=border-right-color] th,.wp-block-table table[style*=border-right-color] tr,.wp-block-table table[style*=border-right-color]>*{border-right-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:last-child,.wp-block-table table[style*=border-bottom-color] tr:last-child td,.wp-block-table table[style*=border-bottom-color] tr:last-child th,.wp-block-table table[style*=border-bottom-color]>*,.wp-block-table table[style*=border-bottom-color]>* td,.wp-block-table table[style*=border-bottom-color]>* th{border-bottom-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:not(:last-child){border-bottom-color:currentColor}.wp-block-table table[style*=border-left-color] td:first-child,.wp-block-table table[style*=border-left-color] th,.wp-block-table table[style*=border-left-color] tr,.wp-block-table table[style*=border-left-color]>*{border-left-color:inherit}.wp-block-table table[style*=border-style] td,.wp-block-table table[style*=border-style] th,.wp-block-table table[style*=border-style] tr,.wp-block-table table[style*=border-style]>*{border-style:inherit}.wp-block-table table[style*=border-width] td,.wp-block-table table[style*=border-width] th,.wp-block-table table[style*=border-width] tr,.wp-block-table table[style*=border-width]>*{border-style:inherit;border-width:inherit}
+</style>
+<style id='wp-block-list-inline-css'>
+ol,ul{box-sizing:border-box}ol.has-background,ul.has-background{padding:1.25em 2.375em}
+</style>
+<script src='https://www.sololearn.com/wp-content/plugins/enlighter/cache/enlighterjs.min.js?ver=5ldjK8WLazRmDr7' id='enlighterjs-js' type="e4711ee21a4c45947d87ddad-text/javascript"></script>
+<script id='enlighterjs-js-after' type="e4711ee21a4c45947d87ddad-text/javascript">
+!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":4,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":true,"theme":"dracula","language":"generic","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
+</script>
+<script src="https://www.sololearn.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="e4711ee21a4c45947d87ddad-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7d8f033e9b814c19","version":"2023.4.0","b":1,"token":"3cd70a6c7768490094eebf19abc1a33f","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
